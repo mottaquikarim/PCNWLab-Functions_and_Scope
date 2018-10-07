@@ -11,13 +11,19 @@ if invalid input given, return -1
 
 function myAge( ageNow, numYears ){
       const futureAge = numYears + ageNow
+
+        if (futureAge > 100){
+            return NaN
+        } else if(typeof ageNow !== "number" || typeof numYears !== "number" || numYears < 0 || ageNow < 0){
+            return -1
+       } else{
+            return futureAge
+       }
+        }
+       console.log(typeof 44)
     
-      
-       return futureAge
-}
+       console.log(myAge(-1, 92))
 
-
-console.log(myAge(28, 92))
 
 
 /******************
