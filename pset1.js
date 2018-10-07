@@ -9,11 +9,13 @@ if that number is > 100, should return NaN
 if invalid input given, return -1
 ******************/
 
+
 function myAge( ageNow, numYears ) {
-       
+   
+return ageNow + numYears
 }
 
-
+//console.log (myAge(26, 4))
 
 /******************
 Concatenate Strings
@@ -30,10 +32,11 @@ Concatenating string variables
 ******************/
 
 function myConcatenate( firstStr, secondStr, thirdStr ) {
-    
+    return `${firstStr}  ${secondStr} ${thirdStr}` 
 }
 
 myConcatenate('I', 'am', 'iron man'); // 'I am iron man'
+console.log (myConcatenate('I', 'am', 'iron man'))
 
 /******************
 Subtract Function
@@ -45,8 +48,9 @@ Ensure that both of the inputs are numbers
 ******************/
 
 function subtract(a,b) {
-    
+    return a - b
 }
+console.log(subtract(10, 5));
 
 /******************
 Area of A Circle
@@ -61,9 +65,12 @@ A = π * r2, where is π is Pi and r is the radius squared
 
 
 function areaOfaCircle(radius){
-    
+    console.log('radius is...', radius);
+    const area = Math.PI * radius ** 2;
+    return area;
     
 }    
+console.log(areaOfaCircle(1), 3.14159);
 
 /******************
 Temperature Converter Fahrenheit to Celsius
@@ -74,7 +81,10 @@ Now store a fahrenheit temperature into a variable.
 
 Convert it to celsius and output "NN°F is NN°C."
 ******************/
-
+function fahrenheitToCelsius(fTemp){
+    return `${fTemp} degree F is ${(fTemp -32) * 1.8} degree C` 
+}
+console.log(fahrenheitToCelsius(32));
 
 /******************
 Temperature Converter Celsius to Fahrenheit
@@ -86,6 +96,10 @@ Store a celsius temperature into a variable.
 Convert it to fahrenheit and output "NN°C is NN°F".
 ******************/
 
+function celsiusToFahrenheit(cTemp){
+    return `${cTemp} degree C is ${(cTemp *9/5) + 32} degree F`
+}
+console.log(celsiusToFahrenheit(0));
 
 /******************
 Is it the weekend?
@@ -115,7 +129,10 @@ The function should return the absolute value of the number
 The absolute value of a negative number is the positive version of that same number,
 and the absolute value of a positive number (or zero) is that number itself.
 ******************/
-
+function absolute(num){
+    return Math.abs(num)
+}
+console.log(absolute(-6));
 
 /******************
 Create a function that counts the number of characters in your name
@@ -128,4 +145,8 @@ return the number of characters in the string
 call function 'countChars'
 ******************/
 
-
+function countCharacter(string){
+    return `hi my length is : ${string.length}`;
+}
+  
+console.log(countCharacter("Chuyun"));
