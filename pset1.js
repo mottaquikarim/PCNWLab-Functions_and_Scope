@@ -11,11 +11,23 @@ if invalid input given, return -1
 
 function myAge( ageNow, numYears ) {
        let num;
-       num = ageNow + numYears;
-       return num;
+       if (typeof ageNow != 'number' || typeof numYears != 'number'){
+            return -1;
+       }
+       else{
+        num = ageNow + numYears;
+            if(num > 100){
+                return "NaN";
+                }
+       else{
+           return num;
+       }
+       }
 }
-console.log("My age in 5 years: " + myAge(23,5));
-
+console.log("My age in 5 years: " + myAge(23,5)); //Correct input values
+console.log("My age in 5 years: " + myAge(23,90)); //Incorrect input values (Over 100yrs old)
+console.log("My age in 5 years: " + myAge(23,'f')); //Incorrect input value
+console.log("");//New line for organization.
 
 /******************
 Concatenate Strings
@@ -34,9 +46,10 @@ Concatenating string variables
 function myConcatenate( firstStr, secondStr, thirdStr ) {
     return firstStr + ' ' + secondStr + ' ' + thirdStr;
 }
-console.log(myConcatenate('I','am','iron man'));
-
-myConcatenate("myConcatenate: " + 'I', 'am', 'iron man'); // 'I am iron man'
+let mySentence = myConcatenate('I','am','iron man');
+console.log("mySentence: " + mySentence); //concatenated arguement as variable mySentence
+console.log("myConcatenate: " + myConcatenate("He","is","iron man")); //myConcatenate function called
+console.log("");//New line for organization.
 
 /******************
 Subtract Function
@@ -48,11 +61,19 @@ Ensure that both of the inputs are numbers
 ******************/
 
 function subtract(a,b) {
-    let num;
+    if(typeof a != 'number' || typeof b != 'number'){
+        return "Not a number"
+    }
+    else{
+        let num;
     num = a - b;
-    return num;
+    return num; 
+    }
+   
 }
-console.log("Subtraction: " + subtract(123,23));
+console.log("Subtraction: " + subtract("ap",5)); //Invalid input, not a number.
+console.log("Subtraction: " + subtract(123,23)); //Correct input, returns 100.
+console.log("");//New line for organization.
 
 /******************
 Area of A Circle
@@ -71,7 +92,9 @@ function areaOfaCircle(radius){
     areaCircle = 3.14159 * (radius ** 2);
     return areaCircle;
 }    
-console.log("Area of a Circle: " + areaOfaCircle(5));
+console.log("Area of a Circle: " + areaOfaCircle(5)); //Radius function
+console.log("");//New line for organization.
+
 /******************
 Temperature Converter Fahrenheit to Celsius
 
@@ -86,7 +109,8 @@ function fahrenheitToCelsius(number){
     celsius = (number - 32) *  5 / 9;
     return celsius;
 }
-console.log("Fahrenheit to Celsius: " + fahrenheitToCelsius(50));
+console.log("Fahrenheit to Celsius: " + fahrenheitToCelsius(50));//F to C.
+console.log("");//New line for organization.
 
 /******************
 Temperature Converter Celsius to Fahrenheit
@@ -101,7 +125,8 @@ function celsiusToFahrenheit(num){
     let fahrenheit = (num * 9 / 5) + 32;
     return fahrenheit;
 }
-console.log("Celsius to Fahrenheit: " + celsiusToFahrenheit(20))
+console.log("Celsius to Fahrenheit: " + celsiusToFahrenheit(20)) //C to F.
+console.log("");//New line for organization.
 
 /******************
 Is it the weekend?
@@ -129,7 +154,8 @@ function isItTheWeekend(){
         return "No, it's the weekday.";
     }
 }
-console.log("Is It The Weekend?: " + isItTheWeekend());
+console.log("Is It The Weekend?: " + isItTheWeekend());//Check's today's date using date function in java script. 0 = Sunday, 1 = Monday, and so on to 7 = Saturday.
+console.log("");//New line for organization.
 
 /******************
 Finding the absolute value of a number
@@ -143,7 +169,7 @@ and the absolute value of a positive number (or zero) is that number itself.
 ******************/
 function absolute(num){
     let abNum;
-    if(num > 0){
+    if(num >= 0){
         return num;
     }
     else {
@@ -151,8 +177,10 @@ function absolute(num){
     }
     return abNum;
 }
-console.log("Absolute of '10' is: " + absolute(10));
-console.log("Absolute of '-50' is: " + absolute(-50));
+console.log("Absolute of '10' is: " + absolute(10));//Absolute value of 10 is 10.
+console.log("Absolute of '-50' is: " + absolute(-50));//Absolute value of -50 is 50.
+console.log("");//New line for organization.
+
 /******************
 Create a function that counts the number of characters in your name
 
@@ -174,5 +202,5 @@ function countChars(letters){
         return num;
     }
 }
-console.log("Char counter of '50' is: " + countChars(50));
-console.log("Char counter of 'apple' is: " + countChars("apple"));
+console.log("Char counter of '50' is: " + countChars(50));//Input value is not a string so invalid.
+console.log("Char counter of 'apple' is: " + countChars("apple"));//Input value amount of char is 5.
