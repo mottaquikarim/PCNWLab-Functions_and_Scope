@@ -145,9 +145,18 @@ If you are having trouble, please note that Javascript has a helpful built-in fu
 ******************/
 
 function isItTheWeekend(day){
-
+    day = day.toLowerCase();
+ if (day == "monday" || day == "tuesday" || day == "wednesday" || day == "thursday" || day == "friday" ) {
+        return `No, it's the weekday`;
+ }else if (day == "saturday" || day == "sunday") {
+        return `Yes, it's the weekday`;
+ } else {
+     return `Invalid input entered`;
+ }
 }
 
+console.log(isItTheWeekend("Monday"));
+console.log(isItTheWeekend("SunDaY"));
 /******************
 Finding the absolute value of a number
 
