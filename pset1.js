@@ -74,7 +74,10 @@ A = π * r2, where is π is Pi and r is the radius squared
 
 
 function areaOfaCircle(radius){
-    
+    console.log( 'radius is...', radius);
+    //const area = Math.PI * radius ** 2;
+    return 0;
+
     
 }    
 
@@ -87,7 +90,12 @@ Now store a fahrenheit temperature into a variable.
 
 Convert it to celsius and output "NN°F is NN°C."
 ******************/
+function fahrenheitToCelsius(fah){
+    let Celsius =(fah - 32) * 5/9 
 
+    return Celsius;
+}
+console.log (fahrenheitToCelsius(10));
 
 /******************
 Temperature Converter Celsius to Fahrenheit
@@ -98,8 +106,12 @@ Store a celsius temperature into a variable.
 
 Convert it to fahrenheit and output "NN°C is NN°F".
 ******************/
+function celsiusToFahrenheit(cel){
+    let fahrenheit =(cel * 9/5) + 32
 
-
+    return fahrenheit;
+}
+console.log (celsiusToFahrenheit(10));
 /******************
 Is it the weekend?
 
@@ -128,7 +140,11 @@ The function should return the absolute value of the number
 The absolute value of a negative number is the positive version of that same number,
 and the absolute value of a positive number (or zero) is that number itself.
 ******************/
-
+function absolute(number) {
+   let abs= Math.abs(number);
+    return 1;
+}
+console.log (absolute(-1),(1))
 
 /******************
 Create a function that counts the number of characters in your name
@@ -140,5 +156,9 @@ make sure argument is string
 return the number of characters in the string
 call function 'countChars'
 ******************/
+function countChars(str) {
+    console.log ('str param is...', str)
+    return str.length;
+}
 
-
+console.log (countChars('test'),4)
