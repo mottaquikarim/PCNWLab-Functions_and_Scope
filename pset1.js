@@ -10,8 +10,19 @@ if invalid input given, return -1
 ******************/
 
 function myAge( ageNow, numYears ) {
-       
+    
+       if (typeof ageNow !== "number"|| typeof numYears !== "number"){
+            return -1;
+       } else if (ageNow + numYears > 100) {
+           return NaN;
+       } 
+
+       return console.log(`In ${numYears} years, you will be ${ageNow + numYears} years old.`);
 }
+
+myAge(29, 6);
+
+
 
 
 
