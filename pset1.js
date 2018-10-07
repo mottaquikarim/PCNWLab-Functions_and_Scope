@@ -25,8 +25,8 @@ function myAge( ageNow, numYears ) {
        }
 }
 console.log("My age in 5 years: " + myAge(23,5)); //Correct input values
-console.log("My age in 5 years: " + myAge(23,90)); //Incorrect input values (Over 100yrs old)
-console.log("My age in 5 years: " + myAge(23,'f')); //Incorrect input value
+console.log("My age in 100 years: " + myAge(23,90)); //Incorrect input values (Over 100yrs old)
+console.log("My age in 'f' years: " + myAge(23,'f')); //Incorrect input value
 console.log("");//New line for organization.
 
 /******************
@@ -71,8 +71,8 @@ function subtract(a,b) {
     }
    
 }
-console.log("Subtraction: " + subtract("ap",5)); //Invalid input, not a number.
-console.log("Subtraction: " + subtract(123,23)); //Correct input, returns 100.
+console.log("Subtraction 'ap' and 5: " + subtract("ap",5)); //Invalid input, not a number.
+console.log("Subtraction 123 and 23: " + subtract(123,23)); //Correct input, returns 100.
 console.log("");//New line for organization.
 
 /******************
@@ -92,7 +92,7 @@ function areaOfaCircle(radius){
     areaCircle = 3.14159 * (radius ** 2);
     return areaCircle;
 }    
-console.log("Area of a Circle: " + areaOfaCircle(5)); //Radius function
+console.log("Area of a Circle with a radius of 5: " + areaOfaCircle(5)); //Radius function
 console.log("");//New line for organization.
 
 /******************
@@ -109,8 +109,8 @@ function fahrenheitToCelsius(number){
     celsius = (number - 32) *  5 / 9;
     return celsius;
 }
-console.log("Fahrenheit to Celsius: " + fahrenheitToCelsius(50));//F to C.
-console.log("");//New line for organization.
+console.log("Fahrenheit to Celsius: 50F is " + fahrenheitToCelsius(50) + "C");//F to C.
+console.log("");//New line for organ ization.
 
 /******************
 Temperature Converter Celsius to Fahrenheit
@@ -125,7 +125,7 @@ function celsiusToFahrenheit(num){
     let fahrenheit = (num * 9 / 5) + 32;
     return fahrenheit;
 }
-console.log("Celsius to Fahrenheit: " + celsiusToFahrenheit(20)) //C to F.
+console.log("Celsius to Fahrenheit: 20C is " + celsiusToFahrenheit(20) + "F") //C to F.
 console.log("");//New line for organization.
 
 /******************
@@ -154,7 +154,7 @@ function isItTheWeekend(){
         return "No, it's the weekday.";
     }
 }
-console.log("Is It The Weekend?: " + isItTheWeekend());//Check's today's date using date function in java script. 0 = Sunday, 1 = Monday, and so on to 7 = Saturday.
+console.log("Is it the weekend?: " + isItTheWeekend());//Check's today's date using date function in java script. 0 = Sunday, 1 = Monday, and so on to 7 = Saturday.
 console.log("");//New line for organization.
 
 /******************
