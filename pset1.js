@@ -9,18 +9,17 @@ if that number is > 100, should return NaN
 if invalid input given, return -1
 ******************/
 
-let ageNow = [26]
-function myAge( ageNow, numYears ) 
+function myAge( ageNow, numYears )  {
+    console.log( 'ageNow value:', ageNow)
+    console.log ('numYears value:', numYears)
 
-for(let i = 0; i < ageNow.length; i++) {
-  console.log(ageNow[i]
+    const ageLater = ageNow + numYears;
+
+    return ageLater;
+  
 }
+console.log (myAge (26, 100)); //50
 
-let numYears = [100]
-
-for(let i = 0; i < numYears.length; i++) {
-  console.log(numYears[i]
-}
 
 
 
@@ -32,17 +31,20 @@ Concatenating string variables
 - Create a function called myConcatenate that takes 3 arguments
     * Create an argument called firstStr
     * Create a second argument called secondStr
-    * Create a third argument called thridStr
+    * Create a third argument called thirdStr
 - Concatenate all three arguments in a variable called mySentence
     * console out mySentence variable
 - Call myConcatenate function
 ******************/
 
 function myConcatenate( firstStr, secondStr, thirdStr ) {
-    
+   
+    const mySentence =firstStr + secondStr + thirdStr;
+    return mySentence;
+
 }
 
-myConcatenate('I', 'am', 'iron man'); // 'I am iron man'
+console.log (myConcatenate('I', 'am', 'iron man')); // 'I am iron man'
 
 /******************
 Subtract Function
