@@ -49,9 +49,10 @@ Ensure that both of the inputs are numbers
 ******************/
 
 function subtract(a,b) {
-    
+    const subtract = b - a 
+    return subtract;
 }
-
+console.log(subtract(100, 40));
 /******************
 Area of A Circle
 
