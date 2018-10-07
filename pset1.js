@@ -11,7 +11,16 @@ if invalid input given, return -1
 
 function myAge( ageNow, numYears ) {
        
-}
+    const age = ageNow + numYears;
+    
+    return age;
+    
+    }
+    
+    
+const myAge2 = myAge(29, 20);
+
+console.log(myAge2);
 
 
 
