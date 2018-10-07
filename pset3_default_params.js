@@ -10,7 +10,9 @@
     
     use a default parameter for the middleName, set it to ""
 */
+function getFullName(firstName,middleName="",lastName){
 
+}
 
 /*
     PROBLEM 2:
@@ -20,8 +22,11 @@
     
     Take a param that represents F. By default this should be 32
 */
-
-
+function fahrenheitToCelsius(F=32){
+    let C = (F - 32) * (5/9)
+    console.log(F + "°F " + "is " + C + "°C" )
+}
+fahrenheitToCelsius()
 /*
     PROBLEM 3:
     
@@ -33,7 +38,9 @@
     should return a number that tells you how old you'll be in numYears
     ageNow and numYears should have default params
 */
+function ageYears(ageNow=25,numYears=3){
 
+}
 /*
     PROBLEM 4:
     Now, let's do something interesint.
@@ -58,7 +65,9 @@
     (red text in console)
     
 */
-
+function addTwoNums(a='a is not set!',b='b is not set!'){
+    return a + b;
+}
 
 
 
