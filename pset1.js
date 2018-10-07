@@ -116,6 +116,16 @@ Store a celsius temperature into a variable.
 
 Convert it to fahrenheit and output "NN°C is NN°F".
 ******************/
+function celsiusToFahrenheit(C){
+    if (typeof C !== "number"){
+        return "Please enter a number";
+   } else {
+    let F = (C * 9/5) + 32;
+    return `${C}°C is ${F} °F`;
+   }
+}
+
+console.log(celsiusToFahrenheit(0));
 
 
 /******************
