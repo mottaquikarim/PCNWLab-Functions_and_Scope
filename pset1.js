@@ -10,12 +10,13 @@ if invalid input given, return -1
 ******************/
 
 function myAge( ageNow, numYears ) {
-    if ((ageNow + numYears) > 100) {
+    howOld = (ageNow + numYears);
+    if ((howOld) > 100) {
         return NaN
-    } else if (typeof (ageNow + numYears) != typeof(1)) {
+    } else if (typeof (howOld) != typeof(1)) {
         return -1
     } else {
-        return ageNow + numYears
+        return howOld
     }      
 }
 
