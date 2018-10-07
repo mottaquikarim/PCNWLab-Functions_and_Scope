@@ -133,6 +133,12 @@ The absolute value of a negative number is the positive version of that same num
 and the absolute value of a positive number (or zero) is that number itself.
 ******************/
 
+function absolute(N) {
+    let abs = Math.abs(N)
+    return abs
+} 
+console.log(absolute(-100))
+
 
 /******************
 Create a function that counts the number of characters in your name
