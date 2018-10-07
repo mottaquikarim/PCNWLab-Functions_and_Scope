@@ -62,8 +62,13 @@ Ensure that both of the inputs are numbers
 ******************/
 
 function subtract(a,b) {
+
+    return a - b;
     
 }
+
+console.log(subtract(3, 3));
+
 
 /******************
 Area of A Circle
