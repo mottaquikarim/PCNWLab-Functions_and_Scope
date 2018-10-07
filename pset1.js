@@ -83,7 +83,7 @@ Convert it to celsius and output "NN°F is NN°C."
 function fahrenheitToCelsius(Fahrenheit){
     let Celsius = ((Fahrenheit - 32) * 5 / 9 );
     //(°F − 32) × 5/9 = °C
-    return Celsius;
+    return Fahrenheit +'F ' + 'is ' + Celsius + 'C';
 }
 console.log(fahrenheitToCelsius(80));
 
