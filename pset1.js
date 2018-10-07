@@ -33,10 +33,11 @@ Concatenating string variables
 ******************/
 
 function myConcatenate( firstStr, secondStr, thirdStr ) {
-    
-}
+    const myConcatenate = ` ${firstStr}  ${secondStr} ${thirdStr}.`;
 
-myConcatenate('I', 'am', 'iron man'); // 'I am iron man'
+    return myConcatenate;
+}
+console.log(myConcatenate( 'I', 'am', 'iron man' ));// 'I am iron man'
 
 /******************
 Subtract Function
