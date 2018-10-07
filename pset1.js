@@ -177,3 +177,4 @@ function countChars(nameString) {
 }
 
 console.log(countChars("Vincent"));
+console.log(countChars(123456));
