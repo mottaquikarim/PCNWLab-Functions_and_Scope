@@ -68,9 +68,11 @@ A = π * r2, where is π is Pi and r is the radius squared
 
 
 function areaOfaCircle(radius){
-    
-    
+ 
+
+    return (Math.PI * radius**2)
 }    
+console.log(areaOfaCircle(75))
 
 /******************
 Temperature Converter Fahrenheit to Celsius
@@ -81,7 +83,7 @@ Now store a fahrenheit temperature into a variable.
 
 Convert it to celsius and output "NN°F is NN°C."
 ******************/
-
+//function fahrenheitToCelsius 
 
 /******************
 Temperature Converter Celsius to Fahrenheit
@@ -134,5 +136,4 @@ make sure argument is string
 return the number of characters in the string
 call function 'countChars'
 ******************/
-
 
