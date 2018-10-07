@@ -10,10 +10,15 @@ if invalid input given, return -1
 ******************/
 
 function myAge( ageNow, numYears ) {
-       
+
+    
+    if(numYears){
+
+    }
+    return myAge; 
 }
-
-
+const MyAge1 = getmyAge(30, 2018)
+console.log(myAge);
 
 /******************
 Concatenate Strings
