@@ -68,9 +68,13 @@ A = π * r2, where is π is Pi and r is the radius squared
 
 
 function areaOfaCircle(radius){
-    
-    
+    const pi = 3.14159;
+    console.log("If your circle's radius = " + radius);
+    const circleArea = pi * radius * radius;
+    return console.log("The area of your circle = " + circleArea);
 }    
+
+areaOfaCircle(10); //314.159
 
 /******************
 Temperature Converter Fahrenheit to Celsius
