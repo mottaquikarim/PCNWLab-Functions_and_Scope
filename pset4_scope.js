@@ -237,12 +237,9 @@
     console.log(foo); // what is foo? why?
 */
 
+//run.foo is 9 because foo is reinit to 9 than anotherFunctionToCall() reinit global
+//variable 1 to 2.
 
-
-
-
-//foo is 2 because foo is reinit to 9 than inside anotherFunctionToCall()
-//foo is reinit to 2 than console logged.
 
 
 
