@@ -87,6 +87,13 @@ Now store a fahrenheit temperature into a variable.
 
 Convert it to celsius and output "NN°F is NN°C."
 ******************/
+function fahrenheitToCelsius(fahrenheit){
+    
+    let fTemperature  = 9 / 5 - 32; 
+    return fTemperature;
+
+}    
+console.log(fahrenheitToCelsius(1));
 
 
 /******************
@@ -98,8 +105,13 @@ Store a celsius temperature into a variable.
 
 Convert it to fahrenheit and output "NN°C is NN°F".
 ******************/
+function celsiusToFahrenheit(celsius){
 
+    let cTemperature = 9 / 5 + 32
+    return cTemperature;
 
+}
+console.log(celsiusToFahrenheit(1));
 /******************
 Is it the weekend?
 
@@ -115,7 +127,17 @@ console.log(today); // No, it's the weekday
 
 If you are having trouble, please note that Javascript has a helpful built-in function to help get the current day
 ******************/
+ function isItTheWeekend(){
+     let weekend = ['Saturday', 'Sunday']; 
 
+     if(weekend === 'Saturday' && 'Sunday'){
+         console.log("Yes");
+     }else {
+         console.log("No");
+     }
+     
+     return weekend; 
+ }
 
 
 /******************
@@ -128,8 +150,12 @@ The function should return the absolute value of the number
 The absolute value of a negative number is the positive version of that same number,
 and the absolute value of a positive number (or zero) is that number itself.
 ******************/
+function absolute(){
+  Math.abs(15);
+  return 15; 
 
-
+}
+console.log(absolute(1));
 /******************
 Create a function that counts the number of characters in your name
 
@@ -141,4 +167,12 @@ return the number of characters in the string
 call function 'countChars'
 ******************/
 
+/*function characterNumber(){
+        
+       let myName = 15 ; 
 
+       return myName ;
+
+
+}
+console.log(myName.toString()); */
