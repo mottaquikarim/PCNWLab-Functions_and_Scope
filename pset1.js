@@ -14,7 +14,7 @@ function myAge(ageNow, numYears) {
     return ageNow + numYears
        
 }
- console.log(myAge(24,3));
+ console.log(myAge(24,3)); 
 
 /******************
 Concatenate Strings
@@ -31,9 +31,10 @@ Concatenating string variables
 ******************/
 
 function myConcatenate( firstStr, secondStr, thirdStr ) {
-    
+    return `my ${firstStr} scratched my ${secondStr} and it ${thirdStr}`
 }
 
+console.log(myConcatenate('cat', 'arm', 'hurts'))
 myConcatenate('I', 'am', 'iron man'); // 'I am iron man'
 
 /******************
