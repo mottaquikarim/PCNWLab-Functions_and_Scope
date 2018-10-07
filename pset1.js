@@ -124,6 +124,8 @@ If you are having trouble, please note that Javascript has a helpful built-in fu
 
 
 
+
+
 /******************
 Finding the absolute value of a number
 
@@ -135,6 +137,12 @@ The absolute value of a negative number is the positive version of that same num
 and the absolute value of a positive number (or zero) is that number itself.
 ******************/
 
+function absolute (number){
+let absoluteNumber = Math.abs(number);
+return absoluteNumber;
+}
+
+console.log(absolute(-5));
 
 /******************
 Create a function that counts the number of characters in your name
