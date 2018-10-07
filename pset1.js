@@ -145,4 +145,8 @@ return the number of characters in the string
 call function 'countChars'
 ******************/
 
-
+function countCharacter(string){
+    return `hi my length is : ${string.length}`;
+}
+  
+console.log(countCharacter("Chuyun"));
