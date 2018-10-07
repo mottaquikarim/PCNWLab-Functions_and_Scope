@@ -81,7 +81,10 @@ Now store a fahrenheit temperature into a variable.
 
 Convert it to celsius and output "NN°F is NN°C."
 ******************/
-
+function fahrenheitToCelsius(fTemp){
+    return `${fTemp} degree F is ${(fTemp -32) * 1.8} degree C` 
+}
+console.log(fahrenheitToCelsius(32));
 
 /******************
 Temperature Converter Celsius to Fahrenheit
