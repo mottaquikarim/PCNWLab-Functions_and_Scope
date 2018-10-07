@@ -10,9 +10,12 @@ if invalid input given, return -1
 ******************/
 
 function myAge( ageNow, numYears ) {
+    let newAge = ageNow + numYears;
+    return newAge;
        
 }
-
+let myAgeNYears = myAge(22,30);
+console.log(myAgeNYears);
 
 
 /******************
