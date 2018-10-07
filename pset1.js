@@ -39,10 +39,13 @@ Concatenating string variables
 ******************/
 
 function myConcatenate( firstStr, secondStr, thirdStr ) {
-    
+    const myStrings = firstStr + ' ' + secondStr + ' ' + thirdStr + '.';
+
+    return myStrings;
 }
 
-myConcatenate('I', 'am', 'iron man'); // 'I am iron man'
+const mySentence = myConcatenate('I', 'am', 'iron man');
+console.log(mySentence); 
 
 /******************
 Subtract Function
