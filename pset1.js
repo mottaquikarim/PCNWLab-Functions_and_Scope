@@ -10,10 +10,11 @@ if invalid input given, return -1
 ******************/
 
 function myAge( ageNow, numYears ) {
-       
+       let ageInNumYears = ageNow + numYears;
+       return ageInNumYears
 }
-
-
+let futureAge = myAge(35, 10)
+console.log(futureAge)
 
 /******************
 Concatenate Strings
