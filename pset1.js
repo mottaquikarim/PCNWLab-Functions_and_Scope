@@ -84,8 +84,13 @@ A = π * r2, where is π is Pi and r is the radius squared
 
 function areaOfaCircle(radius){
     
+    total = 3.14 * radius ** 2;
     
-}    
+    return total;
+    
+}
+
+console.log(areaOfaCircle(100));
 
 /******************
 Temperature Converter Fahrenheit to Celsius
