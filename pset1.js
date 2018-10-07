@@ -147,9 +147,9 @@ function isItTheWeekend(day){
  if (day == "monday" || day == "tuesday" || day == "wednesday" || day == "thursday" || day == "friday" ) {
         return `No, it's the weekday`;
  }else if (day == "saturday" || day == "sunday") {
-        return `Yes, it's the weekday`;
+        return `Yes, it's the weekend`;
  } else {
-     return `Invalid input entered`;
+        return `Invalid input entered`;
  }
 }
 
@@ -169,14 +169,14 @@ and the absolute value of a positive number (or zero) is that number itself.
 function absolute(num){
     if (typeof num !== "number"){
         return `Not a number`;
-} else if (num >= 0){
-    return `${num} is an absolute number`;
-} else {
+} else
     return `Absolute version of ${num} is ${Math.abs(num)}`;
- }
 }
 
 console.log(absolute(-5));
+console.log(absolute("lol"));
+console.log(absolute(15));
+
 /******************
 Create a function that counts the number of characters in your name
 
@@ -192,9 +192,9 @@ function characterCounter(name){
     if (typeof name !== "string"){
         return `${name} is not a word.`;
     } else {
-       return `${name} is ${name.length} characters long.`;
+       return `${name} is ${name.replace(/\s/g, '').length} characters long.`;
     }
 }
 
 console.log(characterCounter(4));
-console.log(characterCounter("Robert"));
+console.log(characterCounter("Robert Abreu"));
