@@ -158,3 +158,4 @@ console.log(countChars("Tarek"))
 
 //commit 2
 //commit 3
+//commit 4
