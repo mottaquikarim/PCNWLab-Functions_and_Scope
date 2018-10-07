@@ -157,7 +157,6 @@ function absolute (number){
 
 console.log(absolute(-1.6));
 
-console.log()
 /******************
 Create a function that counts the number of characters in your name
 
@@ -169,4 +168,8 @@ return the number of characters in the string
 call function 'countChars'
 ******************/
 
+function countChars(string){
+    return string.length;
+}
 
+console.log(countChars('mother ')); //7
