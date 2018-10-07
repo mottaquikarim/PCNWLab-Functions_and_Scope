@@ -10,10 +10,21 @@ if invalid input given, return -1
 ******************/
 
 function myAge( ageNow, numYears ) {
-       
+
+       if (ageNow + numYears > 100){
+            console.log("NaN")
+       }
+       else if (typeof ageNow !== "number" || typeof numYears !== "number"){
+                console.log(-1)
+       }
+       else {
+           console.log("You will be " + (ageNow + numYears) + " years old in " + numYears + " years." )
+       }
 }
 
-
+myAge(25, 10); // '35'
+myAge(25, 76); // NaN
+myAge(25, "two"); // -1
 
 /******************
 Concatenate Strings
@@ -30,7 +41,8 @@ Concatenating string variables
 ******************/
 
 function myConcatenate( firstStr, secondStr, thirdStr ) {
-    
+    const mySentence = firstStr + " " + secondStr + " " + thirdStr
+    console.log(mySentence)
 }
 
 myConcatenate('I', 'am', 'iron man'); // 'I am iron man'
@@ -45,8 +57,29 @@ Ensure that both of the inputs are numbers
 ******************/
 
 function subtract(a,b) {
-    
+
+if(typeof a !== "number" && typeof b !== "number"){
+        console.log("What are you doing with your life?")
+    }
+        
+else if(typeof a !== "number"){
+    console.log("Invalid input for argument a")
+    }
+
+else if(typeof b !== "number"){
+    console.log("Invalid input for argument b")
+    }
+
+else {
+    console.log(a - b);
+    }
+
 }
+
+subtract(100, 25); // 75
+subtract("One-Hundred", 25); //Invalid input for argument a
+subtract(123, "two"); // Invalid input for argument b
+subtract("Duh", "Duh"); // What are you doing with your life?
 
 /******************
 Area of A Circle
@@ -61,9 +94,11 @@ A = π * r2, where is π is Pi and r is the radius squared
 
 
 function areaOfaCircle(radius){
-    
-    
+    const circleArea = ((radius ** 2) * Math.PI)
+    console.log("The area of a circle with a radius of " + radius + " is " + circleArea) 
 }    
+
+areaOfaCircle(25); 
 
 /******************
 Temperature Converter Fahrenheit to Celsius
@@ -75,6 +110,12 @@ Now store a fahrenheit temperature into a variable.
 Convert it to celsius and output "NN°F is NN°C."
 ******************/
 
+function fahrenheitToCelsius(fahrenheit){
+    const tempCelcius = (fahrenheit - 32) * (5/9);
+    console.log(fahrenheit + "°F is " + tempCelcius + "°C")
+}
+
+fahrenheitToCelsius(86); // 30 degrees celcius
 
 /******************
 Temperature Converter Celsius to Fahrenheit
@@ -86,6 +127,12 @@ Store a celsius temperature into a variable.
 Convert it to fahrenheit and output "NN°C is NN°F".
 ******************/
 
+function celciusToFahrenheit(celcius){
+    const tempFahrenheit = ((celcius / (5/9)) + 32);
+    console.log(celcius + "°C is " + tempFahrenheit + "°F")
+}
+
+celciusToFahrenheit(30); // 86 degrees fahrenheit
 
 /******************
 Is it the weekend?
@@ -103,7 +150,31 @@ console.log(today); // No, it's the weekday
 If you are having trouble, please note that Javascript has a helpful built-in function to help get the current day
 ******************/
 
+function isItTheWeekend(today){
 
+    today = today.toLowerCase();
+
+    if(today == "saturday" || today == "sunday"){
+        console.log("Yes, it the weekend")
+    }
+    else if (today == "monday" || today == "tuesday" || today == "wednesday" || today == "thursday"){
+        today = today.charAt(0).toUpperCase() + today.slice(1);
+        console.log("No, " + today + " is a weekday")
+    }
+    else if (today == "friday"){
+        today = today.charAt(0).toUpperCase() + today.slice(1);
+        console.log("No, but it's " + today + "! Gotta get down on " + today + "!")
+    }
+    else{
+        today = today.charAt(0).toUpperCase() + today.slice(1);
+        console.log("Yeeeahhh, pretty sure '" + today + "' is not a day. Try again.")
+    }
+}
+
+isItTheWeekend("Saturday");
+isItTheWeekend("Monday");
+isItTheWeekend("Friday");
+isItTheWeekend("Lulzday");
 
 /******************
 Finding the absolute value of a number
@@ -116,6 +187,21 @@ The absolute value of a negative number is the positive version of that same num
 and the absolute value of a positive number (or zero) is that number itself.
 ******************/
 
+function absolute(number){
+    if(number < 0){
+        console.log("The absolute value of " + number + " is " + (number * (-1)))
+    }
+    else if(typeof number !== "number"){
+        console.log("Invald input.")
+    }
+    else{
+        console.log("The absolute value of " + number + " is " + number)
+    }
+}
+
+absolute(-1);
+absolute(1);
+absolute("wut")
 
 /******************
 Create a function that counts the number of characters in your name
@@ -128,4 +214,15 @@ return the number of characters in the string
 call function 'countChars'
 ******************/
 
+function countChars(string){
+    if(typeof string !== "string"){
+        console.log("Invalid input.")
+    }
+    else{
+        console.log(string + " is made up of " + string.length + " characters.")
+    }
+}
+
+countChars("Lul");
+countChars(1);
 
