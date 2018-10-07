@@ -25,7 +25,7 @@ function myAge(ageNow, numYears) {
        
 }
 
-console.log(myAge(51, 50))
+console.log(myAge('node', 50))
 
 
 
