@@ -15,7 +15,7 @@ function myAge( ageNow, numYears ) {
     return (ageLater)   
 }
 
-myAge(30,5)
+console.log(myAge(30,5))
 
 /******************
 Concatenate Strings
@@ -32,10 +32,13 @@ Concatenating string variables
 ******************/
 
 function myConcatenate( firstStr, secondStr, thirdStr ) {
-    
+    let mySentence = `${firstStr} ${secondStr} ${thirdStr}`;
+    return mySentence;
 }
 
-myConcatenate('I', 'am', 'iron man'); // 'I am iron man'
+// console.log('the parameters are... I, am, Iron Man')
+console.log(myConcatenate('I', 'am', 'iron man')); // 'I am iron man'
+
 
 /******************
 Subtract Function
@@ -47,8 +50,12 @@ Ensure that both of the inputs are numbers
 ******************/
 
 function subtract(a,b) {
-    
+    console.log('a is...', a);
+    console.log('b is...', b);
+
+    return (a-b);
 }
+console.log(subtract(2,3));
 
 /******************
 Area of A Circle
