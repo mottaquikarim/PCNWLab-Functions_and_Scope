@@ -46,12 +46,12 @@ Ensure that both of the inputs are numbers
 ******************/
 
 function subtract(a,b) {
-    let num1 = 22
-    let num2 = 11
-    equation = num1 - num2
-    return equation
+ return a-b;
+
 }
- console.log(subtract(22, 11))
+
+ console.log(subtract(100,50));
+
 /******************
 Area of A Circle
 
@@ -69,6 +69,8 @@ function areaOfaCircle(radius){
     return area
 }    
 console.log(areaOfaCircle(5))
+
+
 /******************
 Temperature Converter Fahrenheit to Celsius
 
@@ -78,7 +80,7 @@ Now store a fahrenheit temperature into a variable.
 
 Convert it to celsius and output "NN°F is NN°C."
 ******************/
-
+// function fahrenheitToCelsius
 
 /******************
 Temperature Converter Celsius to Fahrenheit
