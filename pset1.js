@@ -101,7 +101,14 @@ Store a celsius temperature into a variable.
 
 Convert it to fahrenheit and output "NN°C is NN°F".
 ******************/
+function celsiusToFahrenheit(celsius){
+    let conversion = (celsius * 9 / 5) + 32
 
+    return `${celsius} is ${Math.round(conversion)}`;
+    
+
+}
+console.log(celsiusToFahrenheit(30));
 
 /******************
 
@@ -118,6 +125,12 @@ The function should return the absolute value of the number
 The absolute value of a negative number is the positive version of that same number,
 and the absolute value of a positive number (or zero) is that number itself.
 ******************/
+function absolute(n){
+ 
+    return Math.abs(n);
+
+}
+console.log(absolute(-10));
 
 
 /******************
@@ -131,4 +144,10 @@ return the number of characters in the string
 call function 'countChars'
 ******************/
 
+function countChars(string){
+    totalCharas = string.length;
 
+    return ' This sentence has ' + totalCharas + ' characters total.'
+    
+} 
+console.log(countChars(' Can you count yourself?'));
