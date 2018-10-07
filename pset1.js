@@ -47,8 +47,7 @@ Ensure that both of the inputs are numbers
 ******************/
 
 function subtract(a,b) {
-    let value = a - b
-    return value;
+     return a - b
 }
  
 console.log(subtract(4,2))
@@ -67,8 +66,10 @@ A = π * r2, where is π is Pi and r is the radius squared
 
 function areaOfaCircle(radius){
     let circleArea = Math.PI * radius**2
-
+return circleArea;
 }    
+
+console.log(areaOfaCircle(3));
 
 /******************
 Temperature Converter Fahrenheit to Celsius
