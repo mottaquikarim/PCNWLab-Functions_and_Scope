@@ -155,4 +155,8 @@ return the number of characters in the string
 call function 'countChars'
 ******************/
 
-
+function countChars (str){
+    console.log('str param is...' , str)
+    return str.length;
+}
+console.log(countChars('test'),4)
