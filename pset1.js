@@ -44,7 +44,7 @@ function myConcatenate( firstStr, secondStr, thirdStr ) {
 
 }
 
-console.log (myConcatenate('I', 'am', 'iron man')); // 'I am iron man'
+console.log (myConcatenate('I ', 'am ', 'iron man')); // 'I am iron man'
 
 /******************
 Subtract Function
@@ -56,8 +56,10 @@ Ensure that both of the inputs are numbers
 ******************/
 
 function subtract(a,b) {
-    
+   if (typeof b === "undefined") return -a;
+   else return a - b;
 }
+console.log (subtract(10,2));
 
 /******************
 Area of A Circle
