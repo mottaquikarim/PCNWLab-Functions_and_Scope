@@ -55,8 +55,18 @@ This function will take two numbers and subtract them
 Ensure that both of the inputs are numbers
 ******************/
 
-function subtract(a,b) {
+
+{
+    function subtract(a,b)  
+    {
+    let subtract = a-b
     
+    return subtract;
+    }
+    
+    let result = subtract(5,2);  
+    
+    console.log (result);     
 }
 
 /******************
@@ -71,7 +81,8 @@ A = π * r2, where is π is Pi and r is the radius squared
 ******************/
 
 
-function areaOfaCircle(radius){
+function areaOfaCircle(radius)
+{
     
     
 }    
