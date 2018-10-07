@@ -186,4 +186,9 @@ return the number of characters in the string
 call function 'countChars'
 ******************/
 
+function nameCount(name){
+   
+    return name.length
 
+}
+console.log(nameCount("Nadav"))
