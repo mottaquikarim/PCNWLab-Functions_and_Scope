@@ -94,6 +94,14 @@ Now store a fahrenheit temperature into a variable.
 Convert it to celsius and output "NN°F is NN°C."
 ******************/
 
+function fahrenheitToCelsius(fahrenheit) {
+    const celsiusCalc = (fahrenheit - 32) * .5556;
+    return celsiusCalc;
+}
+const fahren = 70;
+const celsius = Math.ceil(fahrenheitToCelsius(fahren));
+console.log(`${fahren}°F is ${celsius}°C`);
+
 
 /******************
 Temperature Converter Celsius to Fahrenheit
@@ -104,6 +112,15 @@ Store a celsius temperature into a variable.
 
 Convert it to fahrenheit and output "NN°C is NN°F".
 ******************/
+
+
+function celsiusToFahrenheit(celsius) {
+    const fahrenCalc = celsius * 9/5 + 32;
+    return fahrenCalc;
+}
+const celsius2 = 20;
+const fahren2 = Math.ceil(celsiusToFahrenheit(celsius2));
+console.log(`${celsius2}°C is ${fahren2}°F`);
 
 
 /******************
@@ -134,6 +151,7 @@ The function should return the absolute value of the number
 The absolute value of a negative number is the positive version of that same number,
 and the absolute value of a positive number (or zero) is that number itself.
 ******************/
+
 
 
 /******************
