@@ -155,3 +155,5 @@ function countChars(str){
 }
 console.log(countChars("Tarek"))
 
+
+//commit 2
