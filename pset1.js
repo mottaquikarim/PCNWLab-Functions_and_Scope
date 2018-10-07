@@ -96,12 +96,12 @@ Now store a fahrenheit temperature into a variable.
 Convert it to celsius and output "NN°F is NN°C."
 ******************/
 
-function fahrenheitToCelsius(F) {
-    if (typeof F !== "number"){
+function fahrenheitToCelsius(f) {
+    if (typeof f !== "number"){
         return "Please enter a number";
    } else {
-    let C = (F - 32) * 5/9;
-    return `${F}°F is ${C} °C`;
+    let c = (f - 32) * 5/9;
+    return `${f}°F is ${c} °C`;
    }
 }
 
@@ -116,12 +116,12 @@ Store a celsius temperature into a variable.
 
 Convert it to fahrenheit and output "NN°C is NN°F".
 ******************/
-function celsiusToFahrenheit(C){
-    if (typeof C !== "number"){
+function celsiusToFahrenheit(c){
+    if (typeof c !== "number"){
         return "Please enter a number";
    } else {
-    let F = (C * 9/5) + 32;
-    return `${C}°C is ${F} °F`;
+    let f = (c * 9/5) + 32;
+    return `${c}°C is ${f} °F`;
    }
 }
 
@@ -144,7 +144,9 @@ console.log(today); // No, it's the weekday
 If you are having trouble, please note that Javascript has a helpful built-in function to help get the current day
 ******************/
 
+function isItTheWeekend(day){
 
+}
 
 /******************
 Finding the absolute value of a number
