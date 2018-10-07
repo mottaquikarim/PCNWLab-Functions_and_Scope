@@ -96,12 +96,12 @@ Store a celsius temperature into a variable.
 
 Convert it to fahrenheit and output "NN°C is NN°F".
 ******************/
-function celsiusToFahren(celsiustemp){
+function celsiusToFahrenheit(celsiustemp){
     const fahren = (celsiustemp * (9/5)) + 32;
-    const celsiusToFahren = `${celsiustemp}°C is ${fahren}°F.`;
-    return celsiusToFahren;
+    const celsiusToFahrenheit = `${celsiustemp}°C is ${fahren}°F.`;
+    return celsiusToFahrenheit;
 }
-console.log(celsiusToFahren(70));
+console.log(celsiusToFahrenheit(70));
 
 /******************
 Is it the weekend?
