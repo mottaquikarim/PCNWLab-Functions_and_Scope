@@ -164,7 +164,7 @@ and the absolute value of a positive number (or zero) is that number itself.
 
 function absolute(n){
 
-
+    return Math.abs(n);
 
 }
 
