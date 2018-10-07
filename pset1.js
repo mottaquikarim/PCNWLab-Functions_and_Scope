@@ -151,8 +151,8 @@ The absolute value of a negative number is the positive version of that same num
 and the absolute value of a positive number (or zero) is that number itself.
 ******************/
 function absolute(){
-  Math.abs(15);
-  return 15; 
+  Math.abs(10);
+  return 10; 
 
 }
 console.log(absolute(1));
@@ -167,7 +167,7 @@ return the number of characters in the string
 call function 'countChars'
 ******************/
 
-/*function characterNumber(){
+function countChars(){
         
        let myName = 15 ; 
 
@@ -175,4 +175,4 @@ call function 'countChars'
 
 
 }
-console.log(myName.toString()); */
+console.log(myName.toString()); 
