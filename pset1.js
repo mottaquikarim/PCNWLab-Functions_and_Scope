@@ -10,8 +10,15 @@ if invalid input given, return -1
 ******************/
 
 function myAge( ageNow, numYears ) {
-       
+    console.log('ageNow value:', ageNow)
+    console.log('numYears value:', numYears)
+
+    const ageLater = ageNow + numYears;
+
+    return ageLater;
 }
+
+console.log(myAge(28, 32)); // 60
 
 
 
@@ -25,15 +32,17 @@ Concatenating string variables
     * Create a second argument called secondStr
     * Create a third argument called thridStr
 - Concatenate all three arguments in a variable called mySentence
-    * console out mySentence variable
 - Call myConcatenate function
 ******************/
 
 function myConcatenate( firstStr, secondStr, thirdStr ) {
-    
+    //let mySentence = firstStr + " " + secondStr + " " + thirdStr;
+    let mySentence = `${firstStr} ${secondStr} ${thirdStr}`;
+    return mySentence;
 }
 
-myConcatenate('I', 'am', 'iron man'); // 'I am iron man'
+console.log('the params are... I, am, iron man');
+console.log(myConcatenate('I', 'am', 'iron man')); // 'I am iron man'
 
 /******************
 Subtract Function
@@ -45,8 +54,13 @@ Ensure that both of the inputs are numbers
 ******************/
 
 function subtract(a,b) {
-    
+    console.log('a is...', a)
+    console.log('b is...', b)
+
+    return (a-b);
 }
+
+console.log(subtract(2,3));
 
 /******************
 Area of A Circle
@@ -61,9 +75,31 @@ A = π * r2, where is π is Pi and r is the radius squared
 
 
 function areaOfaCircle(radius){
-    
-    
+    console.log('radius is...', radius); 
+
+    //const area = Math.PI * radius ** 2;
+    //const area = Math.PI * Math.pow(radius, 2);
+    const area = Math.PI * radius * radius;
+    return area;
 }    
+
+console.log(areaOfaCircle(1), 3.14159)
+/*
+    radius is... 1
+    0
+*/
+console.log(areaOfaCircle(), NaN)
+/*
+    radius is... undefined
+    0
+*/
+console.log(areaOfaCircle(1,2,3,4,5), 3.14159)
+/*
+    radius is... 1
+    0
+*/
+console.log(areaOfaCircle(2), 3.14159 * 4)
+
 
 /******************
 Temperature Converter Fahrenheit to Celsius
@@ -75,6 +111,17 @@ Now store a fahrenheit temperature into a variable.
 Convert it to celsius and output "NN°F is NN°C."
 ******************/
 
+function fahrenheitToCelsius(f) {
+    console.log('f param is...', f)    
+    const c = (f - 32) / 1.8;
+    return c;
+}
+
+console.log(fahrenheitToCelsius(212), 100);
+console.log(fahrenheitToCelsius(32), 0);
+
+
+
 
 /******************
 Temperature Converter Celsius to Fahrenheit
@@ -85,7 +132,16 @@ Store a celsius temperature into a variable.
 
 Convert it to fahrenheit and output "NN°C is NN°F".
 ******************/
+function celsiusToFahrenheit(c) {
+    console.log('c param is...', c)
+    const f = c * 1.8 + 32;
+    return f;
+}
 
+console.log('-------------------------------')
+console.log(celsiusToFahrenheit(100), 212)
+console.log(celsiusToFahrenheit(0), 32)
+console.log('-------------------------------')
 
 /******************
 Is it the weekend?
@@ -115,6 +171,17 @@ The function should return the absolute value of the number
 The absolute value of a negative number is the positive version of that same number,
 and the absolute value of a positive number (or zero) is that number itself.
 ******************/
+function absolute(number) {
+    console.log('number param is...', number);
+
+    let abs = Math.abs(number);
+    return abs;
+}
+
+console.log('absolute-------------------------------')
+console.log(absolute(-2), 2)
+console.log(absolute(2), 2)
+console.log('absolute-------------------------------')
 
 
 /******************
@@ -127,5 +194,12 @@ make sure argument is string
 return the number of characters in the string
 call function 'countChars'
 ******************/
+function countChars(str) {
+    console.log('str param is...', str)
+    return str.length;
+}
 
+console.log('countChars-------------------------------')
+console.log(countChars('test'), 4)
+console.log('countChars-------------------------------')
 
