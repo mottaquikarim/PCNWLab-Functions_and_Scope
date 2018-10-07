@@ -15,8 +15,7 @@ function myAge( ageNow, numYears ) {
 return ageNow + numYears
 }
 
-console.log (myAge(26, 4));
-
+//console.log (myAge(26, 4))
 
 /******************
 Concatenate Strings
@@ -33,10 +32,11 @@ Concatenating string variables
 ******************/
 
 function myConcatenate( firstStr, secondStr, thirdStr ) {
-    
+    return `${firstStr}  ${secondStr} ${thirdStr}` 
 }
 
 myConcatenate('I', 'am', 'iron man'); // 'I am iron man'
+console.log (myConcatenate('I', 'am', 'iron man'))
 
 /******************
 Subtract Function
