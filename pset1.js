@@ -57,9 +57,13 @@ Ensure that both of the inputs are numbers
 ******************/
 
 function subtract(a,b) {
-    
+    if (typeof a !== "number"|| typeof b !== "number"){
+        return "Please enter numbers";
+   } else {
+       return a -= b;
+   }
 }
-
+console.log(subtract(10, 5));
 /******************
 Area of A Circle
 
