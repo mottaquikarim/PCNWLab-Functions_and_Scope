@@ -148,6 +148,7 @@ If you are having trouble, please note that Javascript has a helpful built-in fu
 
 
 /******************
+Problem 8
 Finding the absolute value of a number
 
 write a function called absolute
@@ -157,7 +158,13 @@ The function should return the absolute value of the number
 The absolute value of a negative number is the positive version of that same number,
 and the absolute value of a positive number (or zero) is that number itself.
 ******************/
+function absolute (a){
+    let absolute_number = Math.abs (a);
 
+    return absolute_number
+}
+
+console.log(absolute(-10));
 
 /******************
 Create a function that counts the number of characters in your name
