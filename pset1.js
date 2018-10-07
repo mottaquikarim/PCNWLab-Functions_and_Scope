@@ -111,6 +111,17 @@ Now store a fahrenheit temperature into a variable.
 Convert it to celsius and output "NN°F is NN°C."
 ******************/
 
+function fahrenheitToCelsius(f) {
+    console.log('f param is...', f)    
+    const c = (f - 32) / 1.8;
+    return c;
+}
+
+console.log(fahrenheitToCelsius(212), 100);
+console.log(fahrenheitToCelsius(32), 0);
+
+
+
 
 /******************
 Temperature Converter Celsius to Fahrenheit
@@ -121,7 +132,16 @@ Store a celsius temperature into a variable.
 
 Convert it to fahrenheit and output "NN°C is NN°F".
 ******************/
+function celsiusToFahrenheit(c) {
+    console.log('c param is...', c)
+    const f = c * 1.8 + 32;
+    return f;
+}
 
+console.log('-------------------------------')
+console.log(celsiusToFahrenheit(100), 212)
+console.log(celsiusToFahrenheit(0), 32)
+console.log('-------------------------------')
 
 /******************
 Is it the weekend?
@@ -151,6 +171,17 @@ The function should return the absolute value of the number
 The absolute value of a negative number is the positive version of that same number,
 and the absolute value of a positive number (or zero) is that number itself.
 ******************/
+function absolute(number) {
+    console.log('number param is...', number);
+
+    let abs = Math.abs(number);
+    return abs;
+}
+
+console.log('absolute-------------------------------')
+console.log(absolute(-2), 2)
+console.log(absolute(2), 2)
+console.log('absolute-------------------------------')
 
 
 /******************
@@ -163,5 +194,12 @@ make sure argument is string
 return the number of characters in the string
 call function 'countChars'
 ******************/
+function countChars(str) {
+    console.log('str param is...', str)
+    return str.length;
+}
 
+console.log('countChars-------------------------------')
+console.log(countChars('test'), 4)
+console.log('countChars-------------------------------')
 
