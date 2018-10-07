@@ -10,9 +10,12 @@ if invalid input given, return -1
 ******************/
 
 function myAge( ageNow, numYears ) {
-       const age = ageNow + numYears;
-       return age;
+    console.log("Current age: " + ageNow);
+    console.log("Years later: " + numYears);
+    const futureAge = ageNow + numYears;
+    return console.log("I will be age: " + futureAge);
 }
+myAge(15, 10); //25
 
 /******************
 Concatenate Strings
