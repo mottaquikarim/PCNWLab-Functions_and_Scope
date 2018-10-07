@@ -10,7 +10,7 @@ if invalid input given, return -1
 ******************/
 
 function myAge( ageNow, numYears ) {
-  if (numYears>100){
+  if ((ageNow+numYears)>100){
       return NaN
   }
   else if ((typeof ageNow) !== "number" || (typeof numYears) !== "number" ){
@@ -21,7 +21,7 @@ function myAge( ageNow, numYears ) {
         
 }
 
-console.log(myAge(22,"a"))
+console.log(myAge(22,10))
 
 /******************
 Concatenate Strings
