@@ -9,7 +9,12 @@
                  returns that computed value
     @example doMath( 1,2,3 ); // 9
 */
+function doMath(firstNum, secondNum, thirdNum){
 
+    const arith = (firstNum + secondNum) * thirdNum
+    return arith
+}
+console.log(doMath(1,2,3))
 
 /*
     @function addMiddleName
@@ -24,6 +29,20 @@
                  return firstname and last name
     @example addMiddleNmae('John', 'Mabel', 'Smith'); // John Mabel Smith
 */
+function addMiddleName(firstName, middleName, lastName){
+    let fullName
+    if(middleName.length === 0){ 
+     fullName = `${firstName} ${lastName}`
+    } else {
+     fullName = `${firstName} ${middleName} ${lastName}`
+    }
+    return fullName
+}
+
+console.log(addMiddleName("daniel","eduardo" , "ashley"))
+
+
+
 
 
 /*
