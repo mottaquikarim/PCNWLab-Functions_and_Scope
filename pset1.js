@@ -90,8 +90,7 @@ Now store a fahrenheit temperature into a variable.
 Convert it to celsius and output "NN°F is NN°C."
 ******************/
 function fahrenheitToCelsius(a) { 
-    let fahrenheit = a;
-    let conversion = (fahrenheit - 32)* 5/9;
+    let conversion = (a - 32)* 5/9;
     console.log(a+"°F is "+conversion+"°C");
     return conversion
 }
@@ -107,9 +106,8 @@ Store a celsius temperature into a variable.
 
 Convert it to fahrenheit and output "NN°C is NN°F".
 ******************/
-function celsiusToFahrenheit(a) { 
-    let celsius = a; 
-    let conversion2 = (celsius * 9/5)+ 32 ;
+function celsiusToFahrenheit(a) {  
+    let conversion2 = (a * 9/5)+ 32 ;
     console.log(a+"°C is "+conversion2+"°F");
     return conversion2 ;
 }
