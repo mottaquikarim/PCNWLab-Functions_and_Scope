@@ -133,8 +133,12 @@ The function should return the absolute value of the number
 The absolute value of a negative number is the positive version of that same number,
 and the absolute value of a positive number (or zero) is that number itself.
 ******************/
-
-
+function absolute(number) {
+  let abs = Math.abs(number);
+    return abs;
+}
+console.log(absolute(-1), 1)
+console.log(absolute(1), 1)
 /******************
 Create a function that counts the number of characters in your name
 
@@ -146,4 +150,8 @@ return the number of characters in the string
 call function 'countChars'
 ******************/
 
-
+function countChar(str) {
+    console.log('str param is...', str)
+    return str.length;
+}
+console.log(countChar('Rupa'), 4)
