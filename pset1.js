@@ -177,3 +177,8 @@ call function 'countChars'
 ******************/
 
 
+function countChars(string) {
+    return string.length;
+    }
+    console.log(countChars("Hello world"));
+    
