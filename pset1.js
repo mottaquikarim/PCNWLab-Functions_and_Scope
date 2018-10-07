@@ -10,8 +10,18 @@ if invalid input given, return -1
 ******************/
 
 function myAge( ageNow, numYears ) {
+
+    let howOld = ageNow + numYears;
+
+    return howOld;
        
 }
+
+const howOld2 = myAge (18,25);
+
+console.log(howOld2);
+
+
 
 
 
