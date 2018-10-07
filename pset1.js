@@ -65,10 +65,12 @@ A = π * r2, where is π is Pi and r is the radius squared
 ******************/
 
 
-function areaOfaCircle(radius){
-    
-    
-}    
+function areaOfCircle(radius){
+  let areaOfCircle = (radius * radius * Math.PI);
+  return areaOfCircle;
+}
+
+console.log(areaOfCircle(5))   
 
 /******************
 Temperature Converter Fahrenheit to Celsius
