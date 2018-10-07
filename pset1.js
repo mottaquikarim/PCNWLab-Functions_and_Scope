@@ -80,7 +80,7 @@ function areaOfaCircle(radius){
     if (typeof radius !== "number"){
         return "Please enter a number";
    } else {
-    return radius = 3.14159 * (radius*2);
+    return Math.PI * (radius ** 2);
    }  
 }   
 
@@ -123,10 +123,8 @@ function celsiusToFahrenheit(c){
     let f = (c * 9/5) + 32;
     return `${c}°C is ${f} °F`;
    }
-   
-   console.log(celsiusToFahrenheit(0));
 }
-
+console.log(celsiusToFahrenheit(0));
 
 /******************
 Is it the weekend?
