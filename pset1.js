@@ -32,15 +32,17 @@ Concatenating string variables
     * Create a second argument called secondStr
     * Create a third argument called thridStr
 - Concatenate all three arguments in a variable called mySentence
-    * console out mySentence variable
 - Call myConcatenate function
 ******************/
 
 function myConcatenate( firstStr, secondStr, thirdStr ) {
-    
+    //let mySentence = firstStr + " " + secondStr + " " + thirdStr;
+    let mySentence = `${firstStr} ${secondStr} ${thirdStr}`;
+    return mySentence;
 }
 
-myConcatenate('I', 'am', 'iron man'); // 'I am iron man'
+console.log('the params are... I, am, iron man');
+console.log(myConcatenate('I', 'am', 'iron man')); // 'I am iron man'
 
 /******************
 Subtract Function
