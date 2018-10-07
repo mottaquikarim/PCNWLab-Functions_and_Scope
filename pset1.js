@@ -10,10 +10,9 @@ if invalid input given, return -1
 ******************/
 
 function myAge( ageNow, numYears ) {
-       
+       const age = ageNow + numYears;
+       return age;
 }
-
-
 
 /******************
 Concatenate Strings
@@ -30,7 +29,8 @@ Concatenating string variables
 ******************/
 
 function myConcatenate( firstStr, secondStr, thirdStr ) {
-    
+    const mySentence = firstStr + " " + secondStr + " " + thirdStr;
+    return console.log(mySentence);
 }
 
 myConcatenate('I', 'am', 'iron man'); // 'I am iron man'
