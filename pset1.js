@@ -12,12 +12,11 @@ if invalid input given, return -1
 function myAge( ageNow, numYears ) {
 
     let howOld = ageNow + numYears;
-
     return howOld;
        
 }
 
-const howOld2 = myAge (18,25);
+const howOld2 = myAge (19,25);
 
 console.log(howOld2);
 
@@ -40,10 +39,15 @@ Concatenating string variables
 ******************/
 
 function myConcatenate( firstStr, secondStr, thirdStr ) {
+
+    let mySentence = firstStr + ' ' + secondStr + ' ' + thirdStr;
     
+    return mySentence
 }
 
-myConcatenate('I', 'am', 'iron man'); // 'I am iron man'
+let myConcatenate2 = myConcatenate ('I', 'am', 'iron man'); // 'I am iron man'
+
+console.log(myConcatenate2);
 
 /******************
 Subtract Function
