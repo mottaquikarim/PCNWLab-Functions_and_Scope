@@ -44,16 +44,19 @@ Concatenating string variables
 ******************/
 
 function myConcatenate( firstStr, secondStr, thirdStr ) {
+
+    let mySentence = firstStr + secondStr + thirdStr;
+
+    return mySentence;
     
 }
 
-myConcatenate('I', 'am', 'iron man'); // 'I am iron man'
+console.log(myConcatenate('I ', 'am ', 'iron man')); // 'I am iron man'
 
 /******************
 Subtract Function
 
 Write a subtract function
-
 This function will take two numbers and subtract them
 Ensure that both of the inputs are numbers
 ******************/
