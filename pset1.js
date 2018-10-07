@@ -34,10 +34,10 @@ Concatenating string variables
 
 function myConcatenate( firstStr, secondStr, thirdStr ) {
     let mySentence = firstStr+" "+ secondStr+" "+ thirdStr;
-    console.log (mySentence);
+    return mySentence;
 }
 
-myConcatenate('I', 'am', 'iron man'); // 'I am iron man'
+console.log(myConcatenate('I', 'am', 'iron man')); // 'I am iron man'
 
 /******************
 Subtract Function
@@ -49,8 +49,16 @@ Ensure that both of the inputs are numbers
 ******************/
 
 function subtract(a,b) {
+    if (typeof a == 'number' && typeof b == 'number') {
+        let substraction = a-b;
+        return substraction; }
+        else {
+            return -1;
+        }
+    }
     
-}
+
+console.log(subtract(10,3));
 
 /******************
 Area of A Circle
