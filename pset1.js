@@ -150,6 +150,20 @@ console.log(today); // No, it's the weekday
 If you are having trouble, please note that Javascript has a helpful built-in function to help get the current day
 ******************/
 
+function isItTheWeekend(){
+
+    let today = new Date().getDay();
+    console.log(today)
+
+    if(today === 6 || today === 0){
+        return 'Yes, it actually is the weekend. It\'s either Saturday or Sunday to be precise.'
+    } else {
+        return `Nope. It\'s a weekday.`
+    }
+
+}
+
+console.log(isItTheWeekend());
 
 /******************
 Finding the absolute value of a number
