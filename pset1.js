@@ -31,10 +31,13 @@ Concatenating string variables
 ******************/
 
 function myConcatenate( firstStr, secondStr, thirdStr ) {
-    
+    mySentence = firstStr + secondStr + thirdStr
+    return mySentence
 }
 
-myConcatenate('I', 'am', 'iron man'); // 'I am iron man'
+console.log(myConcatenate('I ', 'am ', 'Ironman')); // 'I am iron man'
+
+
 
 /******************
 Subtract Function
