@@ -134,8 +134,7 @@ and the absolute value of a positive number (or zero) is that number itself.
 ******************/
 
 function absolute(N) {
-    let abs = Math.abs(N)
-    return abs
+    return Math.abs(N)
 } 
 console.log(absolute(-100))
 
@@ -151,4 +150,7 @@ return the number of characters in the string
 call function 'countChars'
 ******************/
 
-
+function countChars(str){
+    return str.length; 
+}
+console.log(countChars('test'));
