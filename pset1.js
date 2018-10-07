@@ -31,9 +31,10 @@ Concatenating string variables
 ******************/
 
 function myConcatenate( firstStr, secondStr, thirdStr ) {
-    return `${firstStr} ${secondStr}  ${thirdStr}` 
+    let mySentence = `${firstStr} ${secondStr} ${thirdStr}` 
+    return mySentence;
 }
-console.log(myConcatenate('I', 'like','pizza'))
+console.log(myConcatenate('I', 'am', 'Syed'));
 myConcatenate('I', 'am', 'iron man'); // 'I am iron man'
 
 /******************
