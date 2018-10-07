@@ -39,10 +39,11 @@ Concatenating string variables
 ******************/
 
 function myConcatenate( firstStr, secondStr, thirdStr ) {
-    console.log(mySentence = (firstStr + " " + secondStr + " " + thirdStr))
+    let mySentence = (firstStr + " " + secondStr + " " + thirdStr);
+    return mySentence;
 }
 
-myConcatenate('I', 'am', 'iron man'); // 'I am iron man'
+console.log(myConcatenate('I', 'am', 'iron man')); // 'I am iron man'
 
 /******************
 Subtract Function
@@ -54,9 +55,12 @@ Ensure that both of the inputs are numbers
 ******************/
 
 function subtract(a,b) {
-    return (a - b);
+    if (typeof(a) === "number" && typeof(b) === "number") {
+        return (a - b);
+    }
 }
 
+console.log(typeof(typeof(1)))
 console.log(subtract(50,45))
 console.log(subtract(45,50))
 
