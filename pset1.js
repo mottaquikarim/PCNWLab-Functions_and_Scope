@@ -123,9 +123,9 @@ function celsiusToFahrenheit(c){
     let f = (c * 9/5) + 32;
     return `${c}°C is ${f} °F`;
    }
+   
+   console.log(celsiusToFahrenheit(0));
 }
-
-console.log(celsiusToFahrenheit(0));
 
 
 /******************
@@ -168,7 +168,17 @@ The absolute value of a negative number is the positive version of that same num
 and the absolute value of a positive number (or zero) is that number itself.
 ******************/
 
+function absolute(num){
+    if (typeof num !== "number"){
+        return `Not a number`;
+} else if (num >= 0){
+    return `${num} is an absolute number`;
+} else {
+    return `Absolute version of ${num} is ${Math.abs(num)}`;
+ }
+}
 
+console.log(absolute(-5));
 /******************
 Create a function that counts the number of characters in your name
 
