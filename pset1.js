@@ -186,7 +186,7 @@ function countChars(string){
 
     totalChars = string.length;
 
-    return totalChars;
+    return 'This sentence has ' + totalChars + ' characters.';
 
 }
 
