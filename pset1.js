@@ -57,8 +57,10 @@ Ensure that both of the inputs are numbers
 ******************/
 
 function subtract(a,b) {
-    
+    return a - b;
 }
+const finalNumber = subtract(5 , 3);
+console.log(finalNumber);
 
 /******************
 Area of A Circle
