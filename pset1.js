@@ -39,7 +39,7 @@ Concatenating string variables
 ******************/
 
 function myConcatenate( firstStr, secondStr, thirdStr ) {
-    
+    console.log(mySentence = (firstStr + " " + secondStr + " " + thirdStr))
 }
 
 myConcatenate('I', 'am', 'iron man'); // 'I am iron man'
