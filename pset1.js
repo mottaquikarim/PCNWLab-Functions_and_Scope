@@ -147,5 +147,9 @@ make sure argument is string
 return the number of characters in the string
 call function 'countChars'
 ******************/
-
-
+function nameCount(strName) {
+   
+    const nameCount = strName.length;
+return nameCount;
+}
+console.log(nameCount("Osita"));
