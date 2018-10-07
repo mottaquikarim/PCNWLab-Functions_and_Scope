@@ -139,7 +139,20 @@ console.log(today); // No, it's the weekday
 If you are having trouble, please note that Javascript has a helpful built-in function to help get the current day
 ******************/
 
+function isItTheWeekend(answer){
 
+    if (answer === "yes") {
+        return "Yes, it's the weekend"
+    } else if (answer === "no") {
+            return "No, it's the weekday"
+        } else {
+            return "choose yes or no"
+        }
+    }
+
+
+
+console.log(isItTheWeekend("no"))
 
 /******************
 Finding the absolute value of a number
