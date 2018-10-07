@@ -109,10 +109,6 @@ console.log (areaOfaCircle(2), 3.14159 * 4)
 /*radius is...undefined
 0
 */
-
-
- 
-    
    
 
 /******************
@@ -122,8 +118,23 @@ Create a function called fahrenheitToCelsius:
 
 Now store a fahrenheit temperature into a variable.
 
-Convert it to celsius and output "NN°F is NN°C."
-******************/
+Convert it to celsius and output "NN°F is NN°C." **/
+
+
+{
+    function fahrenheitToCelsius (f)  
+    {
+    let fahrenheitToCelsius = (((f-32)*5)/9)
+    
+    return fahrenheitToCelsius;
+    
+}
+    
+    let result = fahrenheitToCelsius(90);  
+    
+    console.log (result);     
+}
+
 
 
 /******************
@@ -134,10 +145,19 @@ Create a function called celsiusToFahrenheit:
 Store a celsius temperature into a variable.
 
 Convert it to fahrenheit and output "NN°C is NN°F".
+
+
+
+
+
 ******************/
 
 
+
+
 /******************
+skip meeee 
+
 Is it the weekend?
 
 Please write a function called "isItTheWeekend" that has two conditions:
