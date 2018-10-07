@@ -145,7 +145,8 @@ function isItTheWeekend (day){
    const dayOfWeek = day
 if (dayOfWeek === "Saturday" || dayOfWeek ==="Sunday"){
     console.log("Yes, it's the Weekend ")
-} else{
+} 
+    else{
     console.log("No, it's the weekday")
 }
     return 1
