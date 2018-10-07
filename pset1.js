@@ -151,7 +151,6 @@ If you are having trouble, please note that Javascript has a helpful built-in fu
 ******************/
 
 
-
 /******************
 Finding the absolute value of a number
 
@@ -162,6 +161,14 @@ The function should return the absolute value of the number
 The absolute value of a negative number is the positive version of that same number,
 and the absolute value of a positive number (or zero) is that number itself.
 ******************/
+
+function absolute(n){
+
+
+
+}
+
+console.log(absolute(-5));
 
 
 /******************
@@ -175,4 +182,13 @@ return the number of characters in the string
 call function 'countChars'
 ******************/
 
+function countChars(string){
+
+    totalChars = string.length;
+
+    return totalChars;
+
+}
+
+console.log(countChars('There is a lot of characters on this string'));
 
