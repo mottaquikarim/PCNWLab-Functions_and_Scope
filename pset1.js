@@ -19,6 +19,8 @@ console.log(myAge(22,22))
 
 
 
+
+
 /******************
 Concatenate Strings
 
@@ -34,10 +36,14 @@ Concatenating string variables
 ******************/
 
 function myConcatenate( firstStr, secondStr, thirdStr ) {
+
+    let mySentence = `Guess who I am. ${firstStr} ${secondStr}. And you're going to jail ${thirdStr} `
+
+    return mySentence
     
 }
 
-myConcatenate('I', 'am', 'iron man'); // 'I am iron man'
+console.log(myConcatenate("I\'m", "Batman", "Joker"))
 
 /******************
 Subtract Function
