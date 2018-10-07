@@ -33,10 +33,10 @@ Concatenating string variables
 
 function myConcatenate( firstStr, secondStr, thirdStr ) {
     const mySentence = firstStr + " " + secondStr + " " + thirdStr;
-    return console.log(mySentence);
+    return mySentence;
 }
 
-myConcatenate('I', 'am', 'iron man'); // 'I am iron man'
+console.log(myConcatenate('I', 'am', 'iron man')); // 'I am iron man'
 
 /******************
 Subtract Function
@@ -103,6 +103,12 @@ Store a celsius temperature into a variable.
 Convert it to fahrenheit and output "NN°C is NN°F".
 ******************/
 
+function celsiusToFahrenheit (celsius){
+    const c = celsius;
+    const fahrenheit = c * 9/5 + 32;
+    return fahrenheit;
+}
+console.log(celsiusToFahrenheit(0)); //32
 
 /******************
 Is it the weekend?
