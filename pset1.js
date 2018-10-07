@@ -81,11 +81,39 @@ A = π * r2, where is π is Pi and r is the radius squared
 ******************/
 
 
-function areaOfaCircle(radius)
-{
+
+
+ 
+    function areaOfaCircle(radius)  
+ { console.log ('radius is...', radius);
+   const area=Math.PI* radius**2;
+   //can also solve by with mathpow 
+return area;
+}   
+console.log (areaOfaCircle (1), 3.14159)
+ /*
+ radius is ...1
+ 0
+ */
+
+console.log (areaOfaCircle(), NaN)
+ /*radius is...undefined
+ 0
+ */
+
+console.log (areaOfaCircle(1,2,3,4,5), 3.14159)
+/*radius is...undefined
+0
+*/
+console.log (areaOfaCircle(2), 3.14159 * 4)
+/*radius is...undefined
+0
+*/
+
+
+ 
     
-    
-}    
+   
 
 /******************
 Temperature Converter Fahrenheit to Celsius
