@@ -9,7 +9,12 @@
                  returns that computed value
     @example doMath( 1,2,3 ); // 9
 */
+function doMath(firstNum, secondNum, thirdNum){
 
+    const arith = (firstNum + secondNum) * thirdNum
+    return arith
+}
+console.log(doMath(1,2,3))
 
 /*
     @function addMiddleName
