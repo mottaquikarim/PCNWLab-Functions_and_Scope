@@ -37,7 +37,7 @@ function myConcatenate( firstStr, secondStr, thirdStr ) {
     return mySentence;
 }
 
-myConcatenate('I', 'am', 'iron man'); // 'I am iron man'
+console.log(myConcatenate('I', 'am', 'iron man')); // 'I am iron man'
 
 /******************
 Subtract Function
@@ -49,6 +49,8 @@ Ensure that both of the inputs are numbers
 ******************/
 
 function subtract(a,b) {
+
+    return a - b;
     
 }
 
@@ -65,9 +67,13 @@ A = π * r2, where is π is Pi and r is the radius squared
 
 
 function areaOfaCircle(radius){
-    
+   console.log('radius is...', radius);
+   const area = Math.PI * radius ** 2;
+   return area;
     
 }    
+console.log(areaOfaCircle(3.14)) 
+
 
 /******************
 Temperature Converter Fahrenheit to Celsius
@@ -78,8 +84,14 @@ Now store a fahrenheit temperature into a variable.
 
 Convert it to celsius and output "NN°F is NN°C."
 ******************/
+function fahrenheitToCelsius(fahrenheit){
+    let conversion = (fahrenheit - 32) * (5 / 9)
 
+    return `${fahrenheit} is ${Math.round(conversion)}`;
+    
 
+}
+console.log(fahrenheitToCelsius(40));
 /******************
 Temperature Converter Celsius to Fahrenheit
 
@@ -92,20 +104,7 @@ Convert it to fahrenheit and output "NN°C is NN°F".
 
 
 /******************
-Is it the weekend?
 
-Please write a function called "isItTheWeekend" that has two conditions:
-
-If it is the weekend, return 'Yes, it's the weekend'
-If it is not the weekend, return 'No, it's the weekday';
-A working example would be:
-
-var today = isItTheWeekend();
-
-console.log(today); // No, it's the weekday
-
-If you are having trouble, please note that Javascript has a helpful built-in function to help get the current day
-******************/
 
 
 
