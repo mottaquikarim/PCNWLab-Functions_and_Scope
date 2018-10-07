@@ -35,8 +35,8 @@ Concatenating string variables
 
 function myConcatenate( firstStr, secondStr, thirdStr ) {
     
-    const mySentence = firstStr + ' ' + secondStr + ' ' + thirdStr; 
-    
+    // let mySentence = firstStr + ' ' + secondStr + ' ' + thirdStr; 
+     let mySentence = `${firstStr} ${secondStr} ${thirdStr}`
     return mySentence; 
 
 }
@@ -53,9 +53,11 @@ Ensure that both of the inputs are numbers
 ******************/
 
 function subtract(a,b) {
-    console.log(a - b);
+    
+    return a - b; 
+    
 }
-
+console.log(subtract(5,3));
 /******************
 Area of A Circle
 
@@ -70,8 +72,11 @@ A = π * r2, where is π is Pi and r is the radius squared
 
 function areaOfaCircle(radius){
     
-    
+    const area = 2 ** Math.PI * radius; 
+    return area;
+
 }    
+console.log(areaOfaCircle(1));
 
 /******************
 Temperature Converter Fahrenheit to Celsius
