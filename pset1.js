@@ -9,11 +9,13 @@ if that number is > 100, should return NaN
 if invalid input given, return -1
 ******************/
 
-function myAge( ageNow, numYears ) {
-       
+function myAge(ageNow, numYears) {
+
+    return ageNow + numYears
+
 }
-
-
+ 
+console.log(myAge(34, 60))
 
 /******************
 Concatenate Strings
@@ -23,7 +25,7 @@ Concatenating string variables
 - Create a function called myConcatenate that takes 3 arguments
     * Create an argument called firstStr
     * Create a second argument called secondStr
-    * Create a third argument called thridStr
+    * Create a third argument called thridxStr
 - Concatenate all three arguments in a variable called mySentence
     * console out mySentence variable
 - Call myConcatenate function
@@ -31,9 +33,11 @@ Concatenating string variables
 
 function myConcatenate( firstStr, secondStr, thirdStr ) {
     
+    return firstStr + secondStr + thirdStr
 }
 
-myConcatenate('I', 'am', 'iron man'); // 'I am iron man'
+
+console.log(myConcatenate('I', ' am', ' iron man')); // 'I am iron man'
 
 /******************
 Subtract Function
@@ -45,8 +49,11 @@ Ensure that both of the inputs are numbers
 ******************/
 
 function subtract(a,b) {
-    
+
+    return a - b
 }
+
+console.log(subtract(3,5))
 
 /******************
 Area of A Circle
@@ -62,9 +69,9 @@ A = π * r2, where is π is Pi and r is the radius squared
 
 function areaOfaCircle(radius){
     
-    
+    return 3.14 * (radius * 2)
 }    
-
+console.log(areaOfaCircle(8))
 /******************
 Temperature Converter Fahrenheit to Celsius
 
@@ -74,6 +81,7 @@ Now store a fahrenheit temperature into a variable.
 
 Convert it to celsius and output "NN°F is NN°C."
 ******************/
+
 
 
 /******************
