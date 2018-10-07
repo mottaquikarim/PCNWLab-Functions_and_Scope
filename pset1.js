@@ -54,8 +54,13 @@ Ensure that both of the inputs are numbers
 ******************/
 
 function subtract(a,b) {
-    
+    console.log('a is...', a)
+    console.log('b is...', b)
+
+    return (a-b);
 }
+
+console.log(subtract(2,3));
 
 /******************
 Area of A Circle
@@ -70,9 +75,31 @@ A = π * r2, where is π is Pi and r is the radius squared
 
 
 function areaOfaCircle(radius){
-    
-    
+    console.log('radius is...', radius); 
+
+    //const area = Math.PI * radius ** 2;
+    //const area = Math.PI * Math.pow(radius, 2);
+    const area = Math.PI * radius * radius;
+    return area;
 }    
+
+console.log(areaOfaCircle(1), 3.14159)
+/*
+    radius is... 1
+    0
+*/
+console.log(areaOfaCircle(), NaN)
+/*
+    radius is... undefined
+    0
+*/
+console.log(areaOfaCircle(1,2,3,4,5), 3.14159)
+/*
+    radius is... 1
+    0
+*/
+console.log(areaOfaCircle(2), 3.14159 * 4)
+
 
 /******************
 Temperature Converter Fahrenheit to Celsius
