@@ -59,9 +59,9 @@ Ensure that both of the inputs are numbers
 ******************/
 
 function subtract( a, b )  {
-    let subtractation = a - b;
+    //let subtractation = a - b;
 
-    return subtractation
+    return a - b
     
 }
 
@@ -83,12 +83,12 @@ A = π * r2, where is π is Pi and r is the radius squared
 
 function areaOfaCircle(radius){
 
-    let areaFormula = 3.14 * (radius ** 2);
+    //let areaFormula = Math.PI * (radius ** 2);
 
-    return areaFormula
+    return (Math.PI * (radius ** 2));
 }    
 
-console.log(areaOfaCircle(7));
+console.log(areaOfaCircle(1));
 
 /******************
 Temperature Converter Fahrenheit to Celsius
@@ -99,6 +99,16 @@ Now store a fahrenheit temperature into a variable.
 
 Convert it to celsius and output "NN°F is NN°C."
 ******************/
+function fahrenheitToCelsius(c){
+
+        let fahrenheitTemp = (c * 2) + 30
+
+        return fahrenheitTemp + `°F is ${c}°C.`
+
+}
+
+console.log(fahrenheitToCelsius(3));
+// F = (C x 2) + 30
 
 
 /******************
