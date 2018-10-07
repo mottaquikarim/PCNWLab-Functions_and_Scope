@@ -9,11 +9,14 @@ if that number is > 100, should return NaN
 if invalid input given, return -1
 ******************/
 
-function myAge( ageNow, numYears ) {
-       
-}
 
-
+function age(ageNow, numYears) {
+    const futureAge =  `In ${numYears} years, I will be ${numYears+ageNow}.`;
+  
+    return futureAge;
+  }
+  const futureAge1 = age(26, 42);
+  console.log(futureAge1);
 
 /******************
 Concatenate Strings
