@@ -10,7 +10,8 @@ if invalid input given, return -1
 ******************/
 
 function myAge( ageNow, numYears ) {
-       
+    const ageLater = ageNow + numYears
+    return ageLater;
 }
 
 
@@ -30,7 +31,8 @@ Concatenating string variables
 ******************/
 
 function myConcatenate( firstStr, secondStr, thirdStr ) {
-    
+    mySentence = `${firstStr} ${secondStr} ${thirdStr}`
+    return mySentence
 }
 
 myConcatenate('I', 'am', 'iron man'); // 'I am iron man'
@@ -45,8 +47,11 @@ Ensure that both of the inputs are numbers
 ******************/
 
 function subtract(a,b) {
-    
+    solution = a - b    
+    return solution
 }
+
+console.log(subtract(20,10))
 
 /******************
 Area of A Circle
@@ -60,10 +65,12 @@ A = π * r2, where is π is Pi and r is the radius squared
 ******************/
 
 
-function areaOfaCircle(radius){
-    
-    
-}    
+function areaOfCircle(radius){
+  let areaOfCircle = (radius * radius * Math.PI);
+  return areaOfCircle;
+}
+
+console.log(areaOfCircle(5))   
 
 /******************
 Temperature Converter Fahrenheit to Celsius
