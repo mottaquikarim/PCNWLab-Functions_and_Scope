@@ -129,8 +129,10 @@ The function should return the absolute value of the number
 The absolute value of a negative number is the positive version of that same number,
 and the absolute value of a positive number (or zero) is that number itself.
 ******************/
-
-
+function absolute(num){
+    return Math.abs(num);
+}
+console.log(absolute(-4));
 /******************
 Create a function that counts the number of characters in your name
 
@@ -142,4 +144,7 @@ return the number of characters in the string
 call function 'countChars'
 ******************/
 
-
+function countChars(chars){
+return chars.length
+}
+console.log(countChars("four"));
