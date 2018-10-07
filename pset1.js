@@ -9,8 +9,17 @@ if that number is > 100, should return NaN
 if invalid input given, return -1
 ******************/
 
-function myAge( ageNow, numYears ) {
-       
+let ageNow = [26]
+function myAge( ageNow, numYears ) 
+
+for(let i = 0; i < ageNow.length; i++) {
+  console.log(ageNow[i]
+}
+
+let numYears = [100]
+
+for(let i = 0; i < numYears.length; i++) {
+  console.log(numYears[i]
 }
 
 
