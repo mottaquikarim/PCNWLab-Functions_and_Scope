@@ -46,9 +46,12 @@ Ensure that both of the inputs are numbers
 ******************/
 
 function subtract(a,b) {
-    
+    let num1 = 22
+    let num2 = 11
+    equation = num1 - num2
+    return equation
 }
-
+ console.log(subtract(22, 11))
 /******************
 Area of A Circle
 
