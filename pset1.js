@@ -107,7 +107,13 @@ Store a celsius temperature into a variable.
 
 Convert it to fahrenheit and output "NN°C is NN°F".
 ******************/
-
+function celsiusToFahrenheit(a) { 
+    let celsius = a; 
+    let conversion2 = (celsius * 9/5)+ 32 ;
+    console.log(a+"°C is "+conversion2+"°F");
+    return conversion2 ;
+}
+celsiusToFahrenheit(22.2);
 
 /******************
 Is it the weekend?
