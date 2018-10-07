@@ -10,12 +10,12 @@ if invalid input given, return -1
 ******************/
 
 
-function age(ageNow, numYears) {
+function myAge(ageNow, numYears) {
     const futureAge =  `In ${numYears} years, I will be ${numYears+ageNow}.`;
   
     return futureAge;
   }
-  const futureAge1 = age(26, 42);
+  const futureAge1 = myAge(26, 42);
   console.log(futureAge1);
 
 /******************
