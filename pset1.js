@@ -47,8 +47,11 @@ Ensure that both of the inputs are numbers
 ******************/
 
 function subtract(a,b) {
-    
+    solution = a - b    
+    return solution
 }
+
+console.log(subtract(20,10))
 
 /******************
 Area of A Circle
