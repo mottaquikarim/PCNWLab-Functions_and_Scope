@@ -10,9 +10,11 @@ if invalid input given, return -1
 ******************/
 
 function myAge( ageNow, numYears ) {
-       
+       let num;
+       num = ageNow + numYears;
+       return num;
 }
-
+console.log("My age in 5 years: " + myAge(23,5));
 
 
 /******************
@@ -30,10 +32,11 @@ Concatenating string variables
 ******************/
 
 function myConcatenate( firstStr, secondStr, thirdStr ) {
-    
+    return firstStr + ' ' + secondStr + ' ' + thirdStr;
 }
+console.log(myConcatenate('I','am','iron man'));
 
-myConcatenate('I', 'am', 'iron man'); // 'I am iron man'
+myConcatenate("myConcatenate: " + 'I', 'am', 'iron man'); // 'I am iron man'
 
 /******************
 Subtract Function
@@ -45,8 +48,11 @@ Ensure that both of the inputs are numbers
 ******************/
 
 function subtract(a,b) {
-    
+    let num;
+    num = a - b;
+    return num;
 }
+console.log("Subtraction: " + subtract(123,23));
 
 /******************
 Area of A Circle
@@ -61,10 +67,11 @@ A = π * r2, where is π is Pi and r is the radius squared
 
 
 function areaOfaCircle(radius){
-    
-    
+    let areaCircle;
+    areaCircle = 3.14159 * (radius ** 2);
+    return areaCircle;
 }    
-
+console.log("Area of a Circle: " + areaOfaCircle(5));
 /******************
 Temperature Converter Fahrenheit to Celsius
 
@@ -74,7 +81,12 @@ Now store a fahrenheit temperature into a variable.
 
 Convert it to celsius and output "NN°F is NN°C."
 ******************/
-
+function fahrenheitToCelsius(number){
+    let celsius;
+    celsius = (number - 32) *  5 / 9;
+    return celsius;
+}
+console.log("Fahrenheit to Celsius: " + fahrenheitToCelsius(50));
 
 /******************
 Temperature Converter Celsius to Fahrenheit
@@ -85,7 +97,11 @@ Store a celsius temperature into a variable.
 
 Convert it to fahrenheit and output "NN°C is NN°F".
 ******************/
-
+function celsiusToFahrenheit(num){
+    let fahrenheit = (num * 9 / 5) + 32;
+    return fahrenheit;
+}
+console.log("Celsius to Fahrenheit: " + celsiusToFahrenheit(20))
 
 /******************
 Is it the weekend?
