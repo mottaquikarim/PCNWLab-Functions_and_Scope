@@ -177,4 +177,11 @@ return the number of characters in the string
 call function 'countChars'
 ******************/
 
+function countChars(string){
+    let number = string.length
+
+    return number + 'number of characters in string'
+}
+
+console.log(countChars("Pamela"));
 
