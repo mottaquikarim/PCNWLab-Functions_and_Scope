@@ -66,8 +66,7 @@ A = π * r2, where is π is Pi and r is the radius squared
 
 
 function areaOfaCircle(radius){
-    const pi = 3.1415
-    const areaOfaCircle = pi * (radius**2);
+    const areaOfaCircle = Math.PI * (radius**2);
     return areaOfaCircle;
 }    
 console.log(areaOfaCircle(5)); 
@@ -132,7 +131,11 @@ The function should return the absolute value of the number
 The absolute value of a negative number is the positive version of that same number,
 and the absolute value of a positive number (or zero) is that number itself.
 ******************/
-
+function absolute(value) {
+    const absolute = Math.abs(value);
+    return absolute;
+}
+console.log(absolute(-2));
 
 /******************
 Create a function that counts the number of characters in your name
