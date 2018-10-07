@@ -17,10 +17,11 @@ function myAge( ageNow, numYears ) {
            return NaN;
        } 
 
-       return console.log(`In ${numYears} years, you will be ${ageNow + numYears} years old.`);
+       return `In ${numYears} years, you will be ${ageNow + numYears} years old.`;
 }
 
-myAge(29, 6);
+
+console.log(myAge(69, 6));
 
 
 
