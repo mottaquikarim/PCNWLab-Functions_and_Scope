@@ -37,13 +37,15 @@ Concatenating string variables
 
 function myConcatenate( firstStr, secondStr, thirdStr ) {
 
-    let mySentence = `Guess who I am. ${firstStr} ${secondStr}. And you're going to jail ${thirdStr} `
+    let mySentence = `Dwight: ${firstStr} ${thirdStr}
+Jim: ${firstStr} ${secondStr} ${thirdStr}
+Dwight: ${firstStr} ${thirdStr}`
 
     return mySentence
     
 }
 
-console.log(myConcatenate("I\'m", "Batman", "Joker"))
+console.log(myConcatenate("Assistant", "to the", "Regional Manager"))
 
 /******************
 Subtract Function
@@ -149,7 +151,6 @@ function isItTheWeekend(answer){
             return "choose yes or no"
         }
     }
-
 
 
 console.log(isItTheWeekend("no"))
