@@ -98,6 +98,13 @@ Store a celsius temperature into a variable.
 Convert it to fahrenheit and output "NN°C is NN°F".
 ******************/
 
+function celsiusToFahrenheit (Celcius){
+    let Fahrenheit = ((Celcius * 9 / 5) + 32);
+    //(0°C × 9/5) + 32 = 32°F
+    return Celcius + 'C is '  + Fahrenheit + 'F'
+
+}
+console.log(celsiusToFahrenheit(26.666));
 
 /******************
 Is it the weekend?
