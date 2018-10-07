@@ -96,6 +96,10 @@ Store a celsius temperature into a variable.
 Convert it to fahrenheit and output "NN°C is NN°F".
 ******************/
 
+function celsiusToFahrenheit(cTemp){
+    return `${cTemp} degree C is ${(cTemp *9/5) + 32} degree F`
+}
+console.log(celsiusToFahrenheit(0));
 
 /******************
 Is it the weekend?
