@@ -9,9 +9,23 @@ if that number is > 100, should return NaN
 if invalid input given, return -1
 ******************/
 
-function myAge( ageNow, numYears ) {
+let addition = '';
+
+function myAge(ageNow, numYears) {
+
+    addition = ageNow + numYears;
+
+    if(addition > 100){
+        return NaN
+    } else if(addition <= 100){
+        return addition;
+    }   else {
+        return -1
+    }
        
 }
+
+console.log(myAge(51, 50))
 
 
 
