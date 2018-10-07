@@ -144,6 +144,17 @@ The absolute value of a negative number is the positive version of that same num
 and the absolute value of a positive number (or zero) is that number itself.
 ******************/
 
+function absolute(aNumber){
+    if (aNumber >= 0) {
+        return aNumber;
+    } else {
+        return (aNumber * -1);
+    }
+}
+
+console.log(absolute(321));
+console.log(absolute(-321));
+console.log(absolute(0));
 
 /******************
 Create a function that counts the number of characters in your name
@@ -156,4 +167,13 @@ return the number of characters in the string
 call function 'countChars'
 ******************/
 
+function countChars(nameString) {
+    // return toString(nameString)
+    if (typeof(nameString) != "string") {
+        return ((String(nameString)).length);
+    } else {
+        return ((nameString).length);
+    }
+}
 
+console.log(countChars("Vincent"));
