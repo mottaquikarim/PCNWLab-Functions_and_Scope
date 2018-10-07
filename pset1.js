@@ -13,12 +13,16 @@ function myAge( ageNow, numYears ) {
 
        if (ageNow + numYears > 100){
             console.log("NaN")
+            return "NaN"
        }
        else if (typeof ageNow !== "number" || typeof numYears !== "number"){
-                console.log(-1)
+            console.log(-1)
+            return -1
        }
        else {
+           const ageLater = ageNow + numYears
            console.log("You will be " + (ageNow + numYears) + " years old in " + numYears + " years." )
+           return ageLater
        }
 }
 
@@ -43,6 +47,7 @@ Concatenating string variables
 function myConcatenate( firstStr, secondStr, thirdStr ) {
     const mySentence = firstStr + " " + secondStr + " " + thirdStr
     console.log(mySentence)
+    return mySentence
 }
 
 myConcatenate('I', 'am', 'iron man'); // 'I am iron man'
@@ -59,19 +64,24 @@ Ensure that both of the inputs are numbers
 function subtract(a,b) {
 
 if(typeof a !== "number" && typeof b !== "number"){
-        console.log("What are you doing with your life?")
+    console.log("What are you doing with your life?")
+    return "What are you doing with your life?"
     }
         
 else if(typeof a !== "number"){
     console.log("Invalid input for argument a")
+    return "Invalid input for argument a"
     }
 
 else if(typeof b !== "number"){
     console.log("Invalid input for argument b")
+    return "Invalid input for argument b"
     }
 
 else {
-    console.log(a - b);
+    const myDifference = a -b
+    console.log(myDifference);
+    return myDifference
     }
 
 }
@@ -96,6 +106,7 @@ A = π * r2, where is π is Pi and r is the radius squared
 function areaOfaCircle(radius){
     const circleArea = ((radius ** 2) * Math.PI)
     console.log("The area of a circle with a radius of " + radius + " is " + circleArea) 
+    return circleArea
 }    
 
 areaOfaCircle(25); 
@@ -113,6 +124,7 @@ Convert it to celsius and output "NN°F is NN°C."
 function fahrenheitToCelsius(fahrenheit){
     const tempCelcius = (fahrenheit - 32) * (5/9);
     console.log(fahrenheit + "°F is " + tempCelcius + "°C")
+    return tempCelcius
 }
 
 fahrenheitToCelsius(86); // 30 degrees celcius
@@ -130,6 +142,7 @@ Convert it to fahrenheit and output "NN°C is NN°F".
 function celciusToFahrenheit(celcius){
     const tempFahrenheit = ((celcius / (5/9)) + 32);
     console.log(celcius + "°C is " + tempFahrenheit + "°F")
+    return tempFahrenheit
 }
 
 celciusToFahrenheit(30); // 86 degrees fahrenheit
@@ -156,18 +169,22 @@ function isItTheWeekend(today){
 
     if(today == "saturday" || today == "sunday"){
         console.log("Yes, it the weekend")
+        return "Yes, it is the weekend"
     }
     else if (today == "monday" || today == "tuesday" || today == "wednesday" || today == "thursday"){
         today = today.charAt(0).toUpperCase() + today.slice(1);
         console.log("No, " + today + " is a weekday")
+        return "No, " + today + " is a weekday"
     }
     else if (today == "friday"){
         today = today.charAt(0).toUpperCase() + today.slice(1);
         console.log("No, but it's " + today + "! Gotta get down on " + today + "!")
+        return "No, but it's " + today + "! Gotta get down on " + today + "!"
     }
     else{
         today = today.charAt(0).toUpperCase() + today.slice(1);
         console.log("Yeeeahhh, pretty sure '" + today + "' is not a day. Try again.")
+        return "Yeeeahhh, pretty sure '" + today + "' is not a day. Try again."
     }
 }
 
@@ -189,13 +206,17 @@ and the absolute value of a positive number (or zero) is that number itself.
 
 function absolute(number){
     if(number < 0){
+        absVal = (number * (-1))
         console.log("The absolute value of " + number + " is " + (number * (-1)))
+        return absVal
     }
     else if(typeof number !== "number"){
         console.log("Invald input.")
+        return "Invalid input."
     }
     else{
         console.log("The absolute value of " + number + " is " + number)
+        return number
     }
 }
 
@@ -217,9 +238,11 @@ call function 'countChars'
 function countChars(string){
     if(typeof string !== "string"){
         console.log("Invalid input.")
+        return "Invalid input."
     }
     else{
         console.log(string + " is made up of " + string.length + " characters.")
+        return string.length
     }
 }
 
