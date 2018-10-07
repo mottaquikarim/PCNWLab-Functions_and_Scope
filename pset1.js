@@ -190,4 +190,13 @@ return the number of characters in the string
 call function 'countChars'
 ******************/
 
+function characterCounter(name){
+    if (typeof name !== "string"){
+        return `${name} is not a word.`;
+    } else {
+       return `${name} is ${name.length} characters long.`;
+    }
+}
 
+console.log(characterCounter(4));
+console.log(characterCounter("Robert"));
