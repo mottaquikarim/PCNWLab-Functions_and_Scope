@@ -10,10 +10,10 @@ if invalid input given, return -1
 ******************/
 
 function myAge( ageNow, numYears ) {
-       
+return numYears + ageNow
 }
 
-
+console.log (myAge(26, 4))
 
 /******************
 Concatenate Strings
