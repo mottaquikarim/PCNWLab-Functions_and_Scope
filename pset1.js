@@ -118,8 +118,18 @@ console.log(today); // No, it's the weekday
 
 If you are having trouble, please note that Javascript has a helpful built-in function to help get the current day
 ******************/
-
-
+function isItTheWeekend(){
+    var theDay = new Date();
+    var today = theDay.getDay();
+    // var today = ;
+    if(today == 0 || today == 7){
+        return "Yes, it's the weekend.";
+    }
+    else{
+        return "No, it's the weekday.";
+    }
+}
+console.log("Is It The Weekend?: " + isItTheWeekend());
 
 /******************
 Finding the absolute value of a number
@@ -131,8 +141,18 @@ The function should return the absolute value of the number
 The absolute value of a negative number is the positive version of that same number,
 and the absolute value of a positive number (or zero) is that number itself.
 ******************/
-
-
+function absolute(num){
+    let abNum;
+    if(num > 0){
+        return num;
+    }
+    else {
+        abNum = -1 * num;
+    }
+    return abNum;
+}
+console.log("Absolute of '10' is: " + absolute(10));
+console.log("Absolute of '-50' is: " + absolute(-50));
 /******************
 Create a function that counts the number of characters in your name
 
@@ -143,5 +163,16 @@ make sure argument is string
 return the number of characters in the string
 call function 'countChars'
 ******************/
-
-
+function countChars(letters){
+    let test = typeof letters;
+    if(test != 'string'){
+        return "Error. Not a string.";
+    }
+    else{
+        let temp = letters;
+        let num = temp.length;
+        return num;
+    }
+}
+console.log("Char counter of '50' is: " + countChars(50));
+console.log("Char counter of 'apple' is: " + countChars("apple"));
