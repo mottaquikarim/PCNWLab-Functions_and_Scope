@@ -48,9 +48,13 @@ Ensure that both of the inputs are numbers
 ******************/
 
 function subtract(a,b) {
-    
+    console.log("number1: " + a);
+    console.log("number2: " + b);
+    const difference = a - b;
+    return console.log("number1 - number2 = " + difference);
 }
 
+subtract(10, 8); //2
 /******************
 Area of A Circle
 
