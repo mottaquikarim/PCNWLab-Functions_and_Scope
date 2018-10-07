@@ -9,10 +9,13 @@ if that number is > 100, should return NaN
 if invalid input given, return -1
 ******************/
 
-function myAge( ageNow, numYears ) {
+function myAge(ageNow, numYears) {
+
+    return ageNow + numYears
        
 }
 
+console.log(myAge(24,4));
 
 
 /******************
