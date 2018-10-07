@@ -86,7 +86,13 @@ Now store a fahrenheit temperature into a variable.
 Convert it to celsius and output "NN°F is NN°C."
 ******************/
 
+function fahrenheitToCelsius(Fahrenheit){
+    const f = Fahrenheit;
+    const celsius = (Fahrenheit - 32) * 5 / 9;
+    console.log(f + "°F" + " is " + celsius + "°C.");
+}
 
+fahrenheitToCelsius(32); //0
 /******************
 Temperature Converter Celsius to Fahrenheit
 
