@@ -9,10 +9,15 @@ if that number is > 100, should return NaN
 if invalid input given, return -1
 ******************/
 
-function myAge( ageNow, numYears ) {
-       
+function myAge( ageNow, numYears ){
+      const futureAge = numYears + ageNow
+    
+      
+       return futureAge
 }
 
+
+console.log(myAge(28, 92))
 
 
 /******************
