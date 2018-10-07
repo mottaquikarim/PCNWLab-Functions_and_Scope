@@ -29,6 +29,20 @@ console.log(doMath(1,2,3))
                  return firstname and last name
     @example addMiddleNmae('John', 'Mabel', 'Smith'); // John Mabel Smith
 */
+function addMiddleName(firstName, middleName, lastName){
+    let fullName
+    if(middleName.length === 0){ 
+     fullName = `${firstName} ${lastName}`
+    } else {
+     fullName = `${firstName} ${middleName} ${lastName}`
+    }
+    return fullName
+}
+
+console.log(addMiddleName("daniel","eduardo" , "ashley"))
+
+
+
 
 
 /*
