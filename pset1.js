@@ -17,8 +17,8 @@ function myAge( ageNow, numYears ) {
     }
     return myAge; 
 }
-const MyAge1 = getmyAge(30, 2018)
-console.log(myAge);
+const MyAge1 = myAge(30, 2018)
+console.log(MyAge1);
 
 /******************
 Concatenate Strings
