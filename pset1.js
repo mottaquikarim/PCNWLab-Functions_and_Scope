@@ -11,12 +11,12 @@ if invalid input given, return -1
 
 function myAge( ageNow, numYears ) {
 
-    const myAgeNow = ageNow - numYears;
-    return myAgeNow;
+    const myAgelater = ageNow + numYears;
+    return myAgelater; 
        
 }
 
-console.log(myAge(2018,1986));
+console.log(myAge(32,32));
 
 
 /******************
