@@ -44,7 +44,7 @@ Concatenating string variables
 ******************/
 
 function myConcatenate( firstStr, secondStr, thirdStr ) {
-    const mySentence = firstStr + secondStr + thirdStr
+    const mySentence = `${firstStr} ${secondStr} ${thirdStr}`
     console.log(mySentence)
     return mySentence
     
@@ -53,7 +53,7 @@ function myConcatenate( firstStr, secondStr, thirdStr ) {
 
 
 
-console.log(myConcatenate('I ', 'am ', 'iron man ')); // 'I am iron man'
+console.log(myConcatenate('I', 'am', 'iron man')); // 'I am iron man'
 
 /******************
 Subtract Function
