@@ -165,6 +165,15 @@ The absolute value of a negative number is the positive version of that same num
 and the absolute value of a positive number (or zero) is that number itself.
 ******************/
 
+function absolute(number){
+    if (number >= 0){
+        return number
+    } else if (number < 0){
+        return number * -1
+    }
+}
+
+console.log(absolute(-5))
 
 /******************
 Create a function that counts the number of characters in your name
