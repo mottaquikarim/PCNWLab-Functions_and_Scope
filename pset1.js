@@ -159,5 +159,14 @@ make sure argument is string
 return the number of characters in the string
 call function 'countChars'
 ******************/
+function charcount(a) { 
+    if (typeof(a) == 'string') { 
+     let charactercount = a.length;
+    return charactercount;
+    }
+    else 
+    return -1;
+}
+console.log(`My name has ${charcount("Jorge")} characters`);
 
 
