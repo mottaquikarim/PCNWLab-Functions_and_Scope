@@ -67,7 +67,7 @@ A = π * r2, where is π is Pi and r is the radius squared
 
 function areaOfaCircle(radius){
     const pi = 3.1415
-    const areaOfaCircle = pi * radius**2;
+    const areaOfaCircle = pi * (radius**2);
     return areaOfaCircle;
 }    
 console.log(areaOfaCircle(5)); 
@@ -97,7 +97,12 @@ Store a celsius temperature into a variable.
 
 Convert it to fahrenheit and output "NN°C is NN°F".
 ******************/
-
+function celsiusToFahren(celsiustemp){
+    const fahren = (celsiustemp * (9/5)) + 32;
+    const celsiusToFahren = `${celsiustemp}°C is ${fahren}°F.`;
+    return celsiusToFahren;
+}
+console.log(celsiusToFahren(70));
 
 /******************
 Is it the weekend?
