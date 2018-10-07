@@ -9,9 +9,15 @@ if that number is > 100, should return NaN
 if invalid input given, return -1
 ******************/
 
-function myAge( ageNow, numYears ) {
-       
+
+function myAge( ageNow, numYears )
+ {
+ let calculatedAge = ageNow + numYears
+
+return calculatedAge;
 }
+const calculated=myAge(29,20)
+console.log (calculated)
 
 
 
@@ -29,11 +35,16 @@ Concatenating string variables
 - Call myConcatenate function
 ******************/
 
-function myConcatenate( firstStr, secondStr, thirdStr ) {
-    
+function myConcatenate( firstStr, secondStr, thirdStr ) 
+{
+let mySentence = firstStr + " " + secondStr + " " + thirdStr
+
+return mySentence;
 }
 
-myConcatenate('I', 'am', 'iron man'); // 'I am iron man'
+let myConcatenate2 = myConcatenate('I', 'am', 'iron man');  //'I am iron man'
+
+console.log (myConcatenate2); 
 
 /******************
 Subtract Function
