@@ -10,8 +10,15 @@ if invalid input given, return -1
 ******************/
 
 function myAge( ageNow, numYears ) {
-       
+    console.log('ageNow value:', ageNow)
+    console.log('numYears value:', numYears)
+
+    const ageLater = ageNow + numYears;
+
+    return ageLater;
 }
+
+console.log(myAge(28, 32)); // 60
 
 
 
