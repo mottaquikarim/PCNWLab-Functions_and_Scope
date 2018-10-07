@@ -65,7 +65,7 @@ A = π * r2, where is π is Pi and r is the radius squared
 
 
 function areaOfaCircle(radius){
-    let circleArea = Math.PI * radius**2
+    let circleArea = Math.PI * radius ** 2
 return circleArea;
 }    
 
@@ -81,6 +81,10 @@ Now store a fahrenheit temperature into a variable.
 Convert it to celsius and output "NN°F is NN°C."
 ******************/
 
+function fahrenheightToCelsius(fTemp){
+    return `${fTemp}°F is ${(fTemp - 32) * (5/9)}°C`
+}
+console.log(fahrenheightToCelsius(32));
 
 /******************
 Temperature Converter Celsius to Fahrenheit
@@ -94,7 +98,7 @@ Convert it to fahrenheit and output "NN°C is NN°F".
 
 
 /******************
-Is it the weekend?
+Is it the weekend? skip
 
 Please write a function called "isItTheWeekend" that has two conditions:
 
