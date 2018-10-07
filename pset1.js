@@ -135,7 +135,7 @@ let result = fahrenheitToCelsius(90);
     console.log (result);     
     console.log (90 +" °F is " + result + " °C");
 
-
+     
 
 
 /******************
@@ -149,11 +149,19 @@ Convert it to fahrenheit and output "NN°C is NN°F".
 
 
 
-
-
 ******************/
 
+function celsiusToFahrenheit (c)
+{
+let celsiusToFahrenheit = (1.8*c)+32
 
+return celsiusToFahrenheit;
+
+}
+
+let result1 = celsiusToFahrenheit(30);  
+  
+console.log (30 +" °C is " + result1 + " °F"); 
 
 
 /******************
