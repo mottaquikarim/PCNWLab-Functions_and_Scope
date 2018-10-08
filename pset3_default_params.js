@@ -49,14 +49,13 @@ console.log(fahrenheitToCelsius(86))
 function myAge( ageNow = 0, numYears = 5 ) {
 
     if (ageNow + numYears > 100){
-         console.log("NaN")
          return NaN
     }
     else if (typeof ageNow !== "number" || typeof numYears !== "number"){
          return "Get your life together"
     }
     else {
-        const ageLater = `You are ${ageNow} and will be ${ageNow + numYears} years old in ${numYears} years.`
+        let ageLater = `You are ${ageNow} and will be ${ageNow + numYears} years old in ${numYears} years.`
         return ageLater
     }
 }
@@ -89,19 +88,19 @@ console.log(myAge())
     
 */
 function displayErrorOne(){
-    firstNum = 0
+    let firstNum = 0
     console.log("\x1b[31m","The first number isn't set!")
 }
 
 function displayErrorTwo(){
-    secondNum = 0
+    let secondNum = 0
     console.log("\x1b[31m","The second number isn't set!")
 }
 
 function addTwoNums(numOne = displayErrorOne(), numTwo = displayErrorTwo()){
-    firstNum = numOne
-    secondNum = numTwo
-    sum = firstNum + secondNum
+    let firstNum = numOne
+    let secondNum = numTwo
+    let sum = firstNum + secondNum
     return sum
 }
 

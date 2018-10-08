@@ -34,17 +34,17 @@ console.log(anonFooBar("foo","bar"))
 */ 
 
 function declareRemainder(a =0, b =0, c=0){
-    remainder = (a + b + c) % 3
+    let remainder = (a + b + c) % 3
     return remainder
 }
 
 const nameRemainder = function findRemainder(a =0, b =0, c=0){
-    remainder = (a + b + c) % 3
+    let remainder = (a + b + c) % 3
     return remainder
 }
 
 const anonRemainder = (a =0, b =0, c=0) => {
-    remainder = (a + b + c) % 3
+    let remainder = (a + b + c) % 3
     return remainder
 }
 

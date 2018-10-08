@@ -41,7 +41,7 @@ console.log(addTwoNums("lulz","lmao"))
 */
 
 function turnNumberToString (number){
-    string = `${number}`
+    let string = `${number}`
     return string
 }
 
@@ -150,7 +150,7 @@ console.log(fullNameSentenceWithChecks("TK", "is awesome"))
     
 */
     function farenToCel (farenheit){
-        tempCelcius = (farenheit - 32) * (5/9)
+        let tempCelcius = (farenheit - 32) * (5/9)
         return tempCelcius;
     }
 
@@ -172,7 +172,7 @@ console.log(fullNameSentenceWithChecks("TK", "is awesome"))
 */
 
 function farenToKelvin (farenheit){
-    tempKelvin = farenToCel(farenheit) + 273.15
+    let tempKelvin = farenToCel(farenheit) + 273.15
     return tempKelvin
 }
 
@@ -203,7 +203,7 @@ function farenToKelvinWithCheck (farenheit){
         return "ERROR: Invalid entry, please enter a numerical value for farenheit"
     }
     else {
-        tempKelvin = farenToCel(farenheit) + 273.15
+        let tempKelvin = farenToCel(farenheit) + 273.15
         return tempKelvin
     }
 }
