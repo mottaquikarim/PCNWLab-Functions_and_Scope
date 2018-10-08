@@ -12,8 +12,8 @@ if invalid input given, return -1
 function myAge( ageNow, numYears ) {
 
        if (ageNow + numYears > 100){
-            console.log("NaN")
-            return "NaN"
+            console.log(NaN)
+            return NaN
        }
        else if (typeof ageNow !== "number" || typeof numYears !== "number"){
             console.log(-1)
@@ -21,7 +21,7 @@ function myAge( ageNow, numYears ) {
        }
        else {
            const ageLater = ageNow + numYears
-           console.log("You will be " + (ageNow + numYears) + " years old in " + numYears + " years." )
+           console.log(`You will be ${ageNow + numYears} years old in ${numYears} years.`)
            return ageLater
        }
 }
@@ -45,7 +45,7 @@ Concatenating string variables
 ******************/
 
 function myConcatenate( firstStr, secondStr, thirdStr ) {
-    const mySentence = firstStr + " " + secondStr + " " + thirdStr
+    const mySentence = `${firstStr} ${secondStr} ${thirdStr}`
     console.log(mySentence)
     return mySentence
 }
@@ -109,7 +109,7 @@ function areaOfaCircle(radius){
     return circleArea
 }    
 
-areaOfaCircle(25); 
+areaOfaCircle(25); //some big number, 1900-ish
 
 /******************
 Temperature Converter Fahrenheit to Celsius
@@ -207,7 +207,7 @@ and the absolute value of a positive number (or zero) is that number itself.
 function absolute(number){
     if(number < 0){
         absVal = (number * (-1))
-        console.log("The absolute value of " + number + " is " + (number * (-1)))
+        console.log(`The absolute value of ${number} is ${(number * -1)}`)
         return absVal
     }
     else if(typeof number !== "number"){
@@ -215,7 +215,7 @@ function absolute(number){
         return "Invalid input."
     }
     else{
-        console.log("The absolute value of " + number + " is " + number)
+        console.log(`The absolute value of ${number} is ${number}`)
         return number
     }
 }

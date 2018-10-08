@@ -11,6 +11,12 @@
     use a default parameter for the middleName, set it to ""
 */
 
+function getFullName(firstName, lastName, middleName = ""){
+    return `${firstName} ${middleName} ${lastName}`
+}
+
+console.log(getFullName("Karan", "Taneja"))
+console.log(getFullName("Karan","Taneja","'I swear I know what I'm doing guys'"))
 
 /*
     PROBLEM 2:
@@ -21,6 +27,12 @@
     Take a param that represents F. By default this should be 32
 */
 
+function fahrenheitToCelsius(fahrenheit = 32){
+    const tempCelcius = (fahrenheit - 32) * (5/9);
+    return `${fahrenheit}°F is ${tempCelcius}°C`
+}
+
+console.log(fahrenheitToCelsius(86))
 
 /*
     PROBLEM 3:
@@ -33,6 +45,24 @@
     should return a number that tells you how old you'll be in numYears
     ageNow and numYears should have default params
 */
+
+function myAge( ageNow = 0, numYears = 5 ) {
+
+    if (ageNow + numYears > 100){
+         console.log("NaN")
+         return NaN
+    }
+    else if (typeof ageNow !== "number" || typeof numYears !== "number"){
+         return "Get your life together"
+    }
+    else {
+        const ageLater = `You are ${ageNow} and will be ${ageNow + numYears} years old in ${numYears} years.`
+        return ageLater
+    }
+}
+
+console.log(myAge(25,10))
+console.log(myAge())
 
 /*
     PROBLEM 4:
@@ -58,14 +88,32 @@
     (red text in console)
     
 */
+function displayErrorOne(){
+    firstNum = 0
+    console.log("\x1b[31m","The first number isn't set!")
+}
 
+function displayErrorTwo(){
+    secondNum = 0
+    console.log("\x1b[31m","The second number isn't set!")
+}
 
+function addTwoNums(numOne = displayErrorOne(), numTwo = displayErrorTwo()){
+    firstNum = numOne
+    secondNum = numTwo
+    sum = firstNum + secondNum
+    return sum
+}
 
-
-
-
-
-
-
-
-
+console.log(`---------------
+Start of 25+12
+---------------`)
+console.log(addTwoNums(25,12))
+console.log(`---------------
+Start of 12
+---------------`)
+console.log(addTwoNums(12))
+console.log(`---------------
+Start of Blank
+---------------`)
+console.log(addTwoNums())
