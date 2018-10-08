@@ -79,6 +79,21 @@ console.log(myAge(29, 6));
 */
 
 
+function aRequired(){
+    //return `PARAMETER A NEEDED`;
+    throw "PARAMETER A NEEDED";
+}
+function bRequired(){
+    //return `PARAMETER B NEEDED`;
+    throw "PARAMETER B NEEDED";
+}
+function addTwoNums(a = aRequired(), b = bRequired()){
+
+    return `Your first parameter was ${a} and your second was ${b}`;
+}
+
+console.log(addTwoNums())
+console.log(addTwoNums("pop", "bubbles"));
 
 
 
