@@ -10,9 +10,8 @@ if invalid input given, return -1
 ******************/
 
 function myAge( ageNow, numYears ) {
-       
+      
 }
-
 
 
 /******************
