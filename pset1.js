@@ -50,8 +50,15 @@ Ensure that both of the inputs are numbers
 ******************/
 
 function subtract(a,b) {
+
+    if ((typeof a != typeof 1) || (typeof b != typeof 2)) 
+     return "Wrong input, Please enter a number";
+     else 
+     return a - b;
     
 }
+
+console.log(subtract('five',5));
 
 /******************
 Area of A Circle
