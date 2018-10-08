@@ -32,6 +32,15 @@ console.log(doMath(1,2,3));
     @example addMiddleNmae('John', 'Mabel', 'Smith'); // John Mabel Smith
 */
 
+function addMiddleName(firstName, middleName, lastName) {
+    if (typeof middleName !== "string" || middleName == ''){
+        return `${firstName} ${lastName}`;
+    }
+    return `${firstName} ${middleName} ${lastName}`;
+}
+
+console.log(addMiddleName('Robert', '', 'Abreu'));
+console.log(addMiddleName('John', 'Mabel', 'Smith'));
 
 /*
     @function defaultPlaceholder
