@@ -26,7 +26,16 @@ console.log(getFullName("Robert", "", "Abreu"));
     Take a param that represents F. By default this should be 32
 */
 
+function fahrenheitToCelsius(f) {
+    if (typeof f !== "number"){
+        return "Please enter a number";
+   } else {
+    let c = (f - 32) * 5/9;
+    return `${f}°F is ${c} °C`;
+   }
+}
 
+console.log(fahrenheitToCelsius(32));
 /*
     PROBLEM 3:
     
