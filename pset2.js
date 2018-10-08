@@ -10,6 +10,13 @@
     @example doMath( 1,2,3 ); // 9
 */
 
+function doMath(num1, num2, num3){
+    num1 += num2;
+    return num3 *= num1;
+}
+
+console.log(doMath(1,2,3));
+
 
 /*
     @function addMiddleName
