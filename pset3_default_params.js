@@ -48,6 +48,11 @@ console.log(fahrenheitToCelsius(32));
     ageNow and numYears should have default params
 */
 
+function myAge(ageNow, numYear){
+    return `In ${numYear} you will be ${ageNow += numYear}`;
+}
+
+console.log(myAge(29, 6));
 /*
     PROBLEM 4:
     Now, let's do something interesint.
