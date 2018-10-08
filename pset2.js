@@ -79,4 +79,9 @@ function defaultPlaceHolder(placeHolder){
     @example duplicate('hello!'); // hello!hello!
 */
 
+function duplicate(dup){
+    return dup += `${dup}`;
+}
 
+console.log(duplicate('hello!'));
+console.log(duplicate('cheesy'));
