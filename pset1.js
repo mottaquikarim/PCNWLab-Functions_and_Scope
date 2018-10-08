@@ -10,9 +10,12 @@ if invalid input given, return -1
 ******************/
 
 function myAge( ageNow, numYears ) {
-       
-}
+   let laterAge =  numYears + ageNow
 
+   return laterAge
+}
+let futureAge = myAge (22, 10)
+console.log (futureAge)
 
 
 /******************
@@ -30,10 +33,14 @@ Concatenating string variables
 ******************/
 
 function myConcatenate( firstStr, secondStr, thirdStr ) {
-    
-}
+    let mySentence = `${firstStr} ${secondStr} ${thirdStr}`
 
-myConcatenate('I', 'am', 'iron man'); // 'I am iron man'
+    return mySentence
+}
+// let newSentence = ( 'I', 'love', 'pizza')
+console.log(myConcatenate('I', 'love', 'pizza'))
+
+//myConcatenate('I', 'am', 'iron man'); // 'I am iron man'
 
 /******************
 Subtract Function
@@ -45,9 +52,9 @@ Ensure that both of the inputs are numbers
 ******************/
 
 function subtract(a,b) {
-    
+  return  ( a-b )
 }
-
+console.log (subtract(20,5))
 /******************
 Area of A Circle
 
@@ -61,9 +68,11 @@ A = π * r2, where is π is Pi and r is the radius squared
 
 
 function areaOfaCircle(radius){
-    
-    
+ 
+
+    return (Math.PI * radius**2)
 }    
+console.log(areaOfaCircle(75))
 
 /******************
 Temperature Converter Fahrenheit to Celsius
@@ -74,6 +83,11 @@ Now store a fahrenheit temperature into a variable.
 
 Convert it to celsius and output "NN°F is NN°C."
 ******************/
+function fahrenheitToCelsius(sumFahrenheit){
+     let newCelsius = ((sumFahrenheit-32) *5/9)
+        return newCelsius
+}
+console.log(fahrenheitToCelsius(90) + " NN°C")
 
 
 /******************
@@ -127,5 +141,4 @@ make sure argument is string
 return the number of characters in the string
 call function 'countChars'
 ******************/
-
 
