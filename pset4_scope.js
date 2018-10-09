@@ -226,7 +226,7 @@
     
     let foo = 1;
     function run( anotherFunctionToCall ) {
-        foo = 9;
+        const foo = 9;
         anotherFunctionToCall();
         console.log(foo)
     }
@@ -243,3 +243,5 @@
 
 
 
+
+   

@@ -10,10 +10,10 @@
     
     use a default parameter for the middleName, set it to ""
 */
-function getFullName(firstName,middleName="",lastName){
-
+function getFullName(firstName,lastName,middleName=""){
+    console.log(`${firstName} ${middleName} ${lastName}`)
 }
-
+getFullName(firstName = "Tarekul",lastName="Islam")
 /*
     PROBLEM 2:
     Temperature Converter Fahrenheit to Celsius
@@ -39,8 +39,9 @@ fahrenheitToCelsius()
     ageNow and numYears should have default params
 */
 function ageYears(ageNow=25,numYears=3){
-
+    console.log(ageNow + numYears)
 }
+ageYears()
 /*
     PROBLEM 4:
     Now, let's do something interesint.
@@ -63,16 +64,23 @@ function ageYears(ageNow=25,numYears=3){
         
     if you are adventerous, have it throw an actual custom javascript error
     (red text in console)
-    
+
 */
-function addTwoNums(a='a is not set!',b='b is not set!'){
-    return a + b;
+
+function addTwoNums(a=error('a'),b=error('b')){
+    console.log(a + b);
 }
 
+function error(param){
+    console.log(`${param} is not set!`);
+    
+}
 
-
-
-
+try {
+    addTwoNums()
+} catch (error) {
+    console.log("something broke",e)
+}
 
 
 
