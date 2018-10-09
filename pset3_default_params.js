@@ -11,6 +11,15 @@
     use a default parameter for the middleName, set it to ""
 */
 
+// function getFullName(firstName, lastName, middleName = ''){
+
+//     return `${firstName} ${lastName} ${middleName}`;
+
+// }
+
+// console.log(getFullName());
+
+
 
 /*
     PROBLEM 2:
@@ -20,6 +29,14 @@
     
     Take a param that represents F. By default this should be 32
 */
+
+// function fahrenheitToCelsius(F = 32){
+
+//     return (F - 32) * 5/9;
+
+// }
+
+// console.log(fahrenheitToCelsius(100));
 
 
 /*
@@ -33,6 +50,10 @@
     should return a number that tells you how old you'll be in numYears
     ageNow and numYears should have default params
 */
+
+
+
+
 
 /*
     PROBLEM 4:
@@ -59,6 +80,8 @@
     
 */
 
+//google how to throw a custom error in js.
+//wrap it inside a function call.
 
 
 
