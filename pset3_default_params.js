@@ -11,10 +11,12 @@
     use a default parameter for the middleName, set it to ""
 */
 
-function  getFullname(firstName = "Mielyn", middleName = "", lastName = "Acosta") {
-  
+function  getFullname(firstName, middleName = "", lastName) {
+       return `${firstName} ${middleName} ${lastName}`; 
+       
 }
 
+console.log(getFullname("Mie","Acosta"));
 /*
     PROBLEM 2:
     Temperature Converter Fahrenheit to Celsius
@@ -23,11 +25,11 @@ function  getFullname(firstName = "Mielyn", middleName = "", lastName = "Acosta"
     
     Take a param that represents F. By default this should be 32
 */
-function (){
-
-    
+function fahrenheitToCelsius(F = 32){
+       const convertFToC = (F - 32) * 5 / 9 ; 
+        return convertFToC;
 }
-
+console.log(fahrenheitToCelsius());
 /*
     PROBLEM 3:
     
