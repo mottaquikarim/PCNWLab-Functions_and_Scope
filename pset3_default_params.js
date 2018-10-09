@@ -15,8 +15,12 @@ function getFullName(firstName, lastName, middleName = ""){
     return `${firstName} ${middleName} ${lastName}`
 }
 
+/*
+
 console.log(getFullName("Karan", "Taneja"))
 console.log(getFullName("Karan","Taneja","'I swear I know what I'm doing guys'"))
+
+*/
 
 /*
     PROBLEM 2:
@@ -32,7 +36,8 @@ function fahrenheitToCelsius(fahrenheit = 32){
     return `${fahrenheit}°F is ${tempCelcius}°C`
 }
 
-console.log(fahrenheitToCelsius(86))
+
+// console.log(fahrenheitToCelsius(86))
 
 /*
     PROBLEM 3:
@@ -60,8 +65,8 @@ function myAge( ageNow = 0, numYears = 5 ) {
     }
 }
 
-console.log(myAge(25,10))
-console.log(myAge())
+// console.log(myAge(25,10))
+// console.log(myAge())
 
 /*
     PROBLEM 4:
@@ -89,12 +94,12 @@ console.log(myAge())
 */
 function displayErrorOne(){
     let firstNum = 0
-    console.log("\x1b[31m","The first number isn't set!")
+    throw "The first number isn't set!"
 }
 
 function displayErrorTwo(){
     let secondNum = 0
-    console.log("\x1b[31m","The second number isn't set!")
+    throw "The second number isn't set!"
 }
 
 function addTwoNums(numOne = displayErrorOne(), numTwo = displayErrorTwo()){
@@ -107,12 +112,17 @@ function addTwoNums(numOne = displayErrorOne(), numTwo = displayErrorTwo()){
 console.log(`---------------
 Start of 25+12
 ---------------`)
+
 console.log(addTwoNums(25,12))
+
 console.log(`---------------
 Start of 12
 ---------------`)
+
 console.log(addTwoNums(12))
+
 console.log(`---------------
 Start of Blank
 ---------------`)
+
 console.log(addTwoNums())
