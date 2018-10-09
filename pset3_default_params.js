@@ -53,10 +53,7 @@ function fahrenheitToCelsius(fahrenheit = 32){
 
 function myAge( ageNow = 0, numYears = 5 ) {
 
-    if (ageNow + numYears > 100){
-         return NaN
-    }
-    else if (typeof ageNow !== "number" || typeof numYears !== "number"){
+    if (typeof ageNow !== "number" || typeof numYears !== "number"){
          return "Get your life together"
     }
     else {
