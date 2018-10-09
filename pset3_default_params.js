@@ -89,21 +89,12 @@ function myAge( ageNow = 0, numYears = 5 ) {
     (red text in console)
     
 */
-function displayErrorOne(){
-    let firstNum = 0
-    throw "The first number isn't set!"
+function displayError(paramName){
+    throw `${paramName} isn't set!`
 }
 
-function displayErrorTwo(){
-    let secondNum = 0
-    throw "The second number isn't set!"
-}
-
-function addTwoNums(numOne = displayErrorOne(), numTwo = displayErrorTwo()){
-    let firstNum = numOne
-    let secondNum = numTwo
-    let sum = firstNum + secondNum
-    return sum
+function addTwoNums(firstNumber = displayError(firstNumber), secondNumber = displayError(secondNumber)){
+    return firstNumber + secondNumber
 }
 
 console.log(`---------------
