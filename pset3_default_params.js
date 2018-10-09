@@ -11,6 +11,9 @@
     use a default parameter for the middleName, set it to ""
 */
 
+function  getFullname(firstName = "Mielyn", middleName = "", lastName = "Acosta") {
+  
+}
 
 /*
     PROBLEM 2:
@@ -20,7 +23,10 @@
     
     Take a param that represents F. By default this should be 32
 */
+function (){
 
+    
+}
 
 /*
     PROBLEM 3:
