@@ -11,7 +11,7 @@
     use a default parameter for the middleName, set it to ""
 */
 
-function  getFullname(firstName, middleName = "", lastName) {
+function  getFullname(firstName, lastName, middleName = "",) {
        return `${firstName} ${middleName} ${lastName}`; 
        
 }
@@ -41,7 +41,13 @@ console.log(fahrenheitToCelsius());
     should return a number that tells you how old you'll be in numYears
     ageNow and numYears should have default params
 */
+ function  myage(ageNow = 30, numYears= 2018){
+      if (numYears === numYears)
+      return `${ageNow} `; 
 
+ }
+ 
+ console.log(myage());
 /*
     PROBLEM 4:
     Now, let's do something interesint.
