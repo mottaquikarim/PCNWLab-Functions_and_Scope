@@ -13,12 +13,12 @@ function fooBar (foo="foo", bar="bar"){
     return `${foo}${bar}`
 }
 
-// Function Expression
-const namedFooBar = function addBar (foo = "foo", bar = "bar"){
+// Anon Function Expression
+const namedFooBar = function (foo = "foo", bar = "bar"){
     return `${foo}${bar}`
 }
 
-// Anonymous Function Expression
+// Named Function Expression
 const anonFooBar = (foo = "foo", bar = "bar") => {
     return `${foo}${bar}`
 }
@@ -38,7 +38,7 @@ function declareRemainder(a =0, b =0, c=0){
     return remainder
 }
 
-const nameRemainder = function findRemainder(a =0, b =0, c=0){
+const nameRemainder = function (a =0, b =0, c=0){
     let remainder = (a + b + c) % 3
     return remainder
 }
@@ -66,7 +66,7 @@ function declareConcat (a, b, c){
     return `${a}-${b}-${c}`
 }
 
-const namedConcat = function makeConcat (a, b, c){
+const nameConcat = function (a, b, c){
     return `${a}-${b}-${c}`
 }
 
@@ -88,7 +88,7 @@ console.log(anonConcat(1, 2, 3))
 function declareRandomNum () {
     return Math.floor((Math.random() * 10));
 }
-const namedRandomNum = function genRandomNum (){
+const namedRandomNum = function (){
     return Math.floor((Math.random() * 10));
 }
 const anonRandomNum = () => {
