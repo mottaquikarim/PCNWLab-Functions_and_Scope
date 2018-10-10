@@ -42,7 +42,25 @@ console.log(remainderOfSum(1, 2, 3))
 */
 
 // Function Declaration:
+function takesThreeParams(a, b ,c) {
+    return `${a}-${b}-${c}`;
+}
 
+console.log(takesThreeParams('one', 'two', 'three'))
+
+// Function Expression:
+const takesThreeParams2 = function(a, b, c) {
+    return `${a}-${b}-${c}`;
+}
+
+console.log(takesThreeParams2('one', 'two', 'three'))
+
+// Fat Arrow Expression:
+const takesThreeParams3 = (a, b , c) => {
+    return `${a}-${b}-${c}`;
+}
+
+console.log(takesThreeParams3('one', 'two', 'three'))
 
 /*
     PROBLEM 3:
@@ -50,3 +68,11 @@ console.log(remainderOfSum(1, 2, 3))
         return a random number between 0 and 10 
         (doesn't have to be a whole number tho)
 */
+// Function Declaration:
+
+
+// Function Expression:
+
+
+// Fat Arrow Expression:
+
