@@ -11,6 +11,11 @@
     use a default parameter for the middleName, set it to ""
 */
 
+function getFullName(firstName, lastName, middleName = ""){
+    return `${firstName} ${middleName} ${lastName}`
+}
+
+console.log(getFullName("Hello", "World"))
 
 /*
     PROBLEM 2:
@@ -21,6 +26,12 @@
     Take a param that represents F. By default this should be 32
 */
 
+function fahrenheitToCelsius(F = 32){
+    
+    return (F - 32) * 5/9
+}
+
+console.log(fahrenheitToCelsius())
 
 /*
     PROBLEM 3:
@@ -34,6 +45,12 @@
     ageNow and numYears should have default params
 */
 
+function age(numYears, ageNow = 23){
+    
+    return ageNow + numYears
+}
+
+console.log(age(5))
 /*
     PROBLEM 4:
     Now, let's do something interesint.
@@ -59,13 +76,13 @@
     
 */
 
+// function missingParameter(paramName) {
+//  throw new Error (`${paramName} is not set`)
+// }
 
+// function addTwoNums(a = missingParameter("a"), b = missingParameter("b")){
 
+//     return a +b
+// }
 
-
-
-
-
-
-
-
+// console.log(addTwoNums(1, 2))

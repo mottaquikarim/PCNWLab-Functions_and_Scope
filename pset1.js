@@ -193,3 +193,18 @@ function nameCount(name){
 
 }
 console.log(nameCount("Nadav"))
+
+
+
+
+let foo = 1;
+    function run() {
+        foo = 2;
+        function _inner() {
+            console.log(foo); // what is foo? why?
+        }
+        _inner();
+    }
+    
+    run();
+    console.log(foo);
