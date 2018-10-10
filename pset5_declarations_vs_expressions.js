@@ -69,10 +69,22 @@ console.log(takesThreeParams3('one', 'two', 'three'))
         (doesn't have to be a whole number tho)
 */
 // Function Declaration:
+function randomNumber() {
+    return Math.random() * 10;
+}
 
+console.log(randomNumber());
 
 // Function Expression:
+const randomNumber2 = function() {
+    return Math.random() * 10;
+}
 
+console.log(randomNumber2());
 
 // Fat Arrow Expression:
+const randomNumber3 = () => {
+    return Math.random() * 10;
+}
 
+console.log(randomNumber3());
