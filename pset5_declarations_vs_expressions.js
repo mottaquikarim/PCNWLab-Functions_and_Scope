@@ -71,17 +71,17 @@ console.log(addThreeStrings3('one', 'two', 'three'));
 
 // FUNCTION DECLARATION
 function randomNum() {
-    return Math.random(0,10);
+    
+    return Math.floor(Math.random() * 10);
 }
 console.log(randomNum());
 
 // FUNCTION EXPRESSION
 const randomNum2 = function() {
-    return Math.random(0,10);
+    return Math.floor(Math.random() * 10);
 }
 console.log(randomNum2());
 // FAT ARROW FUNCTION
-const randomNum3 = () => {
-    return Math.random(0,10);
-}
+const randomNum3 = () => Math.floor(Math.random() * 10);
+
 console.log(randomNum3());
