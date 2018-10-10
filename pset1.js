@@ -150,3 +150,26 @@ function countCharacter(string){
 }
   
 console.log(countCharacter("Chuyun"));
+
+const foo = 1;
+    function run() {
+        const foo = 2;
+        console.log(foo); // what is foo? why?
+    }
+    
+    console.log(foo); // what is foo? why?
+    run();
+    console.log(foo); // what is foo? why?
+console.log('_______________')
+
+
+function run() {
+    const foo = 1;
+    function _inner() {
+        console.log(foo); // what is foo? why?
+    }
+    _inner();
+}
+
+run();
+console.log(foo); // what is foo? why?)
