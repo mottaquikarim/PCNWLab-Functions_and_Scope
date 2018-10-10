@@ -61,7 +61,7 @@ function blah(a=1,b=2,c=3)
 {
     return (a+ "-"+ b+ "-" + c);
 }
-console.log(blah('hey','you','wtv'));8/
+console.log(blah('hey','you','wtv'));*/
 
 /*
     PROBLEM 3:
@@ -85,9 +85,19 @@ const blah =  (a,b,c) =>
 }
 console.log(blah())*/
 
-/* function declaration
-function blah()
+/*function declaration
+function randomNumber()
 {
-    return (a+ "-"+ b+ "-" + c);
+    return Math.random()*10;
 }
-console.log(blah());*/
+console.log(randomNumber());*/
+
+/*function expression
+const randomNumber2= function()
+{
+    return Math.random()*10;
+}
+console.log(randomNumber());
+
+/*fatarrow
+const randomNumber3=()=>Math.random()*10;*/
