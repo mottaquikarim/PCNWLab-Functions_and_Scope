@@ -37,6 +37,20 @@ console.log(remainderOfSum3(3,4,7));
         then function will return 'one-two-three'
 */
 
+function returnWithDash(a,b,c) {
+    return a + "-" + b + "-" + c;
+}
+
+const returnWithDash2 = function(a,b,c) {
+    return a + "-" + b +  "-" + c;
+}
+
+const returnWithDash3 = (a,b,c) => {
+    return a + "-" + b + "-" + c;
+}
+
+console.log(returnWithDash3("Abdel","wahab","Oufkir"));
+
 /*
     PROBLEM 3:
         Write a function that takes NO params
