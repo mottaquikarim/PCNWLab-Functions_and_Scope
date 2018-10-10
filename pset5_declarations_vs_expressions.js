@@ -20,7 +20,7 @@ function prob1_decl(a,b,c){
 console.log(prob1_decl(1,2,4));
 
 
-const prob1_named = function(a,b,c){
+const prob1_named = function prob1_named(a,b,c){
     return (a + b + c) % 3;
 }
 console.log(prob1_named(1,2,4));
@@ -47,7 +47,7 @@ function prob2_decl(a,b,c){
 console.log(prob2_decl('one', 'two', 'three'));
 
 
-const prob2_named = function(a,b,c){
+const prob2_named = function prob2_named(a,b,c){
     return (`${a}-${b}-${c}`)
 }
 console.log(prob2_named('one', 'two', 'three'));
@@ -72,7 +72,7 @@ function prob3_decl(){
 console.log(prob3_decl());
 
 
-const prob3_named = function(){
+const prob3_named = function prob3_named(){
     randomNum = Math.random();
     return randomNum * 10;
 }
