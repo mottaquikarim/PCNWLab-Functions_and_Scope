@@ -95,7 +95,7 @@
 
 // function noParamsFunct(){
 
-//     return Math.random();
+//     return Math.random() * 10;
 
 // }
 
@@ -105,7 +105,7 @@
 
 // const noParamsFunct = function(){
 
-//     return Math.random();
+//     return Math.random() * 10;
 
 // }
 
@@ -113,10 +113,10 @@
 
 // fatAFunction
 
-// const noParamsFunct = () => {
+const noParamsFunct = () => {
 
-//     return Math.floor(Math.random());
+    return Math.floor(Math.random() * 10);
 
-// }
+}
 
-// console.log(noParamsFunct());
+console.log(noParamsFunct());
