@@ -11,6 +11,10 @@
     use a default parameter for the middleName, set it to ""
 */
 
+function getFullName (firstName, lastName, middleName = ""){
+    return `Name entered: ${firstName} ${middleName} ${lastName}` 
+}
+console.log(getFullName("Chyun","Huang"));
 
 /*
     PROBLEM 2:
@@ -21,6 +25,12 @@
     Take a param that represents F. By default this should be 32
 */
 
+function fahrenheitToCelsius (F= 32){
+    let celsius;
+    celsius = (F -32) * 5/9;
+    return celsius;
+}
+console.log(fahrenheitToCelsius());
 
 /*
     PROBLEM 3:
@@ -33,6 +43,11 @@
     should return a number that tells you how old you'll be in numYears
     ageNow and numYears should have default params
 */
+function calMyAge (ageNow=0, numYears=0){
+    let myAge;
+    return myAge = ageNow + numYears
+}
+console.log(calMyAge());
 
 /*
     PROBLEM 4:
@@ -59,8 +74,19 @@
     
 */
 
+/*function missingParam(paramName){
+  console.log(`you're missing ${paramName}`);
+  return 0 //setting it a defult number
+}
+*/
+function missingParam(paramName){
+    throw new Error (`you're missing ${paramName}`);
+  }
 
-
+function addTwoNums (a = missingParam('a'), b = missingParam('b')){
+    return a + b;
+}
+console.log(addTwoNums(5));
 
 
 
