@@ -1,7 +1,7 @@
 /*
     FOR EACH PROBLEM BELOW, IMPLEMENT THREE WAYS
     1. AS A FUNCTION DECLARATION
-    2. AS AN ANONYMOUS FUNCTION EXPRESSION
+    2. AS AN ANONYMOUS FUNCTION EXPRESSION //FAT ARROW
     3. AS A NAMED FUNCTION EXPRESSION
     
     RUN BOTH TO ENSURE THEY WORK PROPERLY
@@ -14,6 +14,28 @@
         return the remainder of the sum of a,b,c divided by 3
 */ 
 
+function remainder(a, b ,c) {
+
+     return (a + b + c) % 3;
+};
+
+
+const remainderTwo = function (a, b, c) {
+    
+    return (a + b + c) % 3;
+};
+
+const remainderThree = (a, b, c) => {
+    
+    return (a + b + c) % 3;
+};
+
+// (function(a, b, c) 
+// {return (a + b + c) % 3;});
+
+console.log(remainder(1,2,3));
+console.log(remainderTwo(1,2,3));
+console.log(); 
 
 /*
     PROBLEM 2:
@@ -24,6 +46,17 @@
         then function will return 'one-two-three'
 */
 
+function dashAdder(a ,b ,c) {
+    return `${a}-${b}-${c}`;
+};
+
+const dashAdder1 = function (a ,b ,c) {
+    return `${a}-${b}-${c}`;
+};
+
+const dashAdder2 = (a ,b ,c) => {
+    return `${a}-${b}-${c}`;
+};
 /*
     PROBLEM 3:
         Write a function that takes NO params
