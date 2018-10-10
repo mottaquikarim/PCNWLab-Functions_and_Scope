@@ -57,6 +57,7 @@ const dashAdder1 = function (a ,b ,c) {
 const dashAdder2 = (a ,b ,c) => {
     return `${a}-${b}-${c}`;
 };
+
 /*
     PROBLEM 3:
         Write a function that takes NO params
