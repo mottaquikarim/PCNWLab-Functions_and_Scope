@@ -67,20 +67,20 @@ console.log(prob2_fat('one', 'two', 'three'));
 
 function prob3_decl(){
     randomNum = Math.random();
-    return randomNum;
+    return randomNum * 10;
 }
 console.log(prob3_decl());
 
 
 const prob3_named = function(){
     randomNum = Math.random();
-    return randomNum;
+    return randomNum * 10;
 }
 console.log(prob3_named());
 
 
 const prob3_fat = () => {
     randomNum = Math.random();
-    return randomNum;
+    return randomNum * 10;
 }
 console.log(prob3_fat());
