@@ -10,12 +10,18 @@
     
     use a default parameter for the middleName, set it to ""
 */
-function getFullName(firstName, middleName, lastName){
+// GLOBAL
+let x;
+function getFullName(firstName, lastName, middleName){
 
-    return `${firstName} ${middleName} ${lastName}`;
+    return `${firstName} ${middleName} ${lastName}`; ` `
 }
 
-console.log(getFullName("Robert", "", "Abreu"));
+getFullName("Robert", "Abreu", "Jose")
+
+
+
+
 
 /*
     PROBLEM 2:
@@ -79,25 +85,52 @@ console.log(myAge(29, 6));
 */
 
 
-function aRequired(){
-    //return `PARAMETER A NEEDED`;
-    throw "PARAMETER A NEEDED";
-}
-function bRequired(){
-    //return `PARAMETER B NEEDED`;
-    throw "PARAMETER B NEEDED";
-}
-function addTwoNums(a = aRequired(), b = bRequired()){
 
+function required(x){
+    console.log( `PARAMETER ${x} NEEDED`);
+    return 0;
+}
+
+
+function addTwoNums(a = required('a'), b = required('b')){
+
+//function addTwoNums (a = '', b = '') {
+    return a + b;
     return `Your first parameter was ${a} and your second was ${b}`;
 }
 
-console.log(addTwoNums())
-console.log(addTwoNums("pop", "bubbles"));
+
+ console.log()
+/*
+function addTwoNums (a = "a is not set", b = " b is not set"){
+    return a + b;
+}
+*/
+//console.log(addTwoNums(1));
+//console.log(addTwoNums(1,2));
+//console.log(addTwoNums('Robert'));
+console.log(addTwoNums(1));
+//console.log(addTwoNums());
 
 
+/*
+function sum (a = num1(), b =num2()) {
+    return a + b;
+}
+
+function num1() {
+    return `A not set`
+}
+
+function num2() {
+    return `B not set`
+}
+//console.log(addTwoNums("pop", "bubbles"));
 
 
+console.log (sum());
+
+*/
 
 
 
