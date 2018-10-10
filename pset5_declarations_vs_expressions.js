@@ -14,24 +14,28 @@
         return the remainder of the sum of a,b,c divided by 3
 */ 
 //function declaration 
-/*function sumOfThree(a, b, c ){
-   return (a + b + c ) / 3;  
+function sumOfThree1(a, b, c ){
+   return (a + b + c ) % 3;  
 
 }
-console.log(Math.floor(sumOfThree(4,5,6));
+console.log(sumOfThree1(4,5,6));
 
 //function expression 
-const sumOfThree = function(a, b, c){
-    return (a + b + c ) / 3;  
+const sumOfThree2 = function(a, b, c){
+    return (a + b + c ) % 3;  
 
 }
-console.log(Math.Floor(sumOfThree(4,5,6)); */
+console.log(sumOfThree2(4,5,6)); 
 // function fat arrow 
 
-const sumOfThree = (a, b, c) => {
-    return (a + b + c ) / 3; 
+const sumOfThree3 = (a, b, c) => {
+    return (a + b + c ) % 3; 
 }
-console.log(Math.floor(sumOfThree(4,5,7)));
+console.log(sumOfThree3(4,5,7));
+
+//function fat arrow shorter
+const sumOfThree4 = (a, b, c) => (a + b + c ) % 3;
+console.log(sumOfThree4(4,5,7));
 /*
     PROBLEM 2:
         Write a function that takes THREE params: a,b,c
