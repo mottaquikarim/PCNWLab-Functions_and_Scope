@@ -64,3 +64,17 @@ const dashAdder2 = (a ,b ,c) => {
         return a random number between 0 and 10 
         (doesn't have to be a whole number tho)
 */
+
+function noParams() {
+    return Math.random()*10;
+};
+
+const noParams2 = function() {
+    return Math.random()*10;
+};
+
+const noParams = () => {
+    return Math.random()*10;
+};
+
+console.log(noParams());
