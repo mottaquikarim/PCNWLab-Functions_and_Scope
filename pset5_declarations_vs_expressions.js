@@ -57,3 +57,17 @@ console.log(returnWithDash3("Abdel","wahab","Oufkir"));
         return a random number between 0 and 10 
         (doesn't have to be a whole number tho)
 */
+
+function returnRandomNum () {
+    return Math.floor(Math.random()*11);
+}
+
+const returnRandomNum2 = function() {
+    return Math.floor(Math.random()*11);
+}
+
+const returnRandomNum3 = () => {
+    return Math.floor(Math.random()*11);
+}
+
+console.log(returnRandomNum3());
