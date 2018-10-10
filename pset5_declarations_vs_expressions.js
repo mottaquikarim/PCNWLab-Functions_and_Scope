@@ -14,6 +14,21 @@
         return the remainder of the sum of a,b,c divided by 3
 */ 
 
+function sum(a,b,c) {
+    return (a + b + c) % 3 
+    
+}
+sum(3,2,3)
+
+const sum = function(a,b,c) {
+    return (a + b + c) % 3 
+}
+sum(3,2,3)
+
+const sum = (a,b,c) => {
+    return (a + b + c) % 3 
+}
+sum(3,2,3)
 
 /*
     PROBLEM 2:
@@ -24,9 +39,41 @@
         then function will return 'one-two-three'
 */
 
+function string(a = 'one-',b = 'two-',c = 'three') {
+    return a + b + c
+
+}
+string()
+
+const string = function(a = 'one-',b = 'two-',c = 'three') {
+    return a + b + c
+  }
+  string()
+
+  const string =(a = 'one-',b = 'two-',c = 'three') => {
+    return a + b + c
+  }
+  string()
+  
+  
 /*
     PROBLEM 3:
         Write a function that takes NO params
         return a random number between 0 and 10 
         (doesn't have to be a whole number tho)
 */
+
+function random() {
+    return Math.random() * 11
+  }
+  random()
+
+  const random = function() {
+    return Math.random() * 11
+  }
+  random()
+
+  const random = () => {
+    return Math.random() * 11
+  }
+  random()
