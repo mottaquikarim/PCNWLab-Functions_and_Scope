@@ -13,6 +13,7 @@
         Write a function that takes THREE params: a, b, c
         return the remainder of the sum of a,b,c divided by 3
 */ 
+/*
 //DECLARATION
 function remainder(a, b, c) {
     let sum = a + b + c;
@@ -42,6 +43,21 @@ console.log(remainder(1, 2, 3));
         so, if a = 'one', b = 'two', c='three'
         then function will return 'one-two-three'
 */
+//DECLARTION
+    function string(a, b, c) {
+        return  `${a}-${b}-${c}`;
+    }
+    console.log(string("one", "two", "three"));
+EXPRESSION
+    const string = function(a, b, c) {
+        return  `${a}-${b}-${c}`;
+    }
+    console.log(string("one", "two", "three"));
+//ARROW
+    const string = (a, b, c) => {
+        return  `${a}-${b}-${c}`;
+    }
+    console.log(string("one", "two", "three"));
 
 /*
     PROBLEM 3:
