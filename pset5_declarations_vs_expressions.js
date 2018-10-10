@@ -14,6 +14,23 @@
         return the remainder of the sum of a,b,c divided by 3
 */ 
 
+// Function Declaration:
+function remOfSum(a, b, c) {
+    return ((a+b+c) % 3);
+}
+console.log(remOfSum(1, 2, 3));
+
+// Function Expression:
+const sum = function(a, b, c) {
+    return ((a + b + c) % 3);
+}
+console.log(sum(1,2,3));
+
+// Fat Arrow Expression:
+const remainderOfSum = (a, b, c) => {
+    return ((a + b + c) %3);
+}
+console.log(remainderOfSum(1, 2, 3))
 
 /*
     PROBLEM 2:
@@ -23,6 +40,9 @@
         so, if a = 'one', b = 'two', c='three'
         then function will return 'one-two-three'
 */
+
+// Function Declaration:
+
 
 /*
     PROBLEM 3:
