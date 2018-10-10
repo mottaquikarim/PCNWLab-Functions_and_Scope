@@ -13,7 +13,26 @@
         Write a function that takes THREE params: a, b, c
         return the remainder of the sum of a,b,c divided by 3
 */ 
+//DECLARATION
+function remainder(a, b, c) {
+    let sum = a + b + c;
+    return sum % 3;
+}
+console.log(remainder(1, 2, 3));
 
+//EXPRESSION
+const remainder = function(a, b, c) {
+    let sum = a + b + c;
+    return sum % 3;
+}
+console.log(remainder(1, 2, 3));
+
+//ARROW
+const remainder = (a, b, c) => {
+    let sum = a + b + c;
+    return sum % 3;
+}
+console.log(remainder(1, 2, 3));
 
 /*
     PROBLEM 2:
