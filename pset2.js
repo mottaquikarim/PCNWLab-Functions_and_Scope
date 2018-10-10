@@ -9,7 +9,12 @@
                  returns that computed value
     @example doMath( 1,2,3 ); // 9
 */
+function doMath(firstNum, secondNum, thirdNum){
 
+    const arith = (firstNum + secondNum) * thirdNum
+    return arith
+}
+console.log(doMath(1,2,3))
 
 /*
     @function addMiddleName
@@ -24,6 +29,20 @@
                  return firstname and last name
     @example addMiddleNmae('John', 'Mabel', 'Smith'); // John Mabel Smith
 */
+function addMiddleName(firstName, middleName, lastName){
+    let fullName
+    if(middleName.length === 0){ 
+     fullName = `${firstName} ${lastName}`
+    } else {
+     fullName = `${firstName} ${middleName} ${lastName}`
+    }
+    return fullName
+}
+
+console.log(addMiddleName("daniel","eduardo" , "ashley"))
+
+
+
 
 
 /*
@@ -35,6 +54,23 @@
     @example defaultPlaceHolder('Hello Wrold!'); 
              // <input type="text" placeholder="Hello Wrold!" />
 */
+function defaultPlaceholder(placeHolder = "Hello World"){
+
+return `<input type="text" placeholder= ${placeHolder} />`
+
+}
+console.log(defaultPlaceholder("Goodbye World"))
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*
@@ -47,6 +83,13 @@
     @example addClass('foo', 'bar', 'stuff');
              // <div class="foo bar">stuff</div>
 */
+function addClasses(class1, class2, content){
+        
+    return `<div class ="${class1} ${class2}">${content}</div>`
+
+
+        }
+
 
 
 /*
@@ -59,3 +102,12 @@
 */
 
 
+function duplicate(string = "start"){
+
+const duplicates = `${string}${string}`
+
+return duplicates
+
+
+}
+console.log(duplicate("hello"))

@@ -202,7 +202,17 @@
     });
     console.log(foo); // what is foo? why?
 */
-
+let foo = 1;
+    function run( anotherFunctionToCall ) {
+        const foo = 9;
+        anotherFunctionToCall();
+        console.log(foo)
+    }
+    
+    run(function() {
+        foo = 2;
+    });
+    console.log(foo); // what is foo? why?
 /*
     PROBLEM 12:
     
