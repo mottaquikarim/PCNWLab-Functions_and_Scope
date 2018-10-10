@@ -162,3 +162,74 @@ function countChars(str) {
 }
 
 console.log (countChars('test'),4)
+
+
+const foo = 1;
+function run() {
+    // const foo = 2;
+    console.log(foo)
+}
+
+run();
+console.log(foo); // what is foo? why?
+
+let foo = 1;
+function run() {
+    foo = 2;
+}
+
+console.log(foo); // what is foo? why?
+run();
+console.log(foo); // what is foo? why?
+
+
+const foo = 1;
+function run() {
+    const foo = 2;
+    console.log(foo); // what is foo? why?
+}
+
+console.log(foo); // what is foo? why?
+run();
+console.log(foo); // what is foo? why?
+
+const foo = 1;
+function run() {
+    const foo = 2;
+    function _inner() {
+        console.log(foo); // what is foo? why?
+    }
+    _inner();
+}
+
+run();
+console.log(foo); // what is foo? why?
+
+
+let foo = 1;
+function run() {
+    foo = 2;
+    function _inner() {
+        console.log(foo); // what is foo? why?
+    }
+    _inner();
+}
+
+run();
+console.log(foo); // what is foo? why?
+*/
+
+const foo = 1;
+function run() {
+    const foo = 2;
+    function _inner() {
+        const foo = 3;
+        console.log(foo); // what is foo? why?
+    }
+    _inner();
+}
+
+run();
+console.log(foo); // what is foo? why?
+
+

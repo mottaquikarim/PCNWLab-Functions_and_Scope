@@ -14,6 +14,13 @@
         return the remainder of the sum of a,b,c divided by 3
 */ 
 
+const sum = function (a, b, c) {
+    return (a + b + c) % 3;
+}
+
+console.log(sum(1,2,3));
+
+
 
 /*
     PROBLEM 2:
@@ -23,6 +30,11 @@
         so, if a = 'one', b = 'two', c='three'
         then function will return 'one-two-three'
 */
+function dash (a = 'one', b = 'two', c ='three') {
+    return `${a}-${b}-${c}`;
+}
+
+console.log (dash());
 
 /*
     PROBLEM 3:
