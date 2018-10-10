@@ -10,10 +10,19 @@ if invalid input given, return -1
 ******************/
 
 function myAge( ageNow, numYears ) {
-       
+    howOld = (ageNow + numYears);
+    if ((howOld) > 100) {
+        return NaN
+    } else if (typeof (howOld) != typeof(1)) {
+        return -1
+    } else {
+        return howOld
+    }      
 }
 
-
+console.log(myAge(28, 5))
+console.log(myAge(50, 51))
+console.log(myAge("text", 2))
 
 /******************
 Concatenate Strings
@@ -30,10 +39,11 @@ Concatenating string variables
 ******************/
 
 function myConcatenate( firstStr, secondStr, thirdStr ) {
-    
+    let mySentence = (firstStr + " " + secondStr + " " + thirdStr);
+    return mySentence;
 }
 
-myConcatenate('I', 'am', 'iron man'); // 'I am iron man'
+console.log(myConcatenate('I', 'am', 'iron man')); // 'I am iron man'
 
 /******************
 Subtract Function
@@ -45,8 +55,14 @@ Ensure that both of the inputs are numbers
 ******************/
 
 function subtract(a,b) {
-    
+    if (typeof(a) === "number" && typeof(b) === "number") {
+        return (a - b);
+    }
 }
+
+console.log(typeof(typeof(1)))
+console.log(subtract(50,45))
+console.log(subtract(45,50))
 
 /******************
 Area of A Circle
@@ -61,9 +77,11 @@ A = π * r2, where is π is Pi and r is the radius squared
 
 
 function areaOfaCircle(radius){
-    
-    
+    let areaCircle = (Math.PI * (radius ** 2));
+    return areaCircle;
 }    
+
+console.log(areaOfaCircle(5));
 
 /******************
 Temperature Converter Fahrenheit to Celsius
@@ -75,6 +93,11 @@ Now store a fahrenheit temperature into a variable.
 Convert it to celsius and output "NN°F is NN°C."
 ******************/
 
+function fahrenheitToCelsius(fahrenheitTemp) {
+    let celsiusTemp = ((fahrenheitTemp - 32) / (9/5));
+    return (`${fahrenheitTemp}°F is ${celsiusTemp}°C.`);
+}
+console.log(fahrenheitToCelsius(65));
 
 /******************
 Temperature Converter Celsius to Fahrenheit
@@ -86,6 +109,11 @@ Store a celsius temperature into a variable.
 Convert it to fahrenheit and output "NN°C is NN°F".
 ******************/
 
+function celsiusToFahrenheit(celsiusTemp) {
+    let fahrenheitTemp = ((celsiusTemp * (9/5)) + 32);
+    return (`${celsiusTemp}°C is ${fahrenheitTemp}°F.`);
+}
+console.log(celsiusToFahrenheit(18.33));
 
 /******************
 Is it the weekend?
@@ -116,6 +144,17 @@ The absolute value of a negative number is the positive version of that same num
 and the absolute value of a positive number (or zero) is that number itself.
 ******************/
 
+function absolute(aNumber){
+    if (aNumber >= 0) {
+        return aNumber;
+    } else {
+        return (aNumber * -1);
+    }
+}
+
+console.log(absolute(321));
+console.log(absolute(-321));
+console.log(absolute(0));
 
 /******************
 Create a function that counts the number of characters in your name
@@ -128,4 +167,15 @@ return the number of characters in the string
 call function 'countChars'
 ******************/
 
+function countChars(nameString) {
+    // return toString(nameString)
+    if (typeof(nameString) != "string") {
+        return ((String(nameString)).length);
+    } else {
+        return ((nameString).length);
+    }
+}
 
+console.log(countChars("Vincent"));
+console.log(countChars(123456));
+console.log(typeof(String))

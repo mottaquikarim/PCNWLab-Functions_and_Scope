@@ -14,6 +14,22 @@
         return the remainder of the sum of a,b,c divided by 3
 */ 
 
+function prob1_decl(a,b,c){
+    return (a + b + c) % 3;
+}
+console.log(prob1_decl(1,2,4));
+
+
+const prob1_named = function prob1_named(a,b,c){
+    return (a + b + c) % 3;
+}
+console.log(prob1_named(1,2,4));
+
+
+const prob1_fat = (a,b,c) => {
+    return (a + b + c) % 3;
+}
+console.log(prob1_fat(1,2,4));
 
 /*
     PROBLEM 2:
@@ -24,9 +40,47 @@
         then function will return 'one-two-three'
 */
 
+function prob2_decl(a,b,c){
+//  return (a+"-"+b+"-"+c);
+    return (`${a}-${b}-${c}`)
+}
+console.log(prob2_decl('one', 'two', 'three'));
+
+
+const prob2_named = function prob2_named(a,b,c){
+    return (`${a}-${b}-${c}`)
+}
+console.log(prob2_named('one', 'two', 'three'));
+
+
+const prob2_fat = (a,b,c) =>{
+    return (`${a}-${b}-${c}`)
+}
+console.log(prob2_fat('one', 'two', 'three'));
+
 /*
     PROBLEM 3:
         Write a function that takes NO params
         return a random number between 0 and 10 
         (doesn't have to be a whole number tho)
 */
+
+function prob3_decl(){
+    randomNum = Math.random();
+    return randomNum * 10;
+}
+console.log(prob3_decl());
+
+
+const prob3_named = function prob3_named(){
+    randomNum = Math.random();
+    return randomNum * 10;
+}
+console.log(prob3_named());
+
+
+const prob3_fat = () => {
+    randomNum = Math.random();
+    return randomNum * 10;
+}
+console.log(prob3_fat());
