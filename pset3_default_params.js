@@ -72,14 +72,24 @@ console.log(fahrenheitToCelsius());
     (red text in console)
     
 */
+function addTwoNums() {
+    throw new Error('A is not set');
+    }
+    function foo(a = 1 , b = 2) {
+    return a + b ;
+    
+    }
+    addTwoNums(1);
 
-
-
-
-
-
-
-
-
-
+// 
+//function missingParameter(paramName){ 
+//    console.log (`you are missing ${paramName}`); 
+// }
+  
+// function addTwoNums(a = missingParameter ('a'), b = missingParameter('b')){
+  //   return a + b ; 
+// }
+ 
+// const value = addTwoNums(1);
+// console.log(value);
 
