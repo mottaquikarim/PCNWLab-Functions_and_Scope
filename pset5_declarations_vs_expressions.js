@@ -14,6 +14,19 @@
         return the remainder of the sum of a,b,c divided by 3
 */ 
 
+function remainderOfSum (a,b,c) {
+    return (a+b+c)%3; 
+}
+
+const remainderOfSum2 = function(a,b,c) {
+    return (a+b+c)%3;
+}
+
+const remainderOfSum3 = (a,b,c) => {
+    return (a+b+c)%3;
+}
+
+console.log(remainderOfSum3(3,4,7));
 
 /*
     PROBLEM 2:
