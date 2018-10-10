@@ -73,7 +73,7 @@ const noParams2 = function() {
     return Math.random()*10;
 };
 
-const noParams = () => {
+const noParams3 = () => {
     return Math.random()*10;
 };
 
