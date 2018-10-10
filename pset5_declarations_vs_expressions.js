@@ -13,7 +13,7 @@
         Write a function that takes THREE params: a, b, c
         return the remainder of the sum of a,b,c divided by 3
 */ 
-/*
+
 //DECLARATION
 function remainder(a, b, c) {
     let sum = a + b + c;
@@ -41,10 +41,10 @@ console.log(remainder(1, 2, 3));
         return a string that addes a dash in between them.
         
         so, if a = 'one', b = 'two', c='three'
-        then function will return 'one-two-three'
-*/
+        then function will return 'one-two-three'*/
+
 //DECLARTION 
-   /* function string(a, b, c) {
+   function string(a, b, c) {
         return  `${a}-${b}-${c}`;
     }
     console.log(string("one", "two", "three"));
@@ -59,8 +59,8 @@ EXPRESSION
     }
     console.log(string("one", "two", "three"));
 
-/*
-    PROBLEM 3:
+
+   /* PROBLEM 3:
         Write a function that takes NO params
         return a random number between 0 and 10 
         (doesn't have to be a whole number tho)
