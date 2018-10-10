@@ -43,8 +43,8 @@ console.log(remainder(1, 2, 3));
         so, if a = 'one', b = 'two', c='three'
         then function will return 'one-two-three'
 */
-//DECLARTION
-    function string(a, b, c) {
+//DECLARTION 
+   /* function string(a, b, c) {
         return  `${a}-${b}-${c}`;
     }
     console.log(string("one", "two", "three"));
@@ -65,3 +65,18 @@ EXPRESSION
         return a random number between 0 and 10 
         (doesn't have to be a whole number tho)
 */
+//DECLARTION
+    function randomNum() {
+        return Math.random();
+    }
+    console.log(randomNum());
+//EXPRESSION 
+   /const randomNum = function() {
+        return  Math.random();
+    }
+    console.log(randomNum());
+//ARROW
+    const randomNum = () => {
+        return  Math.random();
+    }
+    console.log(randomNum());
