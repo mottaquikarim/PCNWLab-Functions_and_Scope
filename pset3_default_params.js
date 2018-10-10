@@ -10,7 +10,13 @@
     
     use a default parameter for the middleName, set it to ""
 */
+function getFullName(firstName = "", lastName = "",middleName = "N/A") {
+    let fullName = firstName + middleName + lastName;
+    let result = `Your firstname is ${firstName},  Middle Name is ${middleName} , your last name is ${lastName}`;
+    return result;
 
+}
+console.log (getFullName("Jorge","Billini"));
 
 /*
     PROBLEM 2:
@@ -20,6 +26,13 @@
     
     Take a param that represents F. By default this should be 32
 */
+function fahrenheitToCelsius(F = 32) {
+    C = (F - 32) * 5/9;
+    console.log(C);
+    return C;
+
+}
+fahrenheitToCelsius(100)
 
 
 /*
@@ -33,7 +46,10 @@
     should return a number that tells you how old you'll be in numYears
     ageNow and numYears should have default params
 */
-
+function newAge(ageNow = 0, numYears = 0) {
+    return ageNow + numYears;
+}
+console.log(newAge(22));
 /*
     PROBLEM 4:
     Now, let's do something interesint.
@@ -58,8 +74,15 @@
     (red text in console)
     
 */
+function parameterA(paramName) {
+    throw new Error(`youre missing ${paramName} fam`);
+    return 0;
 
-
+}
+function addSomeNumbers( a =  parameterA('a'), b = parameterA('b')) {
+    return a+b;
+}
+console.log(addSomeNumbers());
 
 
 
