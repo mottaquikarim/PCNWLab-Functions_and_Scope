@@ -8,20 +8,18 @@ should return a number that tells you how old you'll be in numYears
 if that number is > 100, should return NaN
 if invalid input given, return -1
 ******************/
+function myAge(ageNow, numYears) {
+    if ((ageNow + numYears) > 100) {
+        return NaN
+    } else if ((typeof ageNow) !== "number" || (typeof numYears) !== "number") {
+        return -1
+    } else {
+        return ageNow + numYears
+    }
 
-function myAge( ageNow, numYears ) {
-  if ((ageNow+numYears)>100){
-      return NaN
-  }
-  else if ((typeof ageNow) !== "number" || (typeof numYears) !== "number" ){
-      return -1
-  } else {
-    return ageNow+numYears 
-  }
-        
 }
 
-console.log(myAge(22,10))
+console.log(myAge(22, 10))
 
 /******************
 Concatenate Strings
@@ -94,11 +92,12 @@ Now store a fahrenheit temperature into a variable.
 Convert it to celsius and output "NN°F is NN°C."
 ******************/
 const temperatureF = 32
-function fahrenheitToCelsius (fahrenheit){
-return (fahrenheit-32)*5/9
+
+function fahrenheitToCelsius(fahrenheit) {
+    return (fahrenheit - 32) * 5 / 9
 
 }
-console.log(temperatureF +"F is "+  fahrenheitToCelsius(temperatureF)+"C")
+console.log(temperatureF + "F is " + fahrenheitToCelsius(temperatureF) + "C")
 /******************
 Temperature Converter Celsius to Fahrenheit
 

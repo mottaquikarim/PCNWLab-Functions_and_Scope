@@ -14,6 +14,9 @@
         return the remainder of the sum of a,b,c divided by 3
 */ 
 
+const operation = (a,b,c) => {
+return (a+b+c)/3
+}
 
 /*
     PROBLEM 2:
@@ -24,9 +27,18 @@
         then function will return 'one-two-three'
 */
 
+const addStrings = (a,b,c)=>{
+return `${a}-${b}-${c}`
+}
+
 /*
     PROBLEM 3:
         Write a function that takes NO params
         return a random number between 0 and 10 
         (doesn't have to be a whole number tho)
 */
+const randomNum = ()=>{
+    return Math.random() * 11
+}
+
+console.log(randomNum())
