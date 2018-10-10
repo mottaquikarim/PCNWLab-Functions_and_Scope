@@ -18,17 +18,17 @@ function sum(a,b,c) {
     return (a + b + c) % 3 
     
 }
-sum(3,2,3)
+console.log(sum(3,2,3));
 
-const sum = function(a,b,c) {
+const sum2 = function(a,b,c) {
     return (a + b + c) % 3 
 }
-sum(3,2,3)
+console.log(sum2(3,2,3));
 
-const sum = (a,b,c) => {
+const sum3 = (a,b,c) => {
     return (a + b + c) % 3 
 }
-sum(3,2,3)
+console.log(sum3(3,2,3));
 
 /*
     PROBLEM 2:
@@ -43,17 +43,17 @@ function string(a = 'one-',b = 'two-',c = 'three') {
     return a + b + c
 
 }
-string()
+console.log(string());
 
-const string = function(a = 'one-',b = 'two-',c = 'three') {
+const string2 = function(a = 'one-',b = 'two-',c = 'three') {
     return a + b + c
   }
-  string()
+  console.log(string2());
 
-  const string =(a = 'one-',b = 'two-',c = 'three') => {
+  const string3 =(a = 'one-',b = 'two-',c = 'three') => {
     return a + b + c
   }
-  string()
+  console.log(string3());
   
   
 /*
@@ -64,16 +64,16 @@ const string = function(a = 'one-',b = 'two-',c = 'three') {
 */
 
 function random() {
-    return Math.random() * 11
+    return Math.random() * 10;
   }
-  random()
+ console.log(random())
 
-  const random = function() {
-    return Math.random() * 11
+  const random2 = function() {
+    return Math.random() * 10;
   }
-  random()
+  console.log(random2())
 
-  const random = () => {
-    return Math.random() * 11
+  const random3 = () => {
+    return Math.random() * 10;
   }
-  random()
+  console.log(random3())
