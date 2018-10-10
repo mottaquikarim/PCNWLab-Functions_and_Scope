@@ -38,7 +38,8 @@ return `${a}-${b}-${c}`
         (doesn't have to be a whole number tho)
 */
 const randomNum = ()=>{
-    return Math.random() * 11
+    return Math.floor(Math.random() * 11)
+    
 }
 
 console.log(randomNum())
