@@ -18,14 +18,14 @@
    return (a + b + c ) / 3;  
 
 }
-console.log(sumOfThree(4,5,6));
+console.log(Math.floor(sumOfThree(4,5,6));
 
 //function expression 
 const sumOfThree = function(a, b, c){
     return (a + b + c ) / 3;  
 
 }
-console.log(sumOfThree(4,5,6)); */
+console.log(Math.Floor(sumOfThree(4,5,6)); */
 // function fat arrow 
 
 const sumOfThree = (a, b, c) => {
@@ -40,7 +40,26 @@ console.log(Math.floor(sumOfThree(4,5,7)));
         so, if a = 'one', b = 'two', c='three'
         then function will return 'one-two-three'
 */
+// function declaration 
 
+ function threeParams(a = "one", b = "two", c= "three"){
+      return a + "-" + b +"-"+ c;       
+
+ }
+ console.log(threeParams());
+
+ //function expression 
+
+ threeParams1 = function(a = "one", b = "two", c= "three"){
+     return a + "-" + b +"-"+ c; 
+ }
+ console.log(threeParams1());
+ // function fat arrow expression 
+
+ const threeParams2 = (a = "one", b = "two", c= "three") => {
+    return a + "-" + b +"-"+ c; 
+}
+console.log(threeParams2());
 /*
     PROBLEM 3:
         Write a function that takes NO params
