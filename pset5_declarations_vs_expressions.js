@@ -64,16 +64,16 @@ const string2 = function(a = 'one-',b = 'two-',c = 'three') {
 */
 
 function random() {
-    return Math.random() * 10;
+    return Math.random() * 10
   }
- console.log(random())
+ console.log(random());
 
   const random2 = function() {
-    return Math.random() * 10;
+    return Math.random() * 10
   }
-  console.log(random2())
+  console.log(random2());
 
   const random3 = () => {
-    return Math.random() * 10;
+    return Math.random() * 10
   }
-  console.log(random3())
+  console.log(random3());
