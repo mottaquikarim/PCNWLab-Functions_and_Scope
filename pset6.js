@@ -41,7 +41,7 @@ console.log(addTwoNums("lulz","lmao"))
 */
 
 function turnNumberToString (number){
-    let string = `${number}`
+    const string = `${number}`
     return string
 }
 
@@ -60,7 +60,7 @@ console.log(turnNumberToString("2"))
 */
 
 function fullName (firstName, lastName = ""){
-    let yourFullName = firstName
+    const yourFullName = firstName
     if (typeof firstName === "undefined"){
         return "Input Error"
     }
@@ -124,7 +124,7 @@ console.log(fullNameSentence("TK", "is awesome"))
 
 function fullNameSentenceWithChecks(firstName, lastName = "", restOfSentence = ""){
     
-    let fullSentence = `${fullName(firstName, lastName)} ${restOfSentence}`
+    const fullSentence = `${fullName(firstName, lastName)} ${restOfSentence}`
     
     if (lastName === "" || restOfSentence === ""){
         return "Required variables are not set!"
@@ -150,7 +150,7 @@ console.log(fullNameSentenceWithChecks("TK", "is awesome"))
     
 */
     function farenToCel (farenheit){
-        let tempCelcius = (farenheit - 32) * (5/9)
+        const tempCelcius = (farenheit - 32) * (5/9)
         return tempCelcius;
     }
 
@@ -172,7 +172,7 @@ console.log(fullNameSentenceWithChecks("TK", "is awesome"))
 */
 
 function farenToKelvin (farenheit){
-    let tempKelvin = farenToCel(farenheit) + 273.15
+    const tempKelvin = farenToCel(farenheit) + 273.15
     return tempKelvin
 }
 
@@ -203,7 +203,7 @@ function farenToKelvinWithCheck (farenheit){
         return "ERROR: Invalid entry, please enter a numerical value for farenheit"
     }
     else {
-        let tempKelvin = farenToCel(farenheit) + 273.15
+        const tempKelvin = farenToCel(farenheit) + 273.15
         return tempKelvin
     }
 }
