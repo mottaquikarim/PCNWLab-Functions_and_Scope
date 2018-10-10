@@ -14,6 +14,20 @@
         return the remainder of the sum of a,b,c divided by 3
 */ 
 
+//FAT ARROW 
+const remainderOfSum = (a,b,c) => {
+    return ((a + b + c)/3);
+}
+
+//FUNCTOIN DECLARATION
+function remainderOfSum(a,b,c){
+    return ((a + b + c)/3);
+}
+
+//FUNCTION EXPRESSION
+const remainderOfSum = functino(a,b,c){
+    return ((a + b + c)/3);
+}
 
 /*
     PROBLEM 2:
