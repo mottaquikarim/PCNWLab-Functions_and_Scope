@@ -11,7 +11,12 @@
     use a default parameter for the middleName, set it to ""
 */
 
+/*function getFullName (firstName, lastName, middleName ="") {
+    return '${first name} ${middlename} ${lastname}'
+}
 
+
+console.log(getFullName(Van))
 /*
     PROBLEM 2:
     Temperature Converter Fahrenheit to Celsius
@@ -58,6 +63,21 @@
     (red text in console)
     
 */
+
+const defaultA = 0;
+const defaultB = 0;
+function addTwoNums(a = 'a is not set', b = 'b is not set') {
+    return a + b;
+}
+
+const value = addTwoNums(1);
+console.log(value);
+
+// FAT ARROW 
+
+const multiply = (a,b) => {
+    return a * b;
+}
 
 
 
