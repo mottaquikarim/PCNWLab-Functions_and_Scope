@@ -10,7 +10,14 @@
     
     use a default parameter for the middleName, set it to ""
 */
+function getFullName(firstName, lastName, middleName=""){
 
+const fullName = `${firstName} ${middleName} ${lastName}`
+
+return fullName
+
+}
+console.log(getFullName("Daniel", "Ashley"))
 
 /*
     PROBLEM 2:
@@ -20,7 +27,11 @@
     
     Take a param that represents F. By default this should be 32
 */
+function temperatureConverter (F = 32){
 
+    const c =(F - 32) * 5/9
+    return c
+}
 
 /*
     PROBLEM 3:
@@ -33,6 +44,11 @@
     should return a number that tells you how old you'll be in numYears
     ageNow and numYears should have default params
 */
+function futureAge(ageNow = 24, numYears = 0){
+
+    const newAge = ageNow + numYears
+    return newAge
+}
 
 /*
     PROBLEM 4:
@@ -58,7 +74,26 @@
     (red text in console)
     
 */
+function aa(){
 
+    return "a is not a set"
+
+
+}
+
+function bb(){
+
+
+    throw new Error( "b is not a set")
+}
+
+function addTwoNums(a = aa() ,b = bb()){
+
+
+    return a + b
+
+}
+console.log(addTwoNums("hello"))
 
 
 

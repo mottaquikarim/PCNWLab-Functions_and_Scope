@@ -54,6 +54,23 @@ console.log(addMiddleName("daniel","eduardo" , "ashley"))
     @example defaultPlaceHolder('Hello Wrold!'); 
              // <input type="text" placeholder="Hello Wrold!" />
 */
+function defaultPlaceholder(placeHolder = "Hello World"){
+
+return `<input type="text" placeholder= ${placeHolder} />`
+
+}
+console.log(defaultPlaceholder("Goodbye World"))
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*
@@ -66,6 +83,13 @@ console.log(addMiddleName("daniel","eduardo" , "ashley"))
     @example addClass('foo', 'bar', 'stuff');
              // <div class="foo bar">stuff</div>
 */
+function addClasses(class1, class2, content){
+        
+    return `<div class ="${class1} ${class2}">${content}</div>`
+
+
+        }
+
 
 
 /*
@@ -78,3 +102,12 @@ console.log(addMiddleName("daniel","eduardo" , "ashley"))
 */
 
 
+function duplicate(string = "start"){
+
+const duplicates = `${string}${string}`
+
+return duplicates
+
+
+}
+console.log(duplicate("hello"))
