@@ -66,3 +66,24 @@ console.log(threeParams2());
         return a random number between 0 and 10 
         (doesn't have to be a whole number tho)
 */
+// function declaration 
+
+
+function noParam(){
+    return Math.floor(Math.random() * 11);       
+
+}
+console.log(noParam());
+
+//function expression 
+
+noParam1 = function(){
+    return Math.floor(Math.random() * 11); 
+}
+console.log(noParam1());
+// function fat arrow expression 
+
+const noParams2 = () => {
+    return Math.floor(Math.random() * 11); 
+}
+console.log(noParams2());
