@@ -11,7 +11,16 @@ if invalid input given, return -1
 
 function myAge( ageNow, numYears ) {
        
-}
+    const age = ageNow + numYears;
+    
+    return age;
+    
+    }
+    
+    
+const myAge2 = myAge(29, 20);
+
+console.log(myAge2);
 
 
 
@@ -30,10 +39,13 @@ Concatenating string variables
 ******************/
 
 function myConcatenate( firstStr, secondStr, thirdStr ) {
-    
+    const myStrings = firstStr + ' ' + secondStr + ' ' + thirdStr + '.';
+
+    return myStrings;
 }
 
-myConcatenate('I', 'am', 'iron man'); // 'I am iron man'
+const mySentence = myConcatenate('I', 'am', 'iron man');
+console.log(mySentence); 
 
 /******************
 Subtract Function
@@ -45,8 +57,10 @@ Ensure that both of the inputs are numbers
 ******************/
 
 function subtract(a,b) {
-    
+    return a - b;
 }
+const finalNumber = subtract(5 , 3);
+console.log(finalNumber);
 
 /******************
 Area of A Circle
@@ -61,9 +75,14 @@ A = π * r2, where is π is Pi and r is the radius squared
 
 
 function areaOfaCircle(radius){
-    
+
+    const area = Math.PI * (Math.pow(radius, 2));
+    return area
     
 }    
+const area2 = areaOfaCircle(2);
+console.log(area2);
+
 
 /******************
 Temperature Converter Fahrenheit to Celsius
@@ -75,6 +94,14 @@ Now store a fahrenheit temperature into a variable.
 Convert it to celsius and output "NN°F is NN°C."
 ******************/
 
+function fahrenheitToCelsius(fahrenheit) {
+    const celsiusCalc = (fahrenheit - 32) * .5556;
+    return celsiusCalc;
+}
+const fahren = 70;
+const celsius = Math.ceil(fahrenheitToCelsius(fahren));
+console.log(`${fahren}°F is ${celsius}°C`);
+
 
 /******************
 Temperature Converter Celsius to Fahrenheit
@@ -85,6 +112,15 @@ Store a celsius temperature into a variable.
 
 Convert it to fahrenheit and output "NN°C is NN°F".
 ******************/
+
+
+function celsiusToFahrenheit(celsius) {
+    const fahrenCalc = celsius * 9/5 + 32;
+    return fahrenCalc;
+}
+const celsius2 = 20;
+const fahren2 = Math.ceil(celsiusToFahrenheit(celsius2));
+console.log(`${celsius2}°C is ${fahren2}°F`);
 
 
 /******************
@@ -117,6 +153,18 @@ and the absolute value of a positive number (or zero) is that number itself.
 ******************/
 
 
+function absolute(number) {
+    if (number >= 0){
+    return number;
+    }
+    else {
+        return number * -1;
+    }
+    }
+    
+    console.log(absolute(-5));
+
+
 /******************
 Create a function that counts the number of characters in your name
 
@@ -129,3 +177,8 @@ call function 'countChars'
 ******************/
 
 
+function countChars(string) {
+    return string.length;
+    }
+    console.log(countChars("Hello world"));
+    
