@@ -67,16 +67,16 @@ EXPRESSION
 */
 //DECLARTION
     function randomNum() {
-        return Math.random();
+        return Math.random() * 11;
     }
     console.log(randomNum());
 //EXPRESSION 
    /const randomNum = function() {
-        return  Math.random();
+       return Math.random() * 11;
     }
     console.log(randomNum());
 //ARROW
     const randomNum = () => {
-        return  Math.random();
+        return Math.random() * 11;
     }
     console.log(randomNum());
