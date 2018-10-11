@@ -10,6 +10,13 @@
     @example doMath( 1,2,3 ); // 9
 */
 
+function doMath(num1, num2, num3){
+    num1 += num2;
+    return num3 *= num1;
+}
+
+console.log(doMath(1,2,3));
+
 
 /*
     @function addMiddleName
@@ -25,6 +32,15 @@
     @example addMiddleNmae('John', 'Mabel', 'Smith'); // John Mabel Smith
 */
 
+function addMiddleName(firstName, middleName, lastName) {
+    if (typeof middleName !== "string" || middleName == ''){
+        return `${firstName} ${lastName}`;
+    }
+    return `${firstName} ${middleName} ${lastName}`;
+}
+
+console.log(addMiddleName('Robert', '', 'Abreu'));
+console.log(addMiddleName('John', 'Mabel', 'Smith'));
 
 /*
     @function defaultPlaceholder
@@ -36,6 +52,11 @@
              // <input type="text" placeholder="Hello Wrold!" />
 */
 
+// future me problem
+
+function defaultPlaceHolder(string = 'Hello World!'){
+    return <input type="text" placeholder = `${string}` />;
+}
 
 /*
     @function addClasses
@@ -58,4 +79,9 @@
     @example duplicate('hello!'); // hello!hello!
 */
 
+function duplicate(dup){
+    return dup += `${dup}`;
+}
 
+console.log(duplicate('hello!'));
+console.log(duplicate('cheesy'));

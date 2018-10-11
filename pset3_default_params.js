@@ -10,6 +10,17 @@
     
     use a default parameter for the middleName, set it to ""
 */
+// GLOBAL
+let x;
+function getFullName(firstName, lastName, middleName){
+
+    return `${firstName} ${middleName} ${lastName}`; ` `
+}
+
+getFullName("Robert", "Abreu", "Jose")
+
+
+
 
 
 /*
@@ -21,7 +32,16 @@
     Take a param that represents F. By default this should be 32
 */
 
+function fahrenheitToCelsius(f) {
+    if (typeof f !== "number"){
+        return "Please enter a number";
+   } else {
+    let c = (f - 32) * 5/9;
+    return `${f}°F is ${c} °C`;
+   }
+}
 
+console.log(fahrenheitToCelsius(32));
 /*
     PROBLEM 3:
     
@@ -34,6 +54,11 @@
     ageNow and numYears should have default params
 */
 
+function myAge(ageNow, numYear){
+    return `In ${numYear} you will be ${ageNow += numYear}`;
+}
+
+console.log(myAge(29, 6));
 /*
     PROBLEM 4:
     Now, let's do something interesint.
@@ -61,9 +86,51 @@
 
 
 
+function required(x){
+    console.log( `PARAMETER ${x} NEEDED`);
+    return 0;
+}
 
 
+function addTwoNums(a = required('a'), b = required('b')){
 
+//function addTwoNums (a = '', b = '') {
+    return a + b;
+    return `Your first parameter was ${a} and your second was ${b}`;
+}
+
+
+ console.log()
+/*
+function addTwoNums (a = "a is not set", b = " b is not set"){
+    return a + b;
+}
+*/
+//console.log(addTwoNums(1));
+//console.log(addTwoNums(1,2));
+//console.log(addTwoNums('Robert'));
+console.log(addTwoNums(1));
+//console.log(addTwoNums());
+
+
+/*
+function sum (a = num1(), b =num2()) {
+    return a + b;
+}
+
+function num1() {
+    return `A not set`
+}
+
+function num2() {
+    return `B not set`
+}
+//console.log(addTwoNums("pop", "bubbles"));
+
+
+console.log (sum());
+
+*/
 
 
 
