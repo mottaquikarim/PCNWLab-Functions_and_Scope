@@ -53,11 +53,11 @@ console.log(addMiddleName('John', 'Mabel', 'Smith'));
 */
 
 // future me problem
-/*
-function defaultPlaceHolder(placeHolder){
-    return <input type="text" placeholder= `${placeHolder}` />;
+
+function defaultPlaceHolder(string = 'Hello World!'){
+    return <input type="text" placeholder = `${string}` />;
 }
-*/
+
 /*
     @function addClasses
     @param {string} class1
