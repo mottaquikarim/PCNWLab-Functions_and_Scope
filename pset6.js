@@ -8,8 +8,10 @@
     @example addTwoNumbers(1,2) // 3
     @example addTwoNumbers(1) // 1
 */
+const addTwoNumbers = ( a , b ) => a + b ; 
 
-
+console.log(addTwoNumbers(1 , 3)); //4
+console.log(addTwoNumbers(9, 8)); //17
 /*
     @func turnNumberToString
     @param {number} a
@@ -19,7 +21,9 @@
     @example turnNumberToString(1); // "1"
     @example turnNumberToString("2"); // "2"
 */
+const turnNumberToString = (a) => a.toString(); 
 
+console.log(typeof turnNumberToString(6)); //"6"
 /*
     @func fullName
     @param {string} firstName
@@ -30,6 +34,11 @@
     @example fullName('Taq', 'Karim'); // "Taq Karim"
     @example fullName('Foo'); // "Foo"
 */
+
+const fullName = (firstName , lastName) => `${firstName} ${lastName}` ; 
+
+console.log(fullName("heriberto", "uroza"));
+
 
 /*
     @func fullNameSentence
@@ -45,6 +54,9 @@
         // expect: "John Smith is awesome"
         fullNameSentence('John', 'Smith', 'is awesome');
 */
+const fullNameSentence = (firstName, lastName , restOfSentence) => (`${firstName} - ${lastName} ${restOfSentence}`); 
+
+console.log(fullNameSentence("heriberto" , "uroza", "is amazing af")); 
 
 /*
     @func fullNameSentenceWithChecks
