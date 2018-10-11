@@ -81,12 +81,18 @@ function subtract(a,b) {
     
 }
 */
-/*
+
 const subtract = function (a, b) {
     return a - b;
 };
-*/
+
 console.log(subtract(2,1));
+
+const subtract$ = (a, b) => {
+    return a - b;
+};
+
+console.log(subtract$(2,1));
 
 /******************
 Area of A Circle
