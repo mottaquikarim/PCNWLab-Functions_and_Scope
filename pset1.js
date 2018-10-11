@@ -64,12 +64,26 @@ This is the formula to calculate the area of a circle:
 A = π * r2, where is π is Pi and r is the radius squared
 ******************/
 
-
+//function declaration
 function areaOfaCircle(radius){
     let A = Math.PI * (radius ** 2)
     console.log(A)
-}    
+}
+//function expression
+const areaCircle = function(radius){
+    console.log(Math.PI * (radius ** 2))
+}
+
+//fat arrow expression
+const areaC = radius => console.log(Math.PI * (radius ** 2))
+
+console.log('area circles(declaration,expression,fat arrow)')
 areaOfaCircle(5)
+areaCircle(5)
+areaC(5)
+
+console.log("end circle exercise")
+
 /******************
 Temperature Converter Fahrenheit to Celsius
 
@@ -83,7 +97,20 @@ function fahrenheitToCelsius(f){
     let c = (f - 32) * (5/9)
     console.log(f + "°F " + "is " + c + "°C" )
 }
+
+const F = function(f){
+    let c = (f - 32) * (5/9)
+    console.log(f + "°F " + "is " + c + "°C" )
+}
+
+
+
+console.log('f to c conversion')
+const Farrow = f => console.log(f + "°F " + "is " + (f - 32) * (5/9)+ "°C" )
 fahrenheitToCelsius(32)
+F(32)
+Farrow(32)
+console.log('end f to c conversion results')
 
 /******************
 Temperature Converter Celsius to Fahrenheit
