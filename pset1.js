@@ -252,4 +252,13 @@ return the number of characters in the string
 call function 'countChars'
 ******************/
 
+const characterCounter = function (name){
+       return `${name} is ${name.replace(/\s/g, '').length} characters long.`;
+    
+}
 
+console.log(characterCounter('Robert Abreu'));
+
+const characterCounter$ = (name)=> `${name} is ${name.replace(/\s/g, '').length} characters long.`;
+ 
+console.log(characterCounter('Ziz Aziz'));
