@@ -9,9 +9,9 @@ if that number is > 100, should return NaN
 if invalid input given, return -1
 ******************/
 
-function myAge( ageNow, numYears ) {
+//function myAge( ageNow, numYears ) {
        
-}
+//}
 
 const myAge = function (ageNow, numYears) {
     if (typeof ageNow !== "number"|| typeof numYears !== "number"){
@@ -31,7 +31,8 @@ const myAge$ = (ageNow, numYears) => {
     return `In ${numYears} years, you will be ${ageNow + numYears} years old.`;
 };
 
-
+console.log(myAge(30, 5));
+console.log(myAge$(30, 5));
 
 /******************
 Concatenate Strings
@@ -46,12 +47,25 @@ Concatenating string variables
     * console out mySentence variable
 - Call myConcatenate function
 ******************/
-
+/*
 function myConcatenate( firstStr, secondStr, thirdStr ) {
     
 }
 
 myConcatenate('I', 'am', 'iron man'); // 'I am iron man'
+*/
+
+const myConcatenate = function (firstStr, secondStr, thirdStr) {
+    return `${firstStr} ${secondStr} ${thirdStr}`;
+};
+
+console.log(myConcatenate('I', 'am', 'iron man'));
+
+const myConcatenate$ = (firstStr, secondStr, thirdStr) => {
+    return `${firstStr} ${secondStr} ${thirdStr}`;
+};
+
+console.log(myConcatenate$('I', 'am', 'iron man'));
 
 /******************
 Subtract Function
@@ -62,9 +76,17 @@ This function will take two numbers and subtract them
 Ensure that both of the inputs are numbers
 ******************/
 
+/*
 function subtract(a,b) {
     
 }
+*/
+/*
+const subtract = function (a, b) {
+    return a - b;
+};
+*/
+console.log(subtract(2,1));
 
 /******************
 Area of A Circle
