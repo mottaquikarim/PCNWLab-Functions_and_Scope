@@ -13,6 +13,24 @@ function myAge( ageNow, numYears ) {
        
 }
 
+const myAge = function (ageNow, numYears) {
+    if (typeof ageNow !== "number"|| typeof numYears !== "number"){
+        return -1;
+   } else if (ageNow + numYears > 100) {
+       return NaN;
+   } 
+    return `In ${numYears} years, you will be ${ageNow + numYears} years old.`;
+};
+
+const myAge$ = (ageNow, numYears) => {
+    if (typeof ageNow !== "number"|| typeof numYears !== "number"){
+        return -1;
+   } else if (ageNow + numYears > 100) {
+       return NaN;
+   } 
+    return `In ${numYears} years, you will be ${ageNow + numYears} years old.`;
+};
+
 
 
 /******************
