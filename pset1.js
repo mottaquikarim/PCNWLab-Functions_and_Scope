@@ -232,7 +232,15 @@ The absolute value of a negative number is the positive version of that same num
 and the absolute value of a positive number (or zero) is that number itself.
 ******************/
 
+const absolute = function (num){
+    return `Absolute version of ${num} is ${Math.abs(num)}`;
+}
 
+console.log(absolute(5));
+
+const absolute$ = (num) => `Absolute version of ${num} is ${Math.abs(num)}`;
+
+console.log(absolute$(-6));
 /******************
 Create a function that counts the number of characters in your name
 
