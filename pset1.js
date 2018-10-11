@@ -129,6 +129,31 @@ Convert it to celsius and output "NN°F is NN°C."
 ******************/
 
 
+
+const fahrenheitToCelsius = function (f){
+
+let c = (f - 32) * 5/9;
+return `${f}°F is ${c} °C`;
+};
+
+console.log(fahrenheitToCelsius(32));
+
+const fahrenheitToCelsius$ =  (f) => {
+    let c = (f - 32) * 5/9;
+    return `${f}°F is ${c} °C`;
+  
+    };
+
+console.log(fahrenheitToCelsius$(32));
+
+const fahrenheitToCelsius$$ =  (f) => `${f}°F is ${(f - 32) * 5/9} °C`;
+
+console.log(fahrenheitToCelsius$$(32));
+
+/*
+  let f = (c * 9/5) + 32;
+    return `${c}°C is ${f} °F`;
+*/
 /******************
 Temperature Converter Celsius to Fahrenheit
 
