@@ -180,6 +180,7 @@ console.log(celsiusToFahrenheit$(0));
 const celsiusToFahrenheit$$ = (c) =>  `${c}°C is ${(c * 9/5) + 32} °F`;
 
 console.log(celsiusToFahrenheit$$(0));
+
 /******************
 Is it the weekend?
 
@@ -196,7 +197,29 @@ console.log(today); // No, it's the weekday
 If you are having trouble, please note that Javascript has a helpful built-in function to help get the current day
 ******************/
 
+const isItTheWeekend= function (day){
+    day = day.toLowerCase();
+ if (day == "monday" || day == "tuesday" || day == "wednesday" || day == "thursday" || day == "friday" ) {
+        return `No, it's the weekday`;
+ }else if (day == "saturday" || day == "sunday") {
+        return `Yes, it's the weekend`;
+ } else {
+        return `Invalid input entered`;
+ }
+}
+console.log(isItTheWeekend('monDay'));
 
+const isItTheWeekend$ = (day) => {
+    day = day.toLowerCase();
+ if (day == "monday" || day == "tuesday" || day == "wednesday" || day == "thursday" || day == "friday" ) {
+        return `No, it's the weekday`;
+ }else if (day == "saturday" || day == "sunday") {
+        return `Yes, it's the weekend`;
+ } else {
+        return `Invalid input entered`;
+ }
+}
+console.log(isItTheWeekend$('SunDay'));
 
 /******************
 Finding the absolute value of a number
