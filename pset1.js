@@ -164,7 +164,22 @@ Store a celsius temperature into a variable.
 Convert it to fahrenheit and output "NN°C is NN°F".
 ******************/
 
+const celsiusToFahrenheit = function (c) {
+    let f = (c * 9/5) + 32;
+    return `${c}°C is ${f} °F`;
+}
 
+console.log(celsiusToFahrenheit(0));
+
+const celsiusToFahrenheit$ =  (c) => {
+    let f = (c * 9/5) + 32;
+    return `${c}°C is ${f} °F`;
+}
+console.log(celsiusToFahrenheit$(0));
+
+const celsiusToFahrenheit$$ = (c) =>  `${c}°C is ${(c * 9/5) + 32} °F`;
+
+console.log(celsiusToFahrenheit$$(0));
 /******************
 Is it the weekend?
 
