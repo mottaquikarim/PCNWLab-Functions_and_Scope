@@ -10,8 +10,13 @@ if invalid input given, return -1
 ******************/
 
 function myAge( ageNow, numYears ) {
-       
+       const ageLater = ageNow + numYears
+        
+       return ageLater;
 }
+
+console.log(myAge(28, 32))
+myAge(22, 39)
 
 
 
@@ -30,10 +35,16 @@ Concatenating string variables
 ******************/
 
 function myConcatenate( firstStr, secondStr, thirdStr ) {
-    
+
+     let myString = firstStr + " " + secondStr + " "  + thirdStr;
+
+    return myString;
 }
 
-myConcatenate('I', 'am', 'iron man'); // 'I am iron man'
+
+console.log(myConcatenate('I', 'am', 'iron man')); // 'I am iron man'
+
+//console.log(myConcatenate(firstStr, secondStr, thirdStr));
 
 /******************
 Subtract Function
@@ -45,8 +56,11 @@ Ensure that both of the inputs are numbers
 ******************/
 
 function subtract(a,b) {
-    
+    let minus = a - b;
+return minus;
 }
+
+console.log(subtract(3,20));
 
 /******************
 Area of A Circle
@@ -62,8 +76,13 @@ A = π * r2, where is π is Pi and r is the radius squared
 
 function areaOfaCircle(radius){
     
-    
+    let circle1 = Math.PI * radius ** 2;
+
+    return circle1;
 }    
+
+console.log(areaOfaCircle(6));
+
 
 /******************
 Temperature Converter Fahrenheit to Celsius
@@ -74,6 +93,13 @@ Now store a fahrenheit temperature into a variable.
 
 Convert it to celsius and output "NN°F is NN°C."
 ******************/
+function fahrenheitToCelsius(f){
+
+    const celsius = (f - 32) * 5/9;
+
+    return celsius;
+}
+console.log(fahrenheitToCelsius(100));
 
 
 /******************
@@ -85,6 +111,15 @@ Store a celsius temperature into a variable.
 
 Convert it to fahrenheit and output "NN°C is NN°F".
 ******************/
+
+function celsiusToFahrenheit(c){
+
+    const fahrenheit = (c * 9/5) + 32
+
+    return fahrenheit;
+}
+console.log(celsiusToFahrenheit(100));
+
 
 
 /******************
@@ -115,8 +150,23 @@ The function should return the absolute value of the number
 The absolute value of a negative number is the positive version of that same number,
 and the absolute value of a positive number (or zero) is that number itself.
 ******************/
+function absolute(a){
+
+ if (a >= 0) {
+
+    return a
+
+ } else { 
+
+   return number = (a) * -1
+ }
+        
+}
 
 
+console.log(absolute(-1));
+console.log(absolute(0));
+console.log(absolute(2));
 /******************
 Create a function that counts the number of characters in your name
 
@@ -128,4 +178,10 @@ return the number of characters in the string
 call function 'countChars'
 ******************/
 
+function countChars(str){
+
+ return (str.length);
+}
+
+console.log(countChars('Richard'));
 
