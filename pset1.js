@@ -10,9 +10,11 @@ if invalid input given, return -1
 ******************/
 
 function myAge( ageNow, numYears ) {
-       
+    return ageNow + numYears 
+
 }
 
+console.log(myAge(29, 5))
 
 
 /******************
@@ -30,10 +32,12 @@ Concatenating string variables
 ******************/
 
 function myConcatenate( firstStr, secondStr, thirdStr ) {
-    
+    let mySentence = firstStr + secondStr + thirdStr;
+
+    return mySentence;
 }
 
-myConcatenate('I', 'am', 'iron man'); // 'I am iron man'
+console.log(myConcatenate('I', 'am', 'iron man')); // 'I am iron man'
 
 /******************
 Subtract Function
@@ -45,6 +49,8 @@ Ensure that both of the inputs are numbers
 ******************/
 
 function subtract(a,b) {
+
+    return a - b;
     
 }
 
@@ -61,9 +67,13 @@ A = π * r2, where is π is Pi and r is the radius squared
 
 
 function areaOfaCircle(radius){
-    
+   console.log('radius is...', radius);
+   const area = Math.PI * radius ** 2;
+   return area;
     
 }    
+console.log(areaOfaCircle(3.14)) 
+
 
 /******************
 Temperature Converter Fahrenheit to Celsius
@@ -74,8 +84,14 @@ Now store a fahrenheit temperature into a variable.
 
 Convert it to celsius and output "NN°F is NN°C."
 ******************/
+function fahrenheitToCelsius(fahrenheit){
+    let conversion = (fahrenheit - 32) * (5 / 9)
 
+    return `${fahrenheit} is ${Math.round(conversion)}`;
+    
 
+}
+console.log(fahrenheitToCelsius(40));
 /******************
 Temperature Converter Celsius to Fahrenheit
 
@@ -85,23 +101,17 @@ Store a celsius temperature into a variable.
 
 Convert it to fahrenheit and output "NN°C is NN°F".
 ******************/
+function celsiusToFahrenheit(celsius){
+    let conversion = (celsius * 9 / 5) + 32
 
+    return `${celsius} is ${Math.round(conversion)}`;
+    
+
+}
+console.log(celsiusToFahrenheit(30));
 
 /******************
-Is it the weekend?
 
-Please write a function called "isItTheWeekend" that has two conditions:
-
-If it is the weekend, return 'Yes, it's the weekend'
-If it is not the weekend, return 'No, it's the weekday';
-A working example would be:
-
-var today = isItTheWeekend();
-
-console.log(today); // No, it's the weekday
-
-If you are having trouble, please note that Javascript has a helpful built-in function to help get the current day
-******************/
 
 
 
@@ -115,6 +125,12 @@ The function should return the absolute value of the number
 The absolute value of a negative number is the positive version of that same number,
 and the absolute value of a positive number (or zero) is that number itself.
 ******************/
+function absolute(n){
+ 
+    return Math.abs(n);
+
+}
+console.log(absolute(-10));
 
 
 /******************
@@ -128,4 +144,10 @@ return the number of characters in the string
 call function 'countChars'
 ******************/
 
+function countChars(string){
+    totalCharas = string.length;
 
+    return ' This sentence has ' + totalCharas + ' characters total.'
+    
+} 
+console.log(countChars(' Can you count yourself?'));
