@@ -14,24 +14,24 @@
         return the remainder of the sum of a,b,c divided by 3
 */ 
 
-/*function expression
-const blah = function (a=1,b=2,c=3){
+//function expression
+const threeParams = function (a=1,b=2,c=3){
     return (a+b+c) % 3;
 }
-console.log(blah());
-*/
+console.log(threeParams());
 
-/*function declaration
-const blah = function (a=1,b=2,c=3){
-    return (a+b+c) % 3;
-}
-console.log(blah()); */
 
-/*function fat arrow
-const blah = (a,b,c) =>{
+//function declaration
+function threeParams1 (a,b,c){
     return (a+b+c) % 3;
 }
-console.log(blah(1,2,3));*/
+console.log(threeParams1(a=1,b=2,c=3));
+
+//function fat arrow
+const threeparams2 = (a,b,c) =>{
+    return (a+b+c) % 3;
+}
+console.log(threeparams2(1,2,3));
 
 /*
     PROBLEM 2:
@@ -41,27 +41,27 @@ console.log(blah(1,2,3));*/
         so, if a = 'one', b = 'two', c='three'
         then function will return 'one-two-three'
 */
-/*expression
-const blah = function (a,b,c)
+//expression
+const threeStrings = function (a,b,c)
 {
     return (a+ "-"+ b+ "-" + c);
 }
-console.log(blah('hey','you','wtv'));*/
+console.log(threeStrings('one','two','three'));
 
 
-/* fat
-const blah =  (a,b,c) => 
+//fat arrow
+const threeStrings1=  (a,b,c) => 
 {
     return (a+ "-"+ b+ "-" + c);
 }
-console.log(blah('hey','you','wtv'))*/
+console.log(threeStrings1('one','two','three'))
 
-/* function declaration
-function blah(a=1,b=2,c=3)
+// function declaration
+function threeStrings2(a,b,c)
 {
     return (a+ "-"+ b+ "-" + c);
 }
-console.log(blah('hey','you','wtv'));*/
+console.log(threeStrings2('one','two','three'));
 
 /*
     PROBLEM 3:
@@ -70,34 +70,23 @@ console.log(blah('hey','you','wtv'));*/
         (doesn't have to be a whole number tho)
 */
 
-/*
-const blah = function (a,b,c)
-{
-    return (a+ "-"+ b+ "-" + c);
-}
-console.log(blah());
-*/
 
-/*fat
-const blah =  (a,b,c) => 
-{
-    return (a+ "-"+ b+ "-" + c);
-}
-console.log(blah())*/
 
-/*function declaration
+//function declaration
 function randomNumber()
-{
-    return Math.random()*10;
-}
-console.log(randomNumber());*/
-
-/*function expression
-const randomNumber2= function()
 {
     return Math.random()*10;
 }
 console.log(randomNumber());
 
-/*fatarrow
-const randomNumber3=()=>Math.random()*10;*/
+
+//function expression
+const randomNumber2= function()
+{
+    return Math.random()*10;
+}
+console.log(randomNumber2());
+
+//fat Arrow
+const randomNumber3=()=>Math.random()*10;
+console.log(randomNumber3());
