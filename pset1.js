@@ -9,11 +9,18 @@ if that number is > 100, should return NaN
 if invalid input given, return -1
 ******************/
 
-function myAge( ageNow, numYears ) {
-       
+//function expression 
+const myAge = function(ageNow1=29, numYearsgone=2 ) {
+    const sum =ageNow1 + numYearsgone;
+    return sum;       
 }
+console.log (myAge())
 
-
+//fat arrow
+const myAges= (ageNow,numYears)=>{
+    return ageNow+numYears;
+}
+    console.log (myAges(29,2));
 
 /******************
 Concatenate Strings
@@ -29,11 +36,21 @@ Concatenating string variables
 - Call myConcatenate function
 ******************/
 
-function myConcatenate( firstStr, secondStr, thirdStr ) {
-    
+//function expression
+const myConcatenate= function( firstStr="i", secondStr="am", thirdStr ="iron man" ) {
+    const mySentence=firstStr+ " "+ secondStr+ " " + thirdStr;
+    return mySentence; 
 }
+console.log (myConcatenate())
 
-myConcatenate('I', 'am', 'iron man'); // 'I am iron man'
+
+//function fat arrow
+const myConcatenation= ( firstStr="i", secondStr="am", thirdStr ="iron man" ) =>{
+    const mySentence=firstStr+ " "+ secondStr+ " " + thirdStr;
+    return mySentence; 
+}
+console.log (myConcatenation())
+
 
 /******************
 Subtract Function
@@ -44,9 +61,23 @@ This function will take two numbers and subtract them
 Ensure that both of the inputs are numbers
 ******************/
 
-function subtract(a,b) {
-    
+
+
+//function expression
+const subtracted= function (a, b) {
+   return (a-b);
+    //return difference; 
 }
+console.log (subtracted(7,8))
+
+//fat arrow
+const subtract = (a, b) => {
+    const difference=a-b;
+    return difference; 
+}
+console.log (subtract(29,10))
+
+
 
 /******************
 Area of A Circle
@@ -60,13 +91,22 @@ A = π * r2, where is π is Pi and r is the radius squared
 ******************/
 
 
-function areaOfaCircle(radius){
-    
-    
-}    
+//function expression
+const areaOfaCircle = function(radius=2) {
+    const Area=3.14*radius**2;
+    return Area;
+}
+console.log (areaOfaCircle())
+
+//function fat arrow
+const areaOfaCircle2 = (radius=2) =>{
+    const Area=3.14*radius**2;
+    return Area;
+}
+console.log (areaOfaCircle2());
 
 /******************
-Temperature Converter Fahrenheit to Celsius
+Temperature Convertert Fahrenheit to Celsius
 
 Create a function called fahrenheitToCelsius:
 
@@ -75,8 +115,24 @@ Now store a fahrenheit temperature into a variable.
 Convert it to celsius and output "NN°F is NN°C."
 ******************/
 
+//function expression
+//NEED TO FIX THE CONSOLE.LOG RESPONSE 
+let fahrenheitToCelsius= function(fahrenheit=70){
+    let celsius1= ((fahrenheit-32)*(5/9));
+    return celsius1;
+}
+console.log (fahrenheitToCelsius());
 
-/******************
+//FatArrow Function 
+let fahrenheitToCelsius2= (fahrenheit=70)=>{
+    let celsius1=((fahrenheit-32)*(5/9));
+    return celsius1;
+}
+console.log (fahrenheitToCelsius ());
+
+ 
+/*******************
+  
 Temperature Converter Celsius to Fahrenheit
 
 Create a function called celsiusToFahrenheit:
@@ -85,6 +141,20 @@ Store a celsius temperature into a variable.
 
 Convert it to fahrenheit and output "NN°C is NN°F".
 ******************/
+
+let celsiusToFahrenheit= function(celsius=29){
+    let fahrenheit1= ((celsius * (9/5) + 32));
+    return fahrenheit1;
+}
+console.log (celsiusToFahrenheit());
+
+//FatArrow Function 
+let celsiusToFahrenheit2= (celsius1=29)=>{
+    let fahrenheit2=(celsius1 * (9/5) + 32);
+    return fahrenheit2;
+}
+console.log (celsiusToFahrenheit2 ());
+
 
 
 /******************
@@ -102,9 +172,21 @@ console.log(today); // No, it's the weekday
 
 If you are having trouble, please note that Javascript has a helpful built-in function to help get the current day
 ******************/
+ 
 
+const isItTheWeekend=(num)=>{
 
+    var today=new Date ("October 20,2018");
+    var dateToday=today.getDay();
+    if (dateToday==0||dateToday==6) {
+     return "yes it is the weekend";
+    }
+     return "no it is not";
+  }
+  
+  console.log (isItTheWeekend());
 
+  
 /******************
 Finding the absolute value of a number
 
@@ -116,6 +198,17 @@ The absolute value of a negative number is the positive version of that same num
 and the absolute value of a positive number (or zero) is that number itself.
 ******************/
 
+//function expression 
+const absolute = function(num) {
+    return Math.abs(num);       
+}
+console.log (absolute(-7))
+
+//fat arrow
+const absolute1= (num)=>{
+    return Math.abs(num)
+}
+    console.log (absolute1(7));
 
 /******************
 Create a function that counts the number of characters in your name
@@ -128,4 +221,19 @@ return the number of characters in the string
 call function 'countChars'
 ******************/
 
+//function expression 
+const countChars= function(str) {
+    let stringName="Jenn"
+    return stringName.length;       
+}
+console.log (countChars());
+
+
+//Fat Arrrow
+    const countChars1 = (str) => {
+        let stringName = "Jenn";
+         return stringName.length;
+    }
+console.log (countChars1()); 
+    
 
