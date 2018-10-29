@@ -10,7 +10,12 @@
     @example doMath( 1,2,3 ); // 9
 */
 
-
+//fat arrow
+const doMath= (firstNum, secondNum,thirdNum)=>{
+    let computedValue=((firstNum+secondNum)*thirdNum);
+    return computedValue;
+}
+    console.log (doMath(1,2,3));
 /*
     @function addMiddleName
     @param firstName
@@ -25,6 +30,11 @@
     @example addMiddleNmae('John', 'Mabel', 'Smith'); // John Mabel Smith
 */
 
+const addMiddleName = (firstName,lastName,middleName='')=>{
+    
+return `${firstName} ${middleName} ${lastName}`
+}
+console.log (addMiddleName('John', 'Smith'));
 
 /*
     @function defaultPlaceholder
@@ -36,6 +46,10 @@
              // <input type="text" placeholder="Hello Wrold!" />
 */
 
+const defaultPlaceHolder=(placeholder)=>{
+    return  `<input type="text" placeholder="${placeholder}" />`//'<input type="text" placeholder="' + placeholder+ '" />';
+}
+console.log(defaultPlaceHolder('Hello Wrold!')); // <input type="text" placeholder="Hello Wrold!" />
 
 /*
     @function addClasses
@@ -48,6 +62,10 @@
              // <div class="foo bar">stuff</div>
 */
 
+const addClasses =(class1,class2,content)=>{
+    return `<div class="${class1} ${class2}">${content}</div>`
+}
+console.log(addClasses('foo', 'bar', 'stuff'))
 
 /*
     @function duplicate
@@ -58,4 +76,7 @@
     @example duplicate('hello!'); // hello!hello!
 */
 
-
+const duplicate =(start)=>{
+    return `${start} ${start}`
+}
+console.log(duplicate('hello!'))

@@ -5,10 +5,10 @@
     DEMO THE QUESTIONS POSED, BUT NO ACTUAL CODE IS NECESSARY
 */
 
-/*
-    PROBLEM 1:
+
+ //   PROBLEM 1:
     
-    Given the following code:
+//    Given the following code:
     
     const foo = 1;
     function run() {
@@ -16,8 +16,8 @@
     }
     
     run();
-    console.log(foo); // what is foo? why?
-
+    console.log(foo); // what is foo? why? foo is 
+/*
 const foo = 1; //global
     function run() {
         const foo = 2; //local 
@@ -25,7 +25,7 @@ const foo = 1; //global
     
     run();
     console.log(foo); // what is foo? why? 
-/depends on how the variable are being declared. const in line 21 is not going to change const! no error is shown because global and local are 2 diff varables. 
+//ANS: depends on how the variable are being declared. const in line 21 is not going to change const! no error is shown because global and local are 2 diff varables. 
 //21 creates a variable, 22 creates a function but doesnt read what s inside a function...just made it 25 nada. 26runs the function...go back and see whats inside now in line 23 it shows const 2 just an assignment. 
 //in order to get something outside of a function we need a return key! RETURN key! 
 //line 27 looks at global value in line 21 because the local variable is not affecting the global variable.
@@ -83,7 +83,6 @@ console.log(foo); // what is foo? why? food is not defined because the console l
     run();
     console.log(foo); // what is foo? why?
 */
-
 /*let foo = 1;
     function run() {
         foo = 2;
@@ -171,6 +170,7 @@ console.log(foo); // what is foo? why?
     console.log(foo); // what is foo? why?
 
 */
+/*
 const foo = 1;
     function run() {
         const foo = 2;
@@ -182,6 +182,7 @@ const foo = 1;
     
     run();
     console.log(foo); // what is foo? why?
+    */
 /*
 
 PROBLEM 8:
