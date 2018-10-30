@@ -189,11 +189,11 @@ const foo = 1;
     
 // Given the following code:
     
-    let foo = 1;
-    function run() {
+    let foo = 1; //global.foo 
+    function run() { //global. foo-no explicit declaration foo in scope of function run. 
         foo = 2;
         function _inner() {
-            console.log(foo); // what is foo? why? 2 because function inner goes up one scope where food is declared and replacing the original foo of 1 with a 2because of let no const declaration
+            console.log(foo); // what is foo? why? 2 because function inner goes up one scope where foo is declared and replacing the original foo of 1 with a 2 from line 194 because of let no const declaration
         }
         _inner();
     }
@@ -207,11 +207,11 @@ const foo = 1;
     
 //Given the following code:
     
-    const foo = 1;
-    function run() {
+    const foo = 1; //global.foo
+    function run() {// explicit declaration belonging to function run
         const foo = 2;
         function _inner() {
-            const foo = 3;
+            const foo = 3; //inner.foo explicitly declared here
             console.log(foo); // what is foo? why? 3 prints what is inside of the braces at the local scope where foo is defined with 3
         }
         _inner();
@@ -226,11 +226,11 @@ const foo = 1;
     
 // Given the following code:
     
-    let foo = 1;
+    let foo = 1; //global foo
     function run() {
-        function _inner() {
-            console.log(foo); // what is foo? why? 1 computer wont recognize 10 because javascript reads from the top. only recognizes foo at global where if there is no loca definition of the console log at a local ***before console log is written, then it will go to global scope. 
-            foo = 10;
+        function _inner() { //no eplicit definition goes up one scope to run but not explicitly defined there therefore goes up another scope 
+            console.log(foo); // what is foo? why? 1 computer wont recognize 10 because javascript reads from the top. only recognizes foo at global where if there is no local definition of the console log at a local ***before console log is written, then it will go to global scope. 
+            foo = 10; //global.foo=10
         }
         _inner();
     }
@@ -244,55 +244,58 @@ const foo = 1;
     
 //Given the following code:
     
-    let foo = 1;
-    function run( anotherFunctionToCall ) {
-        anotherFunctionToCall();
+    let foo = 1; //global.foo 
+    function run( anotherFunctionToCall ) {//run.anotherFunctionCall
+        anotherFunctionToCall(); //invokes global.foo=2
         console.log(foo)
     }
     
     run(function() {
-        foo = 2;
+        foo = 2; //global.foo
     });
     console.log(foo); // what is foo? why? 2 twice. because it is invoking the run function where it console logs the foo defined in  line 254. although "another function to call" is 
                       //written before, it is encapsulated inside the run function. foo is written with let globally, hence it is replced with a 2 from ine 254 therefore, once invoked 
                       //in line 253, it will print the foo of 2 from 254. 
 
 
-/*
-    PROBLEM 11:
+//
+//-------------------------------------------------------------PROBLEM 11:
     
-    Given the following code:
+//Given the following code:
     
-    let foo = 1;
+    let foo = 1;           //global.foo
     function run( anotherFunctionToCall ) {
-        const foo = 9;
+        const foo = 9;      //run.foo
         anotherFunctionToCall();
         console.log(foo)
     }
     
     run(function() {
-        foo = 2;
+        foo = 2;     //global.foo
     });
-    console.log(foo); // what is foo? why?
-*/
+    console.log(foo); // what is foo? why? 9 and 2 this foo is 2. because it is going to console log the response from the function encapsulated inside since there is a console.log 
+                      //there is a let global variable that allows the run function to replace the original global foo value of 1
+                      //foo is being redeclared as a variable to be 2 inside this function
 
-/*
-    PROBLEM 12:
+
+//
+//---------------------------------------------- PROBLEM 12:
     
-    Given the following code:
+//Given the following code:
     
     let foo = 1;
     function run( anotherFunctionToCall ) {
-        foo = 9;
-        anotherFunctionToCall();
+        foo = 9;            //global.foo
+        anotherFunctionToCall(); //global.foo (2)
         console.log(foo)
     }
     
     run(function() {
-        foo = 2;
+        foo = 2;       //global foo for lines 287-290
     });
-    console.log(foo); // what is foo? why?
-*/
+    console.log(foo); // what is foo? why? foo will console log 2 twice because the function in line 293 redefines the global scope in 286 to be 2 since it has a let variable definition 
+                      //foo is not replaced by 9 because of anotherFunctionToCall is invoking the foo in 289. that function however does not declare any variable for foo. goes to its global in line 294. 
+
 
 
 
