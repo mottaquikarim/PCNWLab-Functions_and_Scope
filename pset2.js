@@ -10,6 +10,11 @@
     @example doMath( 1,2,3 ); // 9
 */
 
+function doMath(firstNum, secondNum, thirdNum){
+    return (firstNum+secondNum)*thirdNum
+}
+
+console.log(doMath(1,2,3))
 
 /*
     @function addMiddleName
@@ -25,7 +30,15 @@
     @example addMiddleNmae('John', 'Mabel', 'Smith'); // John Mabel Smith
 */
 
+function addMiddleName(firstName,middleName,lastName){
+if (middleName == undefined || middleName == null || middleName == ' '){
+return `${firstName} ${lastName}`
+} else {
+    return `${firstName} ${middleName} ${lastName}`
+}
+}
 
+console.log(addMiddleName("alex",' ',"onate"))
 /*
     @function defaultPlaceholder
     @param placeholder {string}
@@ -35,8 +48,11 @@
     @example defaultPlaceHolder('Hello Wrold!'); 
              // <input type="text" placeholder="Hello Wrold!" />
 */
+function defaultPlaceholder(placeholder){
+return `<input type="text" placeholder=\"${placeholder}\" />`
+}
 
-
+console.log(defaultPlaceholder("hello!"))
 /*
     @function addClasses
     @param {string} class1
@@ -48,7 +64,11 @@
              // <div class="foo bar">stuff</div>
 */
 
-
+function addClasses(class1,class2,content){
+    return `<div class=\"${class1} ${class2}\">${content}</div>`
+    }
+    
+    console.log(addClasses("foo","bar","TEST!"))
 /*
     @function duplicate
     @param {string} start
@@ -58,4 +78,8 @@
     @example duplicate('hello!'); // hello!hello!
 */
 
+function duplicate(start){
+return start+start
+}
 
+console.log(duplicate("hello"))

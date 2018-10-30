@@ -11,7 +11,10 @@
     use a default parameter for the middleName, set it to ""
 */
 
-
+function getFullName(firstName,lastName, middleName=""){
+return `${firstName} ${middleName} ${lastName}`
+}
+console.log(getFullName('alex','onate'))
 /*
     PROBLEM 2:
     Temperature Converter Fahrenheit to Celsius
@@ -21,6 +24,12 @@
     Take a param that represents F. By default this should be 32
 */
 
+
+function fahrenheitToCelsius(fahrenheit=32) {
+    return (fahrenheit - 32) * 5 / 9
+
+}
+console.log(fahrenheitToCelsius() + "C")
 
 /*
     PROBLEM 3:
@@ -33,6 +42,19 @@
     should return a number that tells you how old you'll be in numYears
     ageNow and numYears should have default params
 */
+
+function myAge(ageNow=22, numYears=2018) {
+    if ((ageNow + numYears) > 100) {
+        return NaN
+    } else if ((typeof ageNow) !== "number" || (typeof numYears) !== "number") {
+        return -1
+    } else {
+        return ageNow + numYears
+    }
+
+}
+
+console.log(myAge(22, 10))
 
 /*
     PROBLEM 4:
@@ -59,7 +81,20 @@
     
 */
 
+function error(varName) {
+    throw new Error(`${varName} is not set`)
+}
 
+function addTwoNums(a=error('a'), b=error('b')){
+    return a+b
+}
+
+try {
+    addTwoNums(1)
+}
+catch (e) {
+    console.log('Something went wrong! ', e)
+}
 
 
 
