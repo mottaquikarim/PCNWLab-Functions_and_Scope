@@ -10,6 +10,12 @@
     @example doMath( 1,2,3 ); // 9
 */
 
+const doMath = (firstNum,secondNum,thirdNum) =>{
+    let sum = firstNum + secondNum; 
+    let computedVal = sum * thirdNum
+    return computedVal; 
+  }
+  console.log(doMath(2,4,5))
 
 /*
     @function addMiddleName
@@ -24,7 +30,17 @@
                  return firstname and last name
     @example addMiddleNmae('John', 'Mabel', 'Smith'); // John Mabel Smith
 */
-
+const addMiddleName = (firstN,lastN, middleName) => {
+    let combinedName = `${firstN} ${lastN}  ${middleName}`; 
+    if (middleName === 0 ){
+      return `${firstN} ${lastN}`;
+    }
+    return combinedName;
+  
+  }
+  
+  console.log(addMiddleName("Mielyn","Acosta"));
+    
 
 /*
     @function defaultPlaceholder
