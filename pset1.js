@@ -206,12 +206,6 @@ return the number of characters in the string
 call function 'countChars'
 ******************/
 
-/* function countChars(){
-        
-       let myName = 15 ; 
-
-       return myName ;
-
-
-}
-console.log(myName.toString()); */
+const countChars = string => { 
+    return string.length; 
+} 
