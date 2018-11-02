@@ -10,7 +10,11 @@
     
     use a default parameter for the middleName, set it to ""
 */
-
+const getFullName = (firstName,lastName, middleName="")=>{
+    let nameGiven=firstName+" "+middleName+" "+lastName;
+    return nameGiven;
+}
+console.log(getFullName("Jen","Perez", "Marie"));
 
 /*
     PROBLEM 2:
@@ -20,7 +24,11 @@
     
     Take a param that represents F. By default this should be 32
 */
-
+let fahrenheitToCelsius= function(f){
+    let celsius1= ((f-32)*(5/9));
+    return celsius1;
+}
+console.log (fahrenheitToCelsius(32));
 
 /*
     PROBLEM 3:
@@ -33,7 +41,10 @@
     should return a number that tells you how old you'll be in numYears
     ageNow and numYears should have default params
 */
-
+const myAges= (ageNow,numYears)=>{
+    return ageNow+numYears;
+}
+    console.log (myAges(29,2));
 /*
     PROBLEM 4:
     Now, let's do something interesint.
@@ -56,8 +67,18 @@
         
     if you are adventerous, have it throw an actual custom javascript error
     (red text in console)
-    
 */
+const required = (variable)=>{
+    let var1 = " is not set";
+  console.log(variable + var1);
+}
+
+const addTwoNums=(a = required("a"), b = required("b") ) =>{
+    let sum = a + b;
+    return sum;
+}
+console.log(addTwoNums());
+
 
 
 
