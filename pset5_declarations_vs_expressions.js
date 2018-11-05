@@ -21,14 +21,14 @@ function remainder(a, b, c) {
 }
 console.log(remainder(1, 2, 3));
 
-//EXPRESSION
+//EXPRESSION - anonymous function
 const remainder = function(a, b, c) {
     let sum = a + b + c;
     return sum % 3;
 }
 console.log(remainder(1, 2, 3));
 
-//ARROW
+//ARROW - anonymous function
 const remainder = (a, b, c) => {
     let sum = a + b + c;
     return sum % 3;
@@ -48,7 +48,7 @@ console.log(remainder(1, 2, 3));
         return  `${a}-${b}-${c}`;
     }
     console.log(string("one", "two", "three"));
-EXPRESSION
+//EXPRESSION
     const string = function(a, b, c) {
         return  `${a}-${b}-${c}`;
     }
@@ -71,7 +71,7 @@ EXPRESSION
     }
     console.log(randomNum());
 //EXPRESSION 
-   /const randomNum = function() {
+   const randomNum = function() {
        return Math.random() * 11;
     }
     console.log(randomNum());
@@ -80,3 +80,4 @@ EXPRESSION
         return Math.random() * 11;
     }
     console.log(randomNum());
+
