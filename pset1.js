@@ -9,9 +9,15 @@ if that number is > 100, should return NaN
 if invalid input given, return -1
 ******************/
 
-function myAge( ageNow, numYears ) {
-       
+
+function myAge( ageNow, numYears )
+ {
+ let calculatedAge = ageNow + numYears
+
+return calculatedAge;
 }
+const calculated=myAge(29,20)
+console.log (calculated)
 
 
 
@@ -29,11 +35,16 @@ Concatenating string variables
 - Call myConcatenate function
 ******************/
 
-function myConcatenate( firstStr, secondStr, thirdStr ) {
-    
+function myConcatenate( firstStr, secondStr, thirdStr ) 
+{
+let mySentence = firstStr + " " + secondStr + " " + thirdStr
+
+return mySentence;
 }
 
-myConcatenate('I', 'am', 'iron man'); // 'I am iron man'
+let myConcatenate2 = myConcatenate('I', 'am', 'iron man');  //'I am iron man'
+
+console.log (myConcatenate2); 
 
 /******************
 Subtract Function
@@ -44,8 +55,18 @@ This function will take two numbers and subtract them
 Ensure that both of the inputs are numbers
 ******************/
 
-function subtract(a,b) {
+
+{
+    function subtract(a,b)  
+    {
+    let subtract = a-b
     
+    return subtract;
+    }
+    
+    let result = subtract(5,2);  
+    
+    console.log (result);     
 }
 
 /******************
@@ -60,10 +81,35 @@ A = π * r2, where is π is Pi and r is the radius squared
 ******************/
 
 
-function areaOfaCircle(radius){
-    
-    
-}    
+
+
+ 
+    function areaOfaCircle(radius)  
+ { console.log ('radius is...', radius);
+   const area=Math.PI* radius**2;
+   //can also solve by with mathpow 
+return area;
+}   
+console.log (areaOfaCircle (1), 3.14159)
+ /*
+ radius is ...1
+ 0
+ */
+
+console.log (areaOfaCircle(), NaN)
+ /*radius is...undefined
+ 0
+ */
+
+console.log (areaOfaCircle(1,2,3,4,5), 3.14159)
+/*radius is...undefined
+0
+*/
+console.log (areaOfaCircle(2), 3.14159 * 4)
+/*radius is...undefined
+0
+*/
+   
 
 /******************
 Temperature Converter Fahrenheit to Celsius
@@ -72,8 +118,24 @@ Create a function called fahrenheitToCelsius:
 
 Now store a fahrenheit temperature into a variable.
 
-Convert it to celsius and output "NN°F is NN°C."
-******************/
+Convert it to celsius and output "NN°F is NN°C." **/
+
+
+
+    function fahrenheitToCelsius (f)
+    {
+    let fahrenheitToCelsius = (((f-32)*5)/9)
+    
+    return fahrenheitToCelsius;
+    
+}
+
+let result = fahrenheitToCelsius(90);  
+    
+    console.log (result);     
+    console.log (90 +" °F is " + result + " °C");
+
+     
 
 
 /******************
@@ -84,10 +146,27 @@ Create a function called celsiusToFahrenheit:
 Store a celsius temperature into a variable.
 
 Convert it to fahrenheit and output "NN°C is NN°F".
+
+
+
 ******************/
+
+function celsiusToFahrenheit (c)
+{
+let celsiusToFahrenheit = (1.8*c)+32
+
+return celsiusToFahrenheit;
+
+}
+
+let result1 = celsiusToFahrenheit(30);  
+  
+console.log (30 +" °C is " + result1 + " °F"); 
 
 
 /******************
+skip meeee 
+
 Is it the weekend?
 
 Please write a function called "isItTheWeekend" that has two conditions:
