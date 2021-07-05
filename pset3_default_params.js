@@ -10,7 +10,12 @@
     
     use a default parameter for the middleName, set it to ""
 */
-
+function getFullName(f_name, l_name, m_name = "")
+{
+    return f_name + " " + m_name + " " + l_name;
+}
+console.log(getFullName("Oliver", "apple"));//Outputs Oliver, "", "undefined". Last name has no default and was not entered.
+console.log("");//New line for organ ization.
 
 /*
     PROBLEM 2:
@@ -20,8 +25,13 @@
     
     Take a param that represents F. By default this should be 32
 */
-
-
+function fahrenheitToCelsius(number=32){
+    let celsius;
+    celsius = (number - 32) *  5 / 9;
+    return celsius;
+}
+console.log("Fahrenheit to Celsius: 32F is " + fahrenheitToCelsius() + "C");//F to C. 0F is 32C
+console.log("");//New line for organ ization.
 /*
     PROBLEM 3:
     
@@ -33,7 +43,11 @@
     should return a number that tells you how old you'll be in numYears
     ageNow and numYears should have default params
 */
-
+function myAgeIn(num,years=0){
+    return num + years;
+}
+console.log("My age in 0 years will be " + myAgeIn(23));//Outputs 23 because that is my current age.
+console.log("");//New line for organ ization.
 /*
     PROBLEM 4:
     Now, let's do something interesint.
@@ -58,14 +72,10 @@
     (red text in console)
     
 */
-
-
-
-
-
-
-
-
-
-
+function addTwoNums(a='\x1b[31m' + "a is not set.\n" + '\x1b[0m',b='\x1b[31m' + "\nb is not set." + '\x1b[0m'){
+    return a+b;
+}
+console.log("A + B = \n" + addTwoNums(2,3));//2 + 3 = 5.
+console.log("A + B = \n" + addTwoNums(3));//3 and B not set.
+console.log("A + B = \n" + addTwoNums());//A and B not set.
 
