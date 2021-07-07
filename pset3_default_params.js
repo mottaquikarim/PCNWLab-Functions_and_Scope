@@ -11,6 +11,15 @@
     use a default parameter for the middleName, set it to ""
 */
 
+// function getFullName(firstName, lastName, middleName = ''){
+
+//     return `${firstName} ${lastName} ${middleName}`;
+
+// }
+
+// console.log(getFullName());
+
+
 
 /*
     PROBLEM 2:
@@ -20,6 +29,14 @@
     
     Take a param that represents F. By default this should be 32
 */
+
+// function fahrenheitToCelsius(F = 32){
+//     const formula = (F - 32) * 5/9;
+//     return `Since in DR the temperature is declared in Celsius, ${F} degrees converted into Celsius is ${formula} degrees`;
+
+// }
+
+// console.log(fahrenheitToCelsius(74));
 
 
 /*
@@ -33,6 +50,15 @@
     should return a number that tells you how old you'll be in numYears
     ageNow and numYears should have default params
 */
+
+// function howOld(ageNow = 0, numYears = 1){
+
+//     const total = ageNow + numYears
+//     return `In ${numYears} years, you'll be ${total} years old.`;
+
+// }
+
+// console.log(howOld(19, 16));
 
 /*
     PROBLEM 4:
@@ -59,6 +85,35 @@
     
 */
 
+// function addTwoNums(a = 'a is not set!', b = 'b is not set!'){
+//     console.log(a);
+//     console.log(b);
+//     return a + b;
+
+// }
+
+// addTwoNums(2);
+
+// function notExistingParams(paramName){
+//     console.log(`The ${paramName} parameter was not set.`);
+//     return 0;
+// }
+
+// function addTwoNums(a = notExistingParams('a'), b = notExistingParams('b')){
+//     console.log(a);
+//     console.log(b);
+//     return a + b;
+
+// }
+
+// addTwoNums(2);
+// console.log(addTwoNums());
+// addTwoNums(function(){
+
+
+// })
+//google how to throw a custom error in js.
+//wrap it inside a function call.
 
 
 

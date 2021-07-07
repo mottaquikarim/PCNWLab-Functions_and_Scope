@@ -14,6 +14,35 @@
         return the remainder of the sum of a,b,c divided by 3
 */ 
 
+// functionDec:
+
+// function threeParams(a, b, c){
+
+//     return (a + b + c) % 3;
+
+// }
+
+// console.log(threeParams(1, 2, 3));
+
+// functionExp
+
+// const threeParams = function(a, b, c){
+
+//     return (a + b + c) % 3;
+
+// }
+
+// console.log(threeParams(1, 2, 3));
+
+// fatAFunction
+
+// const threeParams = (a, b, c) => {
+
+//     return (a + b + c) % 3;
+
+// }
+
+// console.log(threeParams(1, 2, 3));
 
 /*
     PROBLEM 2:
@@ -24,9 +53,70 @@
         then function will return 'one-two-three'
 */
 
+// functionDec
+
+// function threeParams(a, b, c){
+
+//     return a + ' - ' + b + ' - ' + c;
+
+// }
+
+// console.log(threeParams(1, 2, 3));
+
+// functionExp
+
+// const threeParams = function(a, b, c){
+
+//     return a + ' - ' + b + ' - ' + c;
+
+// }
+
+// console.log(threeParams(1, 2, 3));
+
+// fatAFunction
+
+// const threeParams = (a, b, c) => {
+
+//     return a + ' - ' + b + ' - ' + c;
+
+// }
+
+// console.log(threeParams(1, 2, 3));
+
+
 /*
     PROBLEM 3:
         Write a function that takes NO params
         return a random number between 0 and 10 
         (doesn't have to be a whole number tho)
 */
+
+// functionDec
+
+// function noParamsFunct(){
+
+//     return Math.random() * 10;
+
+// }
+
+// console.log(noParamsFunct());
+
+// functionDec:
+
+// const noParamsFunct = function(){
+
+//     return Math.random() * 10;
+
+// }
+
+// console.log(noParamsFunct());
+
+// fatAFunction
+
+const noParamsFunct = () => {
+
+    return Math.floor(Math.random() * 10);
+
+}
+
+console.log(noParamsFunct());

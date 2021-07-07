@@ -9,9 +9,23 @@ if that number is > 100, should return NaN
 if invalid input given, return -1
 ******************/
 
-function myAge( ageNow, numYears ) {
+let addition = '';
+
+function myAge(ageNow, numYears) {
+
+    addition = ageNow + numYears;
+
+    if(addition > 100){
+        return NaN
+    } else if(addition <= 100){
+        return addition;
+    }   else {
+        return -1
+    }
        
 }
+
+console.log(myAge(23, 100))
 
 
 
@@ -29,24 +43,32 @@ Concatenating string variables
 - Call myConcatenate function
 ******************/
 
-function myConcatenate( firstStr, secondStr, thirdStr ) {
-    
-}
+// function myConcatenate( firstStr, secondStr, thirdStr ) {
 
-myConcatenate('I', 'am', 'iron man'); // 'I am iron man'
+//     let mySentence = firstStr + secondStr + thirdStr;
+
+//     return mySentence;
+    
+// }
+
+// console.log(myConcatenate('I ', 'am ', 'iron man')); // 'I am iron man'
 
 /******************
 Subtract Function
 
 Write a subtract function
-
 This function will take two numbers and subtract them
 Ensure that both of the inputs are numbers
 ******************/
 
-function subtract(a,b) {
+// function subtract(a,b) {
+
+//     return a - b;
     
-}
+// }
+
+// console.log(subtract(3, 3));
+
 
 /******************
 Area of A Circle
@@ -60,10 +82,15 @@ A = π * r2, where is π is Pi and r is the radius squared
 ******************/
 
 
-function areaOfaCircle(radius){
+// function areaOfaCircle(radius){
     
+//     total = 3.14 * radius ** 2;
     
-}    
+//     return total;
+    
+// }
+
+// console.log(areaOfaCircle(100));
 
 /******************
 Temperature Converter Fahrenheit to Celsius
@@ -75,6 +102,17 @@ Now store a fahrenheit temperature into a variable.
 Convert it to celsius and output "NN°F is NN°C."
 ******************/
 
+// function fahrenheitToCelsius(fahrenheitTemp){
+//     // Formula: (NN F - 32) * 5/9
+    
+//     let tempInCelsius = (fahrenheitTemp - 32) * 5/9;
+
+//     return 'The Fahrenheit temperature is ' + fahrenheitTemp + ' degrees, that converted in Celsius would be ' + tempInCelsius + ' degrees.';
+
+// }
+
+// console.log(fahrenheitToCelsius(25));
+
 
 /******************
 Temperature Converter Celsius to Fahrenheit
@@ -85,6 +123,15 @@ Store a celsius temperature into a variable.
 
 Convert it to fahrenheit and output "NN°C is NN°F".
 ******************/
+
+// function celsiusToFahrenheit(celsiusTemp){
+
+//     let tempInFahrenheit = (celsiusTemp * 9/5) + 32;
+
+//     return 'The Celsius temperature is ' + celsiusTemp + ' degrees, that converted in Fahrenheit would be ' + tempInFahrenheit + ' degrees.';
+// }
+
+// console.log(celsiusToFahrenheit(32));
 
 
 /******************
@@ -103,7 +150,20 @@ console.log(today); // No, it's the weekday
 If you are having trouble, please note that Javascript has a helpful built-in function to help get the current day
 ******************/
 
+// function isItTheWeekend(){
 
+//     let today = new Date().getDay();
+//     console.log(today)
+
+//     if(today === 6 || today === 0){
+//         return 'Yes, it actually is the weekend. It\'s either Saturday or Sunday to be precise.'
+//     } else {
+//         return `Nope. It\'s a weekday.`
+//     }
+
+// }
+
+// console.log(isItTheWeekend());
 
 /******************
 Finding the absolute value of a number
@@ -115,6 +175,14 @@ The function should return the absolute value of the number
 The absolute value of a negative number is the positive version of that same number,
 and the absolute value of a positive number (or zero) is that number itself.
 ******************/
+
+// function absolute(n){
+
+//     return Math.abs(n);
+
+// }
+
+// console.log(absolute(-5));
 
 
 /******************
@@ -128,4 +196,13 @@ return the number of characters in the string
 call function 'countChars'
 ******************/
 
+// function countChars(string){
+
+//     totalChars = string.length;
+
+//     return 'This sentence has ' + totalChars + ' characters.';
+
+// }
+
+// console.log(countChars('There is a lot of characters on this string'));
 
