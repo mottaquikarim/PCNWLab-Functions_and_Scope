@@ -10,9 +10,13 @@ if invalid input given, return -1
 ******************/
 
 function myAge( ageNow, numYears ) {
+
+    const myAgelater = ageNow + numYears;
+    return myAgelater; 
        
 }
 
+console.log(myAge(32,32));
 
 
 /******************
@@ -30,10 +34,11 @@ Concatenating string variables
 ******************/
 
 function myConcatenate( firstStr, secondStr, thirdStr ) {
+    return firstStr + ' ' + secondStr + ' ' + thirdStr;
     
 }
 
-myConcatenate('I', 'am', 'iron man'); // 'I am iron man'
+console.log(myConcatenate('I', 'am', 'iron man')); // 'I am iron man'
 
 /******************
 Subtract Function
@@ -45,8 +50,15 @@ Ensure that both of the inputs are numbers
 ******************/
 
 function subtract(a,b) {
+
+    if ((typeof a != typeof 1) || (typeof b != typeof 2)) 
+     return "Wrong input, Please enter a number";
+     else 
+     return a - b;
     
 }
+
+console.log(subtract('five',5));
 
 /******************
 Area of A Circle
@@ -61,9 +73,11 @@ A = π * r2, where is π is Pi and r is the radius squared
 
 
 function areaOfaCircle(radius){
-    
-    
+
+    return (radius**2) * 3.14;
 }    
+
+console.log(areaOfaCircle(2));
 
 /******************
 Temperature Converter Fahrenheit to Celsius
@@ -75,6 +89,14 @@ Now store a fahrenheit temperature into a variable.
 Convert it to celsius and output "NN°F is NN°C."
 ******************/
 
+function fahrenheitToCelsius(fahrenheit){
+
+    let celsius = (fahrenheit - 32) * .5556
+    
+    return console.log(fahrenheit + "°F is " + celsius + "°C.")
+}
+
+fahrenheitToCelsius(50);
 
 /******************
 Temperature Converter Celsius to Fahrenheit
@@ -86,6 +108,14 @@ Store a celsius temperature into a variable.
 Convert it to fahrenheit and output "NN°C is NN°F".
 ******************/
 
+function celsiusToFahrenheit(celsius) {
+
+    let fahrenheit = (celsius * 1.8) + 32;
+
+    return console.log(celsius + "°C is " + fahrenheit + "°F.");
+}
+
+celsiusToFahrenheit(30);
 
 /******************
 Is it the weekend?

@@ -14,6 +14,19 @@
         return the remainder of the sum of a,b,c divided by 3
 */ 
 
+function remainderOfSum (a,b,c) {
+    return (a+b+c)%3; 
+}
+
+const remainderOfSum2 = function(a,b,c) {
+    return (a+b+c)%3;
+}
+
+const remainderOfSum3 = (a,b,c) => {
+    return (a+b+c)%3;
+}
+
+console.log(remainderOfSum3(3,4,7));
 
 /*
     PROBLEM 2:
@@ -24,9 +37,37 @@
         then function will return 'one-two-three'
 */
 
+function returnWithDash(a,b,c) {
+    return a + "-" + b + "-" + c;
+}
+
+const returnWithDash2 = function(a,b,c) {
+    return a + "-" + b +  "-" + c;
+}
+
+const returnWithDash3 = (a,b,c) => {
+    return a + "-" + b + "-" + c;
+}
+
+console.log(returnWithDash3("Abdel","wahab","Oufkir"));
+
 /*
     PROBLEM 3:
         Write a function that takes NO params
         return a random number between 0 and 10 
         (doesn't have to be a whole number tho)
 */
+
+function returnRandomNum () {
+    return Math.floor(Math.random()*11);
+}
+
+const returnRandomNum2 = function() {
+    return Math.floor(Math.random()*11);
+}
+
+const returnRandomNum3 = () => {
+    return Math.floor(Math.random()*11);
+}
+
+console.log(returnRandomNum3());
