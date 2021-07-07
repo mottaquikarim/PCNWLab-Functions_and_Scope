@@ -10,7 +10,11 @@
     
     use a default parameter for the middleName, set it to ""
 */
-
+function getFullName(lastName, firstName, middleName = "") {
+let getFullName = `${lastName}, ${firstName} ${middleName}`;
+return getFullName;
+}
+console.log(getFullName("Igwe", "Osita"));
 
 /*
     PROBLEM 2:
@@ -21,7 +25,12 @@
     Take a param that represents F. By default this should be 32
 */
 
-
+function fahrenheitToCelsius(F = 32){
+    const C = ((F-32) * (5/9));
+    const fahrenheitToCelsius = `${F}°F is ${C}°C.`;
+    return fahrenheitToCelsius;
+}
+console.log(fahrenheitToCelsius(70));
 /*
     PROBLEM 3:
     
@@ -33,7 +42,13 @@
     should return a number that tells you how old you'll be in numYears
     ageNow and numYears should have default params
 */
-
+function myAge(ageNow = 26, numYears = 32) {
+    const futureAge =  `In ${numYears} years, I will be ${numYears+ageNow}.`;
+  
+    return futureAge;
+  }
+  const futureAge1 = myAge();
+  console.log(futureAge1);
 /*
     PROBLEM 4:
     Now, let's do something interesint.
@@ -60,12 +75,41 @@
 */
 
 
+  function missingParameter(paramName) {
+      console.log(`you are missing parameter ${paramName}`);
+      return 0; 
+  }
+function addTwoNums (a= missingParameter('a'), b= missingParameter('b')) {
+return a+b;
+}
 
+console.log(addTwoNums());
 
+/* addtwonums runs - it figures out if there is are parameters for both imputs, if there are any missing inputs
+then it invokes the missing parameter function - the missingparam functions prints the message and returns 0 so that the addvalue function
+can return a number */
 
+/*function missingParameter(paramName) {
+      throw new Error(`you are missing ${paramName}.`);
+  }
+function addTwoNums (a= missingParameter('a'), b= missingParameter('b')) {
+return a+b;
+}
 
+console.log(addTwoNums());
 
+*/
+const subtract = function(a, b){
+    return a - b;
+} // this is called a function expression\
+console.log(subtract()); //
 
+const hello = 5;
+hello(3); // this does not work because hello is a number (5) - can't invoke a number
+subtract(5); //this can be invoked because subtract is a function - can invoke a function
 
-
-
+ 
+function countChars(nameString = "Jane Doe") {
+    return nameString.length
+}
+console.log(countChars());
