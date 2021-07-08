@@ -18,6 +18,7 @@
     run();
     console.log(foo); // what is foo? why?
 */
+// foo is 1
 
 
 /*
@@ -32,6 +33,7 @@
     run();
     console.log(foo); // what is foo? why?
 */
+//undefine because foo does not exist outside of the function
 
 /*
     PROBLEM 3:
@@ -45,7 +47,7 @@
     
     run();
 */
-
+//foo is 1
 /*
     PROBLEM 4:
     
@@ -61,6 +63,7 @@
     console.log(foo); // what is foo? why?
 */
 
+//foo is 1 than after run foo is 2
 /*
     PROBLEM 5:
     
@@ -76,7 +79,9 @@
     run();
     console.log(foo); // what is foo? why?
 */
-
+//foo is 1 than 
+//foo is 2 
+//than foo is 1
 
 /*
     PROBLEM 6:
@@ -94,7 +99,8 @@
     run();
     console.log(foo); // what is foo? why?
 */
-
+//run() prints 1 to screen
+//and console.log(foo) will return error
 /*
     PROBLEM 7:
     
@@ -112,7 +118,9 @@
     run();
     console.log(foo); // what is foo? why?
 */
-
+//run() will console.log 2
+//console.log(foo) will print 1 because that will look at foo outside run func
+    
 /*
     PROBLEM 8:
     
@@ -130,7 +138,8 @@
     run();
     console.log(foo); // what is foo? why?
 */
-
+//run() prints 2 
+//console.log(foo) print 2 because run() function reassigns foo to 2 and it global
 /*
     PROBLEM 9:
     
@@ -149,6 +158,9 @@
     run();
     console.log(foo); // what is foo? why?
 */
+//run() returns 3 and
+//console.log(foo) returns 1
+
 
 /*
     PROBLEM 9:
@@ -167,6 +179,8 @@
     run();
     console.log(foo); // what is foo? why?
 */
+//run() prints 1
+//console.log(foo) prints 10 because run() reassigns foo before exiting
 
 /*
     PROBLEM 10:
@@ -184,7 +198,8 @@
     });
     console.log(foo); // what is foo? why?
 */
-
+//foo is 2 because run function takes func as arg and than func init foo
+//than run print foo
 /*
     PROBLEM 11:
     
@@ -202,7 +217,8 @@
     });
     console.log(foo); // what is foo? why?
 */
-
+//print 9 than print 2 because the function inside the run() reintialize 
+//global foo to 2
 /*
     PROBLEM 12:
     
@@ -210,7 +226,7 @@
     
     let foo = 1;
     function run( anotherFunctionToCall ) {
-        foo = 9;
+        const foo = 9;
         anotherFunctionToCall();
         console.log(foo)
     }
@@ -221,10 +237,11 @@
     console.log(foo); // what is foo? why?
 */
 
+//run.foo is 9 because foo is reinit to 9 than anotherFunctionToCall() reinit global
+//variable 1 to 2.
 
 
 
 
 
-
-
+   
